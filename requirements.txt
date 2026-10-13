@@ -1,0 +1,17 @@
+torch
+torchaudio
+librosa
+soundfile
+noisereduce
+jiwer
+transformers
+Levenshtein
+scikit-learn
+pandas
+numpy
+streamlit
+chromadb
+sentence-transformers
+rank-bm25
+gTTS
+matplotlib

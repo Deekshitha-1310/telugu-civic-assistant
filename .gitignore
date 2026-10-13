@@ -1,0 +1,11 @@
+﻿__pycache__/
+*.py[cod]
+*.class
+*.env
+venv/
+.venv/
+models/*.pkl
+outputs/audio/*.mp3
+data/audio/raw_recordings/*.wav
+data/audio/augmented_noisy/**/*.wav
+data/audio/denoised/*.wav
