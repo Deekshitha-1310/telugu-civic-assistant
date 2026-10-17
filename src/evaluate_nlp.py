@@ -1,412 +1,316 @@
 """
-evaluate_nlp.py  —  Member 2: Experiments 2 & 3
-================================================
-Runs TWO controlled experiments and produces console tables + saved plots.
+evaluate_nlp.py (v2) — Member 2: Experiments 2 & 3
+===================================================
+EXPERIMENT 2  Normalizer ablation
+  Token-level repair of simulated ASR spelling errors (asr_noise.py) + false-positive
+  rate on CLEAN text.  Configurations:
+     1 lexicon only                           (no spelling repair)
+     2 v1-style Levenshtein, no folding       (plain Unicode edit distance, sim>=0.75)
+     3 v1 as originally shipped               (aspirate fold + suffix-strip + sim>=0.75)
+     4 v2 phonetic key, aspirate-only fold
+     5 v2 phonetic key, full fold   <- shipped default
+     6 v2 full fold + guarded Levenshtein<=1
+  plus a sentence-level dialect-lexicon regression suite (data/ablation_probes.csv).
 
-Experiment 2: Dialect Normalization Ablation Study
-----------------------------------------------------
-Tests the normalizer on 50 dialectal queries.
-Measures token-level correction accuracy WITH and WITHOUT Phonetic Folding.
-Key verification: পথকం → పథకం fixed by Phonetic Folding alone.
-
-Experiment 3: Intent Classification Macro-F1 Comparison
----------------------------------------------------------
-Compares Intent Macro-F1 across three input conditions on held-out queries:
-  1. Ground Truth (clean standard Telugu)
-  2. Raw ASR-like text (dialectal slang, no normalization)
-  3. Normalized text (after our normalizer)
+EXPERIMENT 3  Intent macro-F1 under dialect shift and ASR noise
+  Two training protocols:  A) all styles  B) standard-only (dialect never seen)
+  Conditions: clean | raw dialect | v1-normalized | v2-normalized | noisy (+/- v2).
+  95 % bootstrap CIs, and fixed/broken counts, because n = 40 queries.
 """
-
-import os
-import sys
-import pickle
 import json
+import os
+import pickle
+import random
+import sys
+
 import numpy as np
 import pandas as pd
 import matplotlib
-matplotlib.use('Agg')           # non-interactive backend for saving figs
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from sklearn.metrics import f1_score, classification_report
+import Levenshtein
+from sklearn.metrics import f1_score
 
-# ── Path resolution ────────────────────────────────────────────────────────────
-_SRC_DIR   = os.path.dirname(os.path.abspath(__file__))
-_ROOT      = os.path.join(_SRC_DIR, '..')
-MODEL_PATH = os.path.join(_ROOT, 'models',  'intent_model.pkl')
-DATA_PATH  = os.path.join(_ROOT, 'data',    'intent_dataset.csv')
-PLOTS_DIR  = os.path.join(_ROOT, 'outputs', 'plots')
-os.makedirs(PLOTS_DIR, exist_ok=True)
+_SRC = os.path.dirname(os.path.abspath(__file__))
+_ROOT = os.path.join(_SRC, '..')
+sys.path.insert(0, _SRC)
+from dialect_normalizer import (TeluguDialectNormalizer, FOLD_TABLES, strip_invisible,
+                                split_punct, TELUGU)
+from asr_noise import variants, corrupt_text
+from train_intent_model import build_pipeline
 
-# Add src to import path so we can import the normalizer
-sys.path.insert(0, _SRC_DIR)
-from dialect_normalizer import TeluguDialectNormalizer
+DATA = os.path.join(_ROOT, 'data')
+PLOTS = os.path.join(_ROOT, 'outputs', 'plots')
+os.makedirs(PLOTS, exist_ok=True)
+RULES_SPELLING = {'phonetic', 'phonetic+suffix', 'fuzzy'}
+
+
+# ── v1 re-implementation (baseline only; this is the code that shipped before) ──
+LEGACY_SUFFIXES = sorted(["లతో", "లకు", "లోని", "ానికి", "ాన్ని", "ంలో", "ంకు", "ంగా",
+                          "ాని", "తో", "కు", "కి", "లో", "ను", "ని", "ల"], key=len, reverse=True)
+
+
+class LegacyNormalizer:
+    def __init__(self, base: TeluguDialectNormalizer, fold_level, suffix_strip):
+        self.b, self.suffix_strip = base, suffix_strip
+        self.fold = str.maketrans(FOLD_TABLES[fold_level])
+
+    def resolve(self, core):
+        b = self.b
+        if core in b.protected:
+            return core, None
+        if core in b.lex1:
+            return b.lex1[core], 'lexicon'
+        root = core
+        if self.suffix_strip:
+            for s in LEGACY_SUFFIXES:
+                if core.endswith(s) and len(core) - len(s) >= 3:
+                    root = core[:-len(s)]
+                    break
+        fr = root.translate(self.fold)
+        best, bs = None, 0.0
+        for cand in b.vocab:
+            fc = cand.translate(self.fold)
+            sim = 1 - Levenshtein.distance(fr, fc) / max(len(fr), len(fc), 1)
+            if sim > bs:
+                bs, best = sim, cand
+        if bs >= 0.75 and best and abs(len(root) - len(best)) <= 2:
+            return best, 'legacy-fuzzy'
+        return core, None
+
+    def explain(self, q):
+        out, edits = [], []
+        for t in self.b.clean_text(q).split():
+            lead, core, trail = split_punct(t)
+            new, rule = self.resolve(core)
+            out.append(lead + new + trail)
+            if rule:
+                edits.append((core, new, rule))
+        return ' '.join(out), edits
+
+    def normalize(self, q):
+        return self.explain(q)[0]
+
+
+def make_configs():
+    mk = TeluguDialectNormalizer
+    base = mk(fold_level='full')
+    return {
+        '1 lexicon only':               mk(fold_level='none', fuzzy=False),
+        '2 plain Levenshtein (no fold)': LegacyNormalizer(base, 'none', False),
+        '3 v1 as shipped':              LegacyNormalizer(base, 'aspirate', True),
+        '4 v2 key: aspirate fold':      mk(fold_level='aspirate'),
+        '5 v2 key: full fold (SHIPPED)': mk(fold_level='full'),
+        '6 v2 full fold + Lev<=1':      mk(fold_level='full', fuzzy=True),
+    }
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# EXPERIMENT 2 – Dialect Normalization Ablation
+# EXPERIMENT 2
 # ══════════════════════════════════════════════════════════════════════════════
-
-# 50 dialectal probe queries with their expected normalized forms
-# Each tuple: (dialect_input, expected_output_token_hint, scheme_class)
-# We test specific token replacements that prove the normalizer works
-ABLATION_PROBES = [
-    # (dialect_query, expected_corrected_token, dialect_token_to_check)
-    # Phonetic Folding probes  (aspirated ↔ unaspirated)
-    ("ఆరోగ్యశ్రీ పతకం కింద ఏమేం కాగితాలు కావాలె?",  "పథకం", "పతకం"),
-    ("రైతు బంధు పతకం అర్హులు ఎవరు?",                "పథకం", "పతకం"),
-    ("అమ్మ ఒడి పతకానికి ఎవరు అర్హులు?",              "పథకం", "పతకం"),
-    ("ఆసరా పెన్షన్ పతకంలో ఎంత వస్తుంది?",            "పథకం", "పతకం"),
-    ("సర్కారు పతకం గురించి చెప్పండి",                  "పథకం", "పతకం"),
-
-    # Lexicon mapping probes (Telangana dialect)
-    ("రైతు బంధు పైసలు ఎప్పుడొస్తయి?",                "డబ్బులు", "పైసలు"),
-    ("ఆరోగ్యశ్రీ పైసలు ఎప్పుడొస్తయి?",                "డబ్బులు", "పైసలు"),
-    ("అమ్మ ఒడి పైసలు ఎంత వస్తయి?",                   "డబ్బులు", "పైసలు"),
-    ("ఆసరా పెన్షన్ పైసలు పడ్డాయా?",                   "డబ్బులు", "పైసలు"),
-    ("రైతు భరోసా పైసలు ఏ నెలలో వస్తయి?",              "డబ్బులు", "పైసలు"),
-
-    # ఎప్పుడొస్తయి → ఎప్పుడు అందుతాయి
-    ("రైతు బంధు సాయం ఎప్పుడొస్తయి?",                 "ఎప్పుడు", "ఎప్పుడొస్తయి"),
-    ("ఆసరా పెన్షన్ ఎప్పుడొస్తయి?",                   "ఎప్పుడు", "ఎప్పుడొస్తయి"),
-    ("అమ్మ ఒడి డబ్బులు ఎప్పుడొస్తయి?",               "ఎప్పుడు", "ఎప్పుడొస్తయి"),
-
-    # ఎట్ల → ఎలా
-    ("రైతు బంధు దరఖాస్తు ఎట్ల చేయాలె?",              "ఎలా", "ఎట్ల"),
-    ("ఆరోగ్యశ్రీ రిజిస్ట్రేషన్ ఎట్ల చేయించాలె?",      "ఎలా", "ఎట్ల"),
-    ("అమ్మ ఒడి కి ఎట్ల అప్లై చేయాలె?",               "ఎలా", "ఎట్ల"),
-    ("ఆసరా పెన్షన్ ఎట్ల పొందాలె?",                    "ఎలా", "ఎట్ల"),
-
-    # యాడ → ఎక్కడ (Rayalaseema)
-    ("రైతు బంధు యాడ దరఖాస్తు చేయాలి?",               "ఎక్కడ", "యాడ"),
-    ("ఆరోగ్యశ్రీ కి యాడ అర్జీ ఇవ్వాలి?",              "ఎక్కడ", "యాడ"),
-    ("అమ్మ ఒడి ఆఫీసు యాడ ఉంటది?",                     "ఎక్కడ", "యాడ"),
-    ("ఆసరా పెన్షన్ యాడ తీసుకుంటారు?",                 "ఎక్కడ", "యాడ"),
-
-    # సొమ్ము → ఆర్థిక సహాయం (Rayalaseema)
-    ("రైతు బంధు సొమ్ము ఎంత వస్తది?",                  "ఆర్థిక", "సొమ్ము"),
-    ("ఆరోగ్యశ్రీ సొమ్ము ఎక్కడ తీసుకోవాలి?",           "ఆర్థిక", "సొమ్ము"),
-    ("అమ్మ ఒడి సొమ్ము ఎప్పుడు వస్తది?",               "ఆర్థిక", "సొమ్ము"),
-
-    # కాగితాలు → ధ్రువీకరణ పత్రాలు
-    ("రైతు బంధు కోసం ఏమేం కాగితాలు కావాలె?",          "పత్రాలు", "కాగితాలు"),
-    ("ఆరోగ్యశ్రీ కాగితాలు ఏమి కావాలె?",               "పత్రాలు", "కాగితాలు"),
-    ("అమ్మ ఒడి కాగితాలు ఎక్కడ తీసుకోవాలె?",           "పత్రాలు", "కాగితాలు"),
-    ("ఆసరా పెన్షన్ కాగితాలు ఏమి ఉండాలె?",             "పత్రాలు", "కాగితాలు"),
-
-    # అప్లై → దరఖాస్తు
-    ("రైతు బంధు కు ఎలా అప్లై చేయాలి?",               "దరఖాస్తు", "అప్లై"),
-    ("ఆరోగ్యశ్రీ కి అప్లై విధానం చెప్పండి",            "దరఖాస్తు", "అప్లై"),
-    ("అమ్మ ఒడి అప్లై చేసే స్థలం ఎక్కడ?",              "దరఖాస్తు", "అప్లై"),
-
-    # సర్కారు → ప్రభుత్వం
-    ("సర్కారు పథకం రైతు బంధు ఎంత ఇస్తున్నది?",         "ప్రభుత్వం", "సర్కారు"),
-    ("సర్కారు ఆరోగ్యశ్రీ పథకం ఏమిటి?",                "ప్రభుత్వం", "సర్కారు"),
-    ("సర్కారు అమ్మ ఒడి ఎంత ఇస్తుంది?",                "ప్రభుత్వం", "సర్కారు"),
-    ("సర్కారు ఆసరా పెన్షన్ ఎంత?",                     "ప్రభుత్వం", "సర్కారు"),
-
-    # బాపతు → సంబంధించిన
-    ("రైతు బంధు బాపతు అర్హత ఉందా?",                   "సంబంధించిన", "బాపతు"),
-    ("ఆరోగ్యశ్రీ బాపతు నిబంధనలు ఏమిటి?",              "సంబంధించిన", "బాపతు"),
-
-    # ఇస్తారా → మంజూరు చేస్తారా
-    ("రైతు బంధు మా కుటుంబానికి ఇస్తారా?",              "మంజూరు", "ఇస్తారా"),
-    ("ఆసరా పెన్షన్ మాకు ఇస్తారా?",                    "మంజూరు", "ఇస్తారా"),
-
-    # డాక్యుమెంట్లు → ధ్రువీకరణ పత్రాలు
-    ("రైతు బంధు డాక్యుమెంట్లు ఏమి కావాలి?",            "పత్రాలు", "డాక్యుమెంట్లు"),
-    ("ఆరోగ్యశ్రీ డాక్యుమెంట్లు సమర్పించాలా?",          "పత్రాలు", "డాక్యుమెంట్లు"),
-    ("అమ్మ ఒడి డాక్యుమెంట్లు ఎక్కడ?",                 "పత్రాలు", "డాక్యుమెంట్లు"),
-
-    # ఏటి → ఏమిటి
-    ("రైతు బంధు ఏటి?",                                "ఏమిటి", "ఏటి"),
-    ("ఆరోగ్యశ్రీ పథకం ఏటి?",                           "ఏమిటి", "ఏటి"),
-
-    # Mixed dialect + phonetic folding compound probes
-    ("ఆరోగ్యశ్రీ పతకం కోసం కాగితాలు ఏమేం కావాలె?",     "పథకం", "పతకం"),
-    ("రైతు బంధు పతకం సొమ్ము ఎంతొస్తయి?",              "పథకం", "పతకం"),
-    ("సర్కారు పతకం కింద పైసలు ఎప్పుడొస్తయి?",          "పథకం", "పతకం"),
-    ("అమ్మ ఒడి పతకం ఎట్ల అప్లై చేయాలె?",              "పథకం", "పతకం"),
-    ("ఆసరా పెన్షన్ పతకం యాడ దరఖాస్తు ఇవ్వాలె?",       "పథకం", "పతకం"),
-]
+def clean_tokens(base):
+    """Valid Telugu tokens the normalizer must leave alone (not lexicon keys)."""
+    df = pd.read_csv(os.path.join(DATA, 'intent_dataset.csv'), encoding='utf-8-sig')
+    ho = pd.read_csv(os.path.join(DATA, 'heldout_intent_queries.csv'), encoding='utf-8-sig')
+    texts = list(df[df.dialect_style == 'standard'].query_text) + list(ho.query_standard)
+    kb = json.load(open(os.path.join(DATA, 'schemes_data.json'), encoding='utf-8'))
+    texts += [c['content'] for c in kb]
+    toks = set()
+    for t in texts:
+        for w in t.split():
+            core = split_punct(strip_invisible(w))[1]
+            if len(core) >= 3 and TELUGU.search(core) and core not in base.lex1:
+                toks.add(core)
+    return sorted(toks)
 
 
 def run_experiment2():
-    """
-    Experiment 2: Ablation – Phonetic Folding ON vs OFF.
-    Tests 50 dialectal probes and reports:
-    - Correction accuracy WITH Phonetic Folding
-    - Correction accuracy WITHOUT Phonetic Folding (remove fold step)
-    """
-    print("\n" + "="*65)
-    print("  EXPERIMENT 2: Dialect Normalization Ablation Study")
-    print("="*65)
+    print('\n' + '=' * 72 + '\n  EXPERIMENT 2: Normalizer ablation (simulated ASR spelling errors)\n' + '=' * 72)
+    cfgs = make_configs()
+    base = cfgs['5 v2 key: full fold (SHIPPED)']
+    words = sorted(base.targets - {'చేయూత'})
+    probes = [(cat, orig, bad) for orig in words for cat, bad in variants(orig)
+              if bad not in base.known]                       # skip corruptions that are real words
+    # suffix-attached probes: aspirate/sibilant/vowel corruption of root + 'లో'
+    suf = [(f'{cat}+suffix', orig + 'లో', bad + 'లో') for orig in words
+           for cat, bad in variants(orig)
+           if cat in ('aspirate', 'sibilant', 'vowel_len') and not orig.endswith('ా')
+           and (bad + 'లో') not in base.known]
+    probes += suf
+    cats = sorted({c for c, _, _ in probes})
+    print(f'  {len(probes)} corrupted tokens from {len(words)} civic words; categories: {cats}')
+    clean = clean_tokens(base)
+    print(f'  {len(clean)} distinct clean Telugu tokens for the false-positive check')
 
-    norm_with_fold    = TeluguDialectNormalizer()
-    norm_without_fold = TeluguDialectNormalizer()
-    # Disable folding by replacing with identity table
-    norm_without_fold.fold = str.maketrans({})  # empty → no folding
+    rows = []
+    for name, norm in cfgs.items():
+        rec = {c: [0, 0] for c in cats}
+        for cat, orig, bad in probes:
+            out = norm.normalize(bad)
+            rec[cat][0] += (out == orig)
+            rec[cat][1] += 1
+        tot_ok = sum(v[0] for v in rec.values())
+        fp = []
+        for t in clean:
+            out, edits = norm.explain(t)
+            if out != t and any(r in RULES_SPELLING or r in ('legacy-fuzzy', 'dialect-morph') for _, _, r in edits):
+                fp.append((t, out))
+        row = {'config': name,
+               'recovery_all': tot_ok / len(probes),
+               **{f'rec_{c}': rec[c][0] / rec[c][1] for c in cats},
+               'false_pos': len(fp), 'fp_rate': len(fp) / len(clean), '_fp': fp}
+        rows.append(row)
+    df = pd.DataFrame(rows)
 
-    results = []
-    for dialect_query, expected_token, dialect_token in ABLATION_PROBES:
-        out_with    = norm_with_fold.normalize(dialect_query)
-        out_without = norm_without_fold.normalize(dialect_query)
+    print(f"\n  {'config':32s} {'recovery':>9s} {'FP tokens':>10s} {'FP rate':>8s}")
+    for r in rows:
+        print(f"  {r['config']:32s} {r['recovery_all']*100:8.1f}% {r['false_pos']:10d} {r['fp_rate']*100:7.2f}%")
+    print('\n  Recovery by corruption category (%):')
+    print('  ' + 'config'.ljust(32) + ''.join(c[:11].rjust(12) for c in cats))
+    for r in rows:
+        print('  ' + r['config'].ljust(32) + ''.join(f"{r['rec_'+c]*100:11.0f}%" for c in cats))
+    for r in rows:
+        if r['config'].startswith(('3 ', '6 ')) and r['_fp']:
+            print(f"\n  False positives in [{r['config']}] (first 8):")
+            for a, b in r['_fp'][:8]:
+                print(f'      {a}  ->  {b}')
 
-        corrected_with    = expected_token in out_with
-        corrected_without = expected_token in out_without
+    # sentence-level lexicon regression suite (in-sample: the lexicon was written for these)
+    ab = pd.read_csv(os.path.join(DATA, 'ablation_probes.csv'), encoding='utf-8-sig')
+    shipped, nofold = cfgs['5 v2 key: full fold (SHIPPED)'], cfgs['1 lexicon only']
+    def ok(norm, r):
+        o = norm.normalize(r.query)
+        return (r.expected_token in o) and (r.dialect_token not in o.split())
+    a_ship = np.mean([ok(shipped, r) for r in ab.itertuples()])
+    a_lex = np.mean([ok(nofold, r) for r in ab.itertuples()])
+    print(f'\n  Sentence-level lexicon regression ({len(ab)} probes, IN-SAMPLE, not evidence of '
+          f'generalisation):  lexicon-only {a_lex*100:.1f}%  |  shipped {a_ship*100:.1f}%')
 
-        results.append({
-            "query":            dialect_query[:55],
-            "dialect_token":    dialect_token,
-            "expected":         expected_token,
-            "with_fold":        corrected_with,
-            "without_fold":     corrected_without,
-            "fold_helped":      corrected_with and not corrected_without,
-        })
-
-    df = pd.DataFrame(results)
-    n  = len(df)
-
-    acc_with    = df['with_fold'].sum() / n
-    acc_without = df['without_fold'].sum() / n
-    fold_boosts = df['fold_helped'].sum()
-
-    print(f"\n  Total probes                    : {n}")
-    print(f"  Corrections WITH Phonetic Fold  : {df['with_fold'].sum():>3d}  ({acc_with*100:.1f}%)")
-    print(f"  Corrections WITHOUT Fold        : {df['without_fold'].sum():>3d}  ({acc_without*100:.1f}%)")
-    print(f"  Queries where Fold was decisive : {fold_boosts}")
-
-    # Show failures (if any) with fold ON
-    failures = df[~df['with_fold']]
-    if not failures.empty:
-        print(f"\n  ⚠  Missed corrections ({len(failures)}):")
-        for _, row in failures.iterrows():
-            print(f"     '{row['query']}' — expected '{row['expected']}'")
-
-    # Show sample phonetic-folding wins
-    fold_wins = df[df['fold_helped']]
-    print(f"\n  Sample Phonetic-Folding wins:")
-    for _, row in fold_wins.head(5).iterrows():
-        print(f"     '{row['dialect_token']}' → '{row['expected']}'  (folding was decisive)")
-
-    # ── Bar chart ────────────────────────────────────────────────────────────
-    fig, ax = plt.subplots(figsize=(7, 4))
-    bars = ax.bar(
-        ['Without\nPhonetic Folding', 'With\nPhonetic Folding'],
-        [acc_without * 100, acc_with * 100],
-        color=['#e74c3c', '#2ecc71'],
-        width=0.4,
-        edgecolor='black'
-    )
-    for bar, val in zip(bars, [acc_without * 100, acc_with * 100]):
-        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 1,
-                f'{val:.1f}%', ha='center', va='bottom', fontsize=12, fontweight='bold')
-    ax.set_ylim(0, 110)
-    ax.set_ylabel('Token Correction Accuracy (%)', fontsize=11)
-    ax.set_title('Experiment 2: Phonetic Folding Ablation\n(50 Dialectal Telugu Probes)', fontsize=12)
-    ax.axhline(y=acc_without * 100, color='gray', linestyle='--', alpha=0.5)
+    # plot
+    fig, ax = plt.subplots(1, 2, figsize=(12, 4.2))
+    names = [r['config'][:2] + r['config'][1:].strip()[:22] for r in rows]
+    short = [r['config'].split(' ', 1)[0] for r in rows]
+    cols = ['#95a5a6', '#e67e22', '#e74c3c', '#f1c40f', '#2ecc71', '#3498db']
+    ax[0].bar(short, [r['recovery_all'] * 100 for r in rows], color=cols, edgecolor='black')
+    for i, r in enumerate(rows):
+        ax[0].text(i, r['recovery_all'] * 100 + 1, f"{r['recovery_all']*100:.0f}%", ha='center', fontweight='bold')
+    ax[0].set_ylim(0, 110); ax[0].set_ylabel('Token recovery (%)'); ax[0].set_xlabel('configuration')
+    ax[0].set_title('Recovery of simulated ASR spelling errors')
+    ax[1].bar(short, [r['fp_rate'] * 100 for r in rows], color=cols, edgecolor='black')
+    for i, r in enumerate(rows):
+        ax[1].text(i, r['fp_rate'] * 100 + .3, f"{r['false_pos']}", ha='center', fontweight='bold')
+    ax[1].set_ylabel('False-positive rate on clean tokens (%)'); ax[1].set_xlabel('configuration')
+    ax[1].set_title('Valid words wrongly rewritten (count on bars)')
+    fig.text(0.5, -0.04, '   '.join(r['config'] for r in rows[:3]) + '\n' + '   '.join(r['config'] for r in rows[3:]),
+             ha='center', fontsize=8)
     plt.tight_layout()
-    plot_path = os.path.join(PLOTS_DIR, 'exp2_phonetic_ablation.png')
-    plt.savefig(plot_path, dpi=150, bbox_inches='tight')
-    plt.close()
-    print(f"\n  📊 Plot saved → {plot_path}")
-
-    return acc_with, acc_without
+    path = os.path.join(PLOTS, 'exp2_phonetic_ablation.png')
+    plt.savefig(path, dpi=150, bbox_inches='tight'); plt.close()
+    print(f'\n  plot -> {path}')
+    return df.drop(columns=['_fp'])
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# EXPERIMENT 3 – Intent Classification Macro-F1
+# EXPERIMENT 3
 # ══════════════════════════════════════════════════════════════════════════════
-
-# Held-out test set: 40 unseen queries (10 per intent)
-# These use phrasing templates NOT present in the training set
-HELD_OUT = [
-    # ELIGIBILITY (10)
-    ("రైతు భరోసా కి మా పొలం అర్హమవుతుందా?",                 "ELIGIBILITY"),
-    ("ఆరోగ్యశ్రీ పొందాలంటే ఏమి చేయాలి?",                   "ELIGIBILITY"),
-    ("అమ్మ ఒడి కి విద్యార్థి హాజరు ఎంత కావాలి?",            "ELIGIBILITY"),
-    ("ఆసరా పెన్షన్ కోసం వయస్సు ఎంత ఉండాలి?",               "ELIGIBILITY"),
-    ("రైతు బంధు కి మహిళా రైతులు అర్హులా?",                  "ELIGIBILITY"),
-    ("ఆరోగ్యశ్రీ కార్డు ఎవరికి దొరుకుతుంది?",               "ELIGIBILITY"),
-    ("అమ్మ ఒడి కి పిల్లలు ప్రైవేట్ స్కూల్లో చదివినా వస్తుందా?", "ELIGIBILITY"),
-    ("ఆసరా పెన్షన్ కి వితంతువులు అర్హులా?",                  "ELIGIBILITY"),
-    ("రైతు భరోసా కి కౌలు రైతు అర్హతలు ఏమిటి?",              "ELIGIBILITY"),
-    ("అమ్మ ఒడి కి 75% హాజరు తప్పనిసరా?",                   "ELIGIBILITY"),
-
-    # BENEFITS (10)
-    ("రైతు బంధు ద్వారా ఎకరాకు ఎంత వస్తుంది?",               "BENEFITS"),
-    ("ఆరోగ్యశ్రీ కింద ఏయే వ్యాధులకు చికిత్స ఉచితం?",        "BENEFITS"),
-    ("అమ్మ ఒడి ఇచ్చే గ్రాంట్ మొత్తం ఎంత?",                  "BENEFITS"),
-    ("ఆసరా పెన్షన్ నెలకు ఎంత ఇస్తారు?",                     "BENEFITS"),
-    ("రైతు భరోసా ఖరీఫ్ సీజన్ లో ఎంత వస్తుంది?",             "BENEFITS"),
-    ("ఆరోగ్యశ్రీ లో ఆపరేషన్ కూడా ఉచితమా?",                 "BENEFITS"),
-    ("అమ్మ ఒడి గ్రాంట్ ఏ నెలలో వస్తుంది?",                  "BENEFITS"),
-    ("ఆసరా పెన్షన్ దివ్యాంగులకు ఎంత?",                      "BENEFITS"),
-    ("రైతు బంధు ఏడాదికి ఎన్ని సార్లు ఇస్తారు?",              "BENEFITS"),
-    ("ఆరోగ్యశ్రీ నెట్‌వర్క్ ఆసుపత్రుల్లో ఏమి అందుతుంది?",   "BENEFITS"),
-
-    # REQUIRED_DOCUMENTS (10)
-    ("రైతు బంధు కి పాస్ పుస్తకం కావాలా?",                   "REQUIRED_DOCUMENTS"),
-    ("ఆరోగ్యశ్రీ కోసం ఆసుపత్రిలో ఏ పత్రాలు చూపించాలి?",    "REQUIRED_DOCUMENTS"),
-    ("అమ్మ ఒడి కి స్కూల్ సర్టిఫికెట్ కావాలా?",               "REQUIRED_DOCUMENTS"),
-    ("ఆసరా పెన్షన్ కి ఆయుష్ కార్డు కావాలా?",                "REQUIRED_DOCUMENTS"),
-    ("రైతు భరోసా కి జమాబందీ కావాలా?",                        "REQUIRED_DOCUMENTS"),
-    ("ఆరోగ్యశ్రీ కోసం రేషన్ కార్డు తప్పనిసరిగా ఉండాలా?",    "REQUIRED_DOCUMENTS"),
-    ("అమ్మ ఒడి కి హాజరు పత్రం సమర్పించాలా?",                "REQUIRED_DOCUMENTS"),
-    ("ఆసరా పెన్షన్ కోసం పేదరిక ధ్రువీకరణ కావాలా?",           "REQUIRED_DOCUMENTS"),
-    ("రైతు బంధు కి భూ యాజమాన్య పత్రం కావాలా?",              "REQUIRED_DOCUMENTS"),
-    ("ఆరోగ్యశ్రీ కార్డు పొందడానికి ఏమి ఇవ్వాలి?",            "REQUIRED_DOCUMENTS"),
-
-    # APPLICATION_PROCEDURE (10)
-    ("రైతు బంధు నమోదు ఎలా చేయించుకోవాలి?",                   "APPLICATION_PROCEDURE"),
-    ("ఆరోగ్యశ్రీ కోసం సచివాలయానికి వెళ్ళాలా?",              "APPLICATION_PROCEDURE"),
-    ("అమ్మ ఒడి నమోదు చేసే స్థలం ఎక్కడ?",                    "APPLICATION_PROCEDURE"),
-    ("ఆసరా పెన్షన్ ఫారం ఎక్కడ తీసుకోవాలి?",                  "APPLICATION_PROCEDURE"),
-    ("రైతు భరోసా ఆన్‌లైన్‌లో నమోదు చేయవచ్చా?",              "APPLICATION_PROCEDURE"),
-    ("ఆరోగ్యశ్రీ మీసేవాలో అప్లై చేయవచ్చా?",                 "APPLICATION_PROCEDURE"),
-    ("అమ్మ ఒడి దరఖాస్తు ప్రక్రియ ఏమిటి?",                   "APPLICATION_PROCEDURE"),
-    ("ఆసరా పెన్షన్ ఆఫ్‌లైన్ దరఖాస్తు ఎలా?",                 "APPLICATION_PROCEDURE"),
-    ("రైతు బంధు పోర్టల్ లో లాగిన్ అవడం ఎలా?",               "APPLICATION_PROCEDURE"),
-    ("ఆరోగ్యశ్రీ కార్డు దరఖాస్తు స్టేటస్ చెక్ చేయడం ఎలా?",  "APPLICATION_PROCEDURE"),
-]
-
-# Dialect versions of the HELD_OUT queries (same intent, different surface form)
-HELD_OUT_DIALECT = [
-    ("రైతు భరోసా కి మా పొలం వస్తదా?",                         "ELIGIBILITY"),
-    ("ఆరోగ్యశ్రీ పొందాలంటే ఏం చేయాలె?",                       "ELIGIBILITY"),
-    ("అమ్మ ఒడి కి పిల్లోడు స్కూలుకు ఎంత పోవాలె?",             "ELIGIBILITY"),
-    ("ఆసరా పెన్షన్ కి వయసు ఎంత ఉండాలె?",                     "ELIGIBILITY"),
-    ("రైతు బంధు కి ఆడ రైతులు అర్హులా?",                        "ELIGIBILITY"),
-    ("ఆరోగ్యశ్రీ కార్డు ఎవరికి దొరుకుతది?",                    "ELIGIBILITY"),
-    ("అమ్మ ఒడి కి ప్రైవేట్ స్కూలు పిల్లలకు వస్తదా?",           "ELIGIBILITY"),
-    ("ఆసరా పెన్షన్ కి వితంతు మహిళలు అర్హులా?",                 "ELIGIBILITY"),
-    ("రైతు భరోసా కి కౌలు రైతు అర్హతలు ఏమిటె?",                "ELIGIBILITY"),
-    ("అమ్మ ఒడి కి 75% హాజరు ఉండాలా లేదా?",                    "ELIGIBILITY"),
-
-    ("రైతు బంధు పైసలు ఎకరాకు ఎంత వస్తయి?",                    "BENEFITS"),
-    ("ఆరోగ్యశ్రీ కింద ఏయే జబ్బులకు ఉచిత వైద్యం?",              "BENEFITS"),
-    ("అమ్మ ఒడి పైసలు ఎంత వస్తయి?",                            "BENEFITS"),
-    ("ఆసరా పెన్షన్ నెలకు ఎంత పైసలు ఇస్తారు?",                  "BENEFITS"),
-    ("రైతు భరోసా ఖరీఫ్ లో ఎన్ని పైసలు వస్తయి?",                "BENEFITS"),
-    ("ఆరోగ్యశ్రీ లో ఆపరేషన్ కూడా ఫ్రీయా?",                   "BENEFITS"),
-    ("అమ్మ ఒడి పైసలు ఏ నెలలో వస్తయి?",                        "BENEFITS"),
-    ("ఆసరా పెన్షన్ దివ్యాంగులకు ఎంత పైసలు?",                   "BENEFITS"),
-    ("రైతు బంధు ఏడాదికి ఎన్ని సార్లు పైసలు ఇస్తయి?",           "BENEFITS"),
-    ("ఆరోగ్యశ్రీ నెట్‌వర్క్ ఆసుపత్రిలో ఏం ఇస్తయి?",            "BENEFITS"),
-
-    ("రైతు బంధు కి పాస్ పుస్తకం కావాలా లేదా?",                  "REQUIRED_DOCUMENTS"),
-    ("ఆరోగ్యశ్రీ కోసం ఆసుపత్రిలో ఏ కాగితాలు చూపించాలె?",      "REQUIRED_DOCUMENTS"),
-    ("అమ్మ ఒడి కి స్కూలు సర్టిఫికెట్ కావాలా?",                  "REQUIRED_DOCUMENTS"),
-    ("ఆసరా పెన్షన్ కి ఆయుష్ కార్డు కావాలా లేదా?",               "REQUIRED_DOCUMENTS"),
-    ("రైతు భరోసా కి జమాబందీ కాగితం కావాలా?",                   "REQUIRED_DOCUMENTS"),
-    ("ఆరోగ్యశ్రీ కోసం రేషన్ కార్డు తప్పక ఉండాలా?",             "REQUIRED_DOCUMENTS"),
-    ("అమ్మ ఒడి కి హాజరు కాగితం ఇవ్వాలా?",                     "REQUIRED_DOCUMENTS"),
-    ("ఆసరా పెన్షన్ కోసం పేదరిక సర్టిఫికెట్ కావాలా?",            "REQUIRED_DOCUMENTS"),
-    ("రైతు బంధు కి భూమి కాగితం కావాలా?",                       "REQUIRED_DOCUMENTS"),
-    ("ఆరోగ్యశ్రీ కార్డు కు ఏమేం కాగితాలు ఇవ్వాలె?",             "REQUIRED_DOCUMENTS"),
-
-    ("రైతు బంధు నమోదు ఎట్ల చేయించుకోవాలె?",                    "APPLICATION_PROCEDURE"),
-    ("ఆరోగ్యశ్రీ కోసం సచివాలయానికి పోవాలా?",                    "APPLICATION_PROCEDURE"),
-    ("అమ్మ ఒడి నమోదు యాడ చేయించాలె?",                         "APPLICATION_PROCEDURE"),
-    ("ఆసరా పెన్షన్ ఫారం యాడ తీసుకోవాలె?",                      "APPLICATION_PROCEDURE"),
-    ("రైతు భరోసా ఆన్‌లైన్లో నమోదు ఎట్ల చేయాలె?",               "APPLICATION_PROCEDURE"),
-    ("ఆరోగ్యశ్రీ మీసేవాలో అప్లై ఎట్ల చేయాలె?",                  "APPLICATION_PROCEDURE"),
-    ("అమ్మ ఒడి దరఖాస్తు ఎట్ల చేయాలె?",                        "APPLICATION_PROCEDURE"),
-    ("ఆసరా పెన్షన్ అప్లై చేసే విధానం ఏమిటె?",                   "APPLICATION_PROCEDURE"),
-    ("రైతు బంధు పోర్టల్ లో లాగిన్ ఎట్ల?",                     "APPLICATION_PROCEDURE"),
-    ("ఆరోగ్యశ్రీ కార్డు స్టేటస్ ఎట్ల చెక్ చేయాలె?",             "APPLICATION_PROCEDURE"),
-]
+def boot_ci(y, p, n=2000, seed=0):
+    rng, y, p = np.random.default_rng(seed), np.array(y), np.array(p)
+    s = [f1_score(y[i], p[i], average='macro') for i in
+         (rng.integers(0, len(y), len(y)) for _ in range(n))]
+    return np.percentile(s, [2.5, 97.5])
 
 
-def run_experiment3(model):
-    """
-    Experiment 3: Intent Macro-F1 across three conditions.
-    """
-    print("\n" + "="*65)
-    print("  EXPERIMENT 3: Intent Classification Macro-F1 Comparison")
-    print("="*65)
+def paired_boot(y, p_a, p_b, n=2000, seed=0):
+    """CI for  F1(b) - F1(a)  (paired bootstrap over queries)."""
+    rng, y, p_a, p_b = np.random.default_rng(seed), np.array(y), np.array(p_a), np.array(p_b)
+    d = []
+    for _ in range(n):
+        i = rng.integers(0, len(y), len(y))
+        d.append(f1_score(y[i], p_b[i], average='macro') - f1_score(y[i], p_a[i], average='macro'))
+    return np.percentile(d, [2.5, 97.5])
 
-    norm = TeluguDialectNormalizer()
 
-    # Condition 1: Ground truth (clean standard Telugu)
-    X_gt,   y_gt   = zip(*HELD_OUT)
-    # Condition 2: Raw dialect (no normalization)
-    X_dial, y_dial = zip(*HELD_OUT_DIALECT)
-    # Condition 3: Normalized dialect
-    X_norm  = [norm.normalize(q) for q in X_dial]
+def run_experiment3():
+    print('\n' + '=' * 72 + '\n  EXPERIMENT 3: Intent macro-F1  (n = 40 hand-written held-out queries)\n' + '=' * 72)
+    df = pd.read_csv(os.path.join(DATA, 'intent_dataset.csv'), encoding='utf-8-sig')
+    ho = pd.read_csv(os.path.join(DATA, 'heldout_intent_queries.csv'), encoding='utf-8-sig')
+    assert not set(ho.query_standard) & set(df.query_text)
+    assert not set(ho.query_dialect) & set(df.query_text)
+    cfg = make_configs()
+    ident = type('Identity', (), {'normalize': staticmethod(lambda q: q)})()
+    pipelines = {'no normalizer': ident,
+                 'v1 normalizer': cfg['3 v1 as shipped'],
+                 'v2 normalizer': cfg['5 v2 key: full fold (SHIPPED)']}
+    v2 = pipelines['v2 normalizer']
+    y = ho.intent_label.tolist()
+    X_clean, X_dial = ho.query_standard.tolist(), ho.query_dialect.tolist()
+    NOISE = (0.15, 0.30)
+    protocols = {'A: train on ALL styles': df,
+                 'B: train on STANDARD only (dialect unseen in training)': df[df.dialect_style == 'standard']}
+    summary = {}
+    for pname, tr in protocols.items():
+        print(f'\n  Protocol {pname}   (train n = {len(tr)})')
+        print(f"    {'pipeline (train & test both normalized)':40s} {'clean':>7s} {'dialect':>8s}  95% CI dialect   "
+              + ''.join(f'noise{p:.2f}'.rjust(12) for p in NOISE))
+        res, preds = {}, {}
+        for pn, norm in pipelines.items():
+            m = build_pipeline().fit([norm.normalize(q) for q in tr.query_text], tr.intent_label)
+            pc = m.predict([norm.normalize(q) for q in X_clean])
+            pd_ = m.predict([norm.normalize(q) for q in X_dial]); preds[pn] = pd_
+            f_c, f_d = f1_score(y, pc, average='macro'), f1_score(y, pd_, average='macro')
+            lo, hi = boot_ci(y, pd_)
+            nz = {}
+            for p_noise in NOISE:
+                sc = []
+                for seed in range(30):
+                    rng = random.Random(seed)
+                    noisy = [norm.normalize(corrupt_text(q, p_noise, rng)) for q in X_dial]
+                    sc.append(f1_score(y, m.predict(noisy), average='macro'))
+                nz[p_noise] = (np.mean(sc), np.std(sc))
+            res[pn] = {'clean': f_c, 'dialect': (f_d, lo, hi), 'noise': nz}
+            print(f'    {pn:40s} {f_c:7.3f} {f_d:8.3f}  [{lo:.3f}, {hi:.3f}]  '
+                  + ''.join(f'{nz[p][0]:.3f}±{nz[p][1]:.3f}'.rjust(12) for p in NOISE))
+        # the mistake v1 made: train raw, normalize only at test time
+        m_raw = build_pipeline().fit(tr.query_text, tr.intent_label)
+        pm = m_raw.predict([v2.normalize(q) for q in X_dial])
+        print(f"    {'(mismatch) train RAW, test v2-normalized':40s} {'':7s} {f1_score(y, pm, average='macro'):8.3f}")
+        raw_ok = np.array(preds['no normalizer']) == np.array(y)
+        ok = np.array(preds['v2 normalizer']) == np.array(y)
+        d_lo, d_hi = paired_boot(y, preds['no normalizer'], preds['v2 normalizer'])
+        d = res['v2 normalizer']['dialect'][0] - res['no normalizer']['dialect'][0]
+        print(f"    v2 vs none on dialect: fixed {int((~raw_ok & ok).sum())}, broken {int((raw_ok & ~ok).sum())}, "
+              f"dF1 = {d:+.3f}  95% CI [{d_lo:+.3f}, {d_hi:+.3f}]")
+        summary[pname] = res
 
-    def eval_condition(name, X, y):
-        preds  = model.predict(list(X))
-        macro_f1 = f1_score(list(y), preds, average='macro')
-        report   = classification_report(list(y), preds, digits=4)
-        print(f"\n  [{name}]  Macro-F1: {macro_f1:.4f}")
-        print(report)
-        return macro_f1, preds
-
-    f1_gt,   preds_gt   = eval_condition("Condition 1 – Ground Truth",   X_gt,   y_gt)
-    f1_dial, preds_dial = eval_condition("Condition 2 – Raw Dialect",    X_dial, y_dial)
-    f1_norm, preds_norm = eval_condition("Condition 3 – Normalized",     X_norm, y_dial)
-
-    # Print normalization gain
-    gain = f1_norm - f1_dial
-    print(f"\n  Normalization gain (Cond 3 vs Cond 2): +{gain:.4f}")
-    print(f"  Recovery gap from Ground Truth       :  {f1_gt - f1_norm:.4f}")
-
-    # ── Bar chart ─────────────────────────────────────────────────────────────
-    fig, ax = plt.subplots(figsize=(8, 4))
-    labels = ['Ground Truth\n(Standard Telugu)', 'Raw Dialect\n(No Normalization)', 'After Normalization\n(Our System)']
-    f1s    = [f1_gt, f1_dial, f1_norm]
-    colors = ['#3498db', '#e74c3c', '#2ecc71']
-    bars   = ax.bar(labels, [v * 100 for v in f1s], color=colors, width=0.4, edgecolor='black')
-
-    for bar, val in zip(bars, f1s):
-        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.5,
-                f'{val*100:.2f}%', ha='center', va='bottom', fontsize=11, fontweight='bold')
-
-    ax.set_ylim(50, 105)
-    ax.set_ylabel('Intent Classification Macro-F1 (%)', fontsize=11)
-    ax.set_title('Experiment 3: Dialect Normalization → Intent Recovery\n(40 Held-Out Queries)', fontsize=12)
+    fig, axs = plt.subplots(1, 2, figsize=(14, 4.4), sharey=True)
+    groups = ['clean', 'dialect', 'noise 0.15', 'noise 0.30']
+    cols = {'no normalizer': '#e74c3c', 'v1 normalizer': '#e67e22', 'v2 normalizer': '#2ecc71'}
+    for ax, (pname, res) in zip(axs, summary.items()):
+        for j, (pn, r) in enumerate(res.items()):
+            vals = [r['clean'], r['dialect'][0], r['noise'][0.15][0], r['noise'][0.30][0]]
+            err = [0, 0, r['noise'][0.15][1], r['noise'][0.30][1]]
+            err[1] = None
+            xs = np.arange(4) + (j - 1) * 0.27
+            ax.bar(xs, [v * 100 for v in vals], 0.26, label=pn, color=cols[pn], edgecolor='black')
+            ax.errorbar(xs[1], vals[1] * 100, yerr=[[ (vals[1]-r['dialect'][1])*100], [(r['dialect'][2]-vals[1])*100]],
+                        color='black', capsize=3)
+            ax.errorbar(xs[2:], [v * 100 for v in vals[2:]], yerr=[e * 100 for e in err[2:]], fmt='none', color='black', capsize=3)
+        ax.set_xticks(range(4)); ax.set_xticklabels(groups); ax.set_ylim(40, 105)
+        ax.set_title(pname, fontsize=10)
+    axs[0].set_ylabel('Intent macro-F1 (%)'); axs[0].legend(loc='lower left', fontsize=8)
+    plt.suptitle('Experiment 3: intent macro-F1, 40 held-out queries (bars: CI for dialect, std over 30 seeds for noise)', y=1.02, fontsize=10)
     plt.tight_layout()
-    plot_path = os.path.join(PLOTS_DIR, 'exp3_intent_macro_f1.png')
-    plt.savefig(plot_path, dpi=150, bbox_inches='tight')
-    plt.close()
-    print(f"\n  📊 Plot saved → {plot_path}")
+    path = os.path.join(PLOTS, 'exp3_intent_macro_f1.png')
+    plt.savefig(path, dpi=150, bbox_inches='tight'); plt.close()
+    print(f'\n  plot -> {path}')
+    return summary
 
-    return f1_gt, f1_dial, f1_norm
-
-
-# ══════════════════════════════════════════════════════════════════════════════
-# MAIN
-# ══════════════════════════════════════════════════════════════════════════════
 
 def main():
-    # Load model
-    if not os.path.exists(MODEL_PATH):
-        print(f"❌  Model not found at {MODEL_PATH}")
-        print("    Run:  python src/train_intent_model.py  first!")
-        sys.exit(1)
-
-    with open(MODEL_PATH, 'rb') as f:
-        model = pickle.load(f)
-    print(f"✅  Loaded model from {MODEL_PATH}")
-
-    acc_with, acc_without = run_experiment2()
-    f1_gt, f1_dial, f1_norm = run_experiment3(model)
-
-    # Summary table
-    print("\n" + "="*65)
-    print("  SUMMARY TABLE (for your Academic Report)")
-    print("="*65)
-    print(f"  Exp 2 — Token Correction Accuracy")
-    print(f"          Without Phonetic Folding : {acc_without*100:6.1f}%")
-    print(f"          With    Phonetic Folding : {acc_with*100:6.1f}%")
-    print(f"          Improvement             : +{(acc_with-acc_without)*100:.1f}%")
-    print(f"\n  Exp 3 — Intent Macro-F1")
-    print(f"          Condition 1 (Ground Truth) : {f1_gt*100:.2f}%")
-    print(f"          Condition 2 (Raw Dialect)  : {f1_dial*100:.2f}%")
-    print(f"          Condition 3 (Normalized)   : {f1_norm*100:.2f}%")
-    print(f"          Normalization Gain         : +{(f1_norm-f1_dial)*100:.2f}%")
-    print(f"\n  Plots saved in: {PLOTS_DIR}")
-    print("="*65)
+    run_experiment2()
+    run_experiment3()
 
 
 if __name__ == '__main__':
+    sys.stdout.reconfigure(encoding='utf-8')
     main()

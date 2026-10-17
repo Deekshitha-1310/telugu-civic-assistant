@@ -1,0 +1,34 @@
+{
+  "sklearn_version": "1.9.1",
+  "numpy_version": "2.4.6",
+  "n_train": 242,
+  "classes": [
+    "APPLICATION_PROCEDURE",
+    "BENEFITS",
+    "ELIGIBILITY",
+    "REQUIRED_DOCUMENTS"
+  ],
+  "features": "TfidfVectorizer(char_wb, ngram_range=(2,4), sublinear_tf)",
+  "classifier": "LogisticRegression(C=1.0)",
+  "grouped_cv_macro_f1": {
+    "majority": {
+      "mean": 0.0915,
+      "std": 0.0319
+    },
+    "word_lr": {
+      "mean": 0.8113,
+      "std": 0.0897
+    },
+    "char_nb": {
+      "mean": 0.7804,
+      "std": 0.1243
+    },
+    "char_lr": {
+      "mean": 0.814,
+      "std": 0.0798
+    }
+  },
+  "grouped_holdout_macro_f1": 0.8308,
+  "trained_on_normalized_text": true,
+  "out_of_scope_threshold": 0.45
+}
