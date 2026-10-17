@@ -1,4 +1,4 @@
-query_id,query_text,intent_label,target_scheme,dialect_style
+﻿query_id,query_text,intent_label,target_scheme,dialect_style
 q_001,రైతు భరోసా పథకానికి ఎవరు అర్హులు?,ELIGIBILITY,రైతు భరోసా,standard
 q_002,రైతు బంధు పథకానికి ఎవరు అర్హులు?,ELIGIBILITY,రైతు బంధు,standard
 q_003,ఆరోగ్యశ్రీ పథకానికి ఎవరు అర్హులు?,ELIGIBILITY,ఆరోగ్యశ్రీ,standard
@@ -14,188 +14,253 @@ q_012,రైతు బంధు వర్తించాలంటే ఎంత �
 q_013,ఆరోగ్యశ్రీ వర్తించాలంటే ఎంత భూమి ఉండాలి?,ELIGIBILITY,ఆరోగ్యశ్రీ,standard
 q_014,అమ్మ ఒడి వర్తించాలంటే ఎంత భూమి ఉండాలి?,ELIGIBILITY,అమ్మ ఒడి,standard
 q_015,ఆసరా పెన్షన్ వర్తించాలంటే ఎంత భూమి ఉండాలి?,ELIGIBILITY,ఆసరా పెన్షన్,standard
-q_016,రైతు భరోసా రూల్స్ మరియు నిబంధనలు ఏమిటి?,ELIGIBILITY,రైతు భరోసా,colloquial
-q_017,రైతు బంధు రూల్స్ మరియు నిబంధనలు ఏమిటి?,ELIGIBILITY,రైతు బంధు,colloquial
-q_018,ఆరోగ్యశ్రీ రూల్స్ మరియు నిబంధనలు ఏమిటి?,ELIGIBILITY,ఆరోగ్యశ్రీ,colloquial
-q_019,అమ్మ ఒడి రూల్స్ మరియు నిబంధనలు ఏమిటి?,ELIGIBILITY,అమ్మ ఒడి,colloquial
-q_020,ఆసరా పెన్షన్ రూల్స్ మరియు నిబంధనలు ఏమిటి?,ELIGIBILITY,ఆసరా పెన్షన్,colloquial
-q_021,రైతు భరోసా ఎవరికి వస్తది ఎవరికి రాదు?,ELIGIBILITY,రైతు భరోసా,dialect_telangana
-q_022,రైతు బంధు ఎవరికి వస్తది ఎవరికి రాదు?,ELIGIBILITY,రైతు బంధు,dialect_telangana
-q_023,ఆరోగ్యశ్రీ ఎవరికి వస్తది ఎవరికి రాదు?,ELIGIBILITY,ఆరోగ్యశ్రీ,dialect_telangana
-q_024,అమ్మ ఒడి ఎవరికి వస్తది ఎవరికి రాదు?,ELIGIBILITY,అమ్మ ఒడి,dialect_telangana
-q_025,ఆసరా పెన్షన్ ఎవరికి వస్తది ఎవరికి రాదు?,ELIGIBILITY,ఆసరా పెన్షన్,dialect_telangana
-q_026,రైతు భరోసా బాపతు అర్హత ఎవరికి ఉంటాది?,ELIGIBILITY,రైతు భరోసా,dialect_rayalaseema
-q_027,రైతు బంధు బాపతు అర్హత ఎవరికి ఉంటాది?,ELIGIBILITY,రైతు బంధు,dialect_rayalaseema
-q_028,ఆరోగ్యశ్రీ బాపతు అర్హత ఎవరికి ఉంటాది?,ELIGIBILITY,ఆరోగ్యశ్రీ,dialect_rayalaseema
-q_029,అమ్మ ఒడి బాపతు అర్హత ఎవరికి ఉంటాది?,ELIGIBILITY,అమ్మ ఒడి,dialect_rayalaseema
-q_030,ఆసరా పెన్షన్ బాపతు అర్హత ఎవరికి ఉంటాది?,ELIGIBILITY,ఆసరా పెన్షన్,dialect_rayalaseema
-q_031,రైతు భరోసా కి వయస్సు పరిమితి ఎంత ఉండాలె?,ELIGIBILITY,రైతు భరోసా,dialect_telangana
-q_032,రైతు బంధు కి వయస్సు పరిమితి ఎంత ఉండాలె?,ELIGIBILITY,రైతు బంధు,dialect_telangana
-q_033,ఆరోగ్యశ్రీ కి వయస్సు పరిమితి ఎంత ఉండాలె?,ELIGIBILITY,ఆరోగ్యశ్రీ,dialect_telangana
-q_034,అమ్మ ఒడి కి వయస్సు పరిమితి ఎంత ఉండాలె?,ELIGIBILITY,అమ్మ ఒడి,dialect_telangana
-q_035,ఆసరా పెన్షన్ కి వయస్సు పరిమితి ఎంత ఉండాలె?,ELIGIBILITY,ఆసరా పెన్షన్,dialect_telangana
-q_036,రైతు భరోసా పథకం ఎవరికి వర్తిస్తుంది?,ELIGIBILITY,రైతు భరోసా,standard
-q_037,రైతు బంధు పథకం ఎవరికి వర్తిస్తుంది?,ELIGIBILITY,రైతు బంధు,standard
-q_038,ఆరోగ్యశ్రీ పథకం ఎవరికి వర్తిస్తుంది?,ELIGIBILITY,ఆరోగ్యశ్రీ,standard
-q_039,అమ్మ ఒడి పథకం ఎవరికి వర్తిస్తుంది?,ELIGIBILITY,అమ్మ ఒడి,standard
-q_040,ఆసరా పెన్షన్ పథకం ఎవరికి వర్తిస్తుంది?,ELIGIBILITY,ఆసరా పెన్షన్,standard
-q_041,రైతు భరోసా అర్హుల జాబితా ఎక్కడ చూడాలి?,ELIGIBILITY,రైతు భరోసా,standard
-q_042,రైతు బంధు అర్హుల జాబితా ఎక్కడ చూడాలి?,ELIGIBILITY,రైతు బంధు,standard
-q_043,ఆరోగ్యశ్రీ అర్హుల జాబితా ఎక్కడ చూడాలి?,ELIGIBILITY,ఆరోగ్యశ్రీ,standard
-q_044,అమ్మ ఒడి అర్హుల జాబితా ఎక్కడ చూడాలి?,ELIGIBILITY,అమ్మ ఒడి,standard
-q_045,ఆసరా పెన్షన్ అర్హుల జాబితా ఎక్కడ చూడాలి?,ELIGIBILITY,ఆసరా పెన్షన్,standard
-q_046,రైతు భరోసా మాకు వస్తదా అర్హత ఉందా?,ELIGIBILITY,రైతు భరోసా,dialect_telangana
-q_047,రైతు బంధు మాకు వస్తదా అర్హత ఉందా?,ELIGIBILITY,రైతు బంధు,dialect_telangana
-q_048,ఆరోగ్యశ్రీ మాకు వస్తదా అర్హత ఉందా?,ELIGIBILITY,ఆరోగ్యశ్రీ,dialect_telangana
-q_049,అమ్మ ఒడి మాకు వస్తదా అర్హత ఉందా?,ELIGIBILITY,అమ్మ ఒడి,dialect_telangana
-q_050,ఆసరా పెన్షన్ మాకు వస్తదా అర్హత ఉందా?,ELIGIBILITY,ఆసరా పెన్షన్,dialect_telangana
-q_051,రైతు భరోసా ద్వారా ఎంత మొత్తం లభిస్తుంది?,BENEFITS,రైతు భరోసా,standard
-q_052,రైతు బంధు ద్వారా ఎంత మొత్తం లభిస్తుంది?,BENEFITS,రైతు బంధు,standard
-q_053,ఆరోగ్యశ్రీ ద్వారా ఎంత మొత్తం లభిస్తుంది?,BENEFITS,ఆరోగ్యశ్రీ,standard
-q_054,అమ్మ ఒడి ద్వారా ఎంత మొత్తం లభిస్తుంది?,BENEFITS,అమ్మ ఒడి,standard
-q_055,ఆసరా పెన్షన్ ద్వారా ఎంత మొత్తం లభిస్తుంది?,BENEFITS,ఆసరా పెన్షన్,standard
-q_056,రైతు భరోసా కింద ఎన్ని పైసలు ఇస్తారు?,BENEFITS,రైతు భరోసా,dialect_telangana
-q_057,రైతు బంధు కింద ఎన్ని పైసలు ఇస్తారు?,BENEFITS,రైతు బంధు,dialect_telangana
-q_058,ఆరోగ్యశ్రీ కింద ఎన్ని పైసలు ఇస్తారు?,BENEFITS,ఆరోగ్యశ్రీ,dialect_telangana
-q_059,అమ్మ ఒడి కింద ఎన్ని పైసలు ఇస్తారు?,BENEFITS,అమ్మ ఒడి,dialect_telangana
-q_060,ఆసరా పెన్షన్ కింద ఎన్ని పైసలు ఇస్తారు?,BENEFITS,ఆసరా పెన్షన్,dialect_telangana
-q_061,రైతు భరోసా సొమ్ము ఖాతాలో ఎప్పుడు పడుతుంది?,BENEFITS,రైతు భరోసా,dialect_rayalaseema
-q_062,రైతు బంధు సొమ్ము ఖాతాలో ఎప్పుడు పడుతుంది?,BENEFITS,రైతు బంధు,dialect_rayalaseema
-q_063,ఆరోగ్యశ్రీ సొమ్ము ఖాతాలో ఎప్పుడు పడుతుంది?,BENEFITS,ఆరోగ్యశ్రీ,dialect_rayalaseema
-q_064,అమ్మ ఒడి సొమ్ము ఖాతాలో ఎప్పుడు పడుతుంది?,BENEFITS,అమ్మ ఒడి,dialect_rayalaseema
-q_065,ఆసరా పెన్షన్ సొమ్ము ఖాతాలో ఎప్పుడు పడుతుంది?,BENEFITS,ఆసరా పెన్షన్,dialect_rayalaseema
-q_066,రైతు భరోసా డబ్బులు ఎప్పుడు వస్తాయి?,BENEFITS,రైతు భరోసా,colloquial
-q_067,రైతు బంధు డబ్బులు ఎప్పుడు వస్తాయి?,BENEFITS,రైతు బంధు,colloquial
-q_068,ఆరోగ్యశ్రీ డబ్బులు ఎప్పుడు వస్తాయి?,BENEFITS,ఆరోగ్యశ్రీ,colloquial
-q_069,అమ్మ ఒడి డబ్బులు ఎప్పుడు వస్తాయి?,BENEFITS,అమ్మ ఒడి,colloquial
-q_070,ఆసరా పెన్షన్ డబ్బులు ఎప్పుడు వస్తాయి?,BENEFITS,ఆసరా పెన్షన్,colloquial
-q_071,రైతు భరోసా పథకం ఆర్థిక సహాయం ఎంత?,BENEFITS,రైతు భరోసా,standard
-q_072,రైతు బంధు పథకం ఆర్థిక సహాయం ఎంత?,BENEFITS,రైతు బంధు,standard
-q_073,ఆరోగ్యశ్రీ పథకం ఆర్థిక సహాయం ఎంత?,BENEFITS,ఆరోగ్యశ్రీ,standard
-q_074,అమ్మ ఒడి పథకం ఆర్థిక సహాయం ఎంత?,BENEFITS,అమ్మ ఒడి,standard
-q_075,ఆసరా పెన్షన్ పథకం ఆర్థిక సహాయం ఎంత?,BENEFITS,ఆసరా పెన్షన్,standard
-q_076,రైతు భరోసా పైసలు ఎప్పుడొస్తయి సర్కారు నుంచి?,BENEFITS,రైతు భరోసా,dialect_telangana
-q_077,రైతు బంధు పైసలు ఎప్పుడొస్తయి సర్కారు నుంచి?,BENEFITS,రైతు బంధు,dialect_telangana
-q_078,ఆరోగ్యశ్రీ పైసలు ఎప్పుడొస్తయి సర్కారు నుంచి?,BENEFITS,ఆరోగ్యశ్రీ,dialect_telangana
-q_079,అమ్మ ఒడి పైసలు ఎప్పుడొస్తయి సర్కారు నుంచి?,BENEFITS,అమ్మ ఒడి,dialect_telangana
-q_080,ఆసరా పెన్షన్ పైసలు ఎప్పుడొస్తయి సర్కారు నుంచి?,BENEFITS,ఆసరా పెన్షన్,dialect_telangana
-q_081,రైతు భరోసా లో ఏడాదికి ఎన్ని విడతల్లో ఇస్తారు?,BENEFITS,రైతు భరోసా,standard
-q_082,రైతు బంధు లో ఏడాదికి ఎన్ని విడతల్లో ఇస్తారు?,BENEFITS,రైతు బంధు,standard
-q_083,ఆరోగ్యశ్రీ లో ఏడాదికి ఎన్ని విడతల్లో ఇస్తారు?,BENEFITS,ఆరోగ్యశ్రీ,standard
-q_084,అమ్మ ఒడి లో ఏడాదికి ఎన్ని విడతల్లో ఇస్తారు?,BENEFITS,అమ్మ ఒడి,standard
-q_085,ఆసరా పెన్షన్ లో ఏడాదికి ఎన్ని విడతల్లో ఇస్తారు?,BENEFITS,ఆసరా పెన్షన్,standard
-q_086,రైతు భరోసా సాయం ఎంత అందుతుంది మాకు?,BENEFITS,రైతు భరోసా,colloquial
-q_087,రైతు బంధు సాయం ఎంత అందుతుంది మాకు?,BENEFITS,రైతు బంధు,colloquial
-q_088,ఆరోగ్యశ్రీ సాయం ఎంత అందుతుంది మాకు?,BENEFITS,ఆరోగ్యశ్రీ,colloquial
-q_089,అమ్మ ఒడి సాయం ఎంత అందుతుంది మాకు?,BENEFITS,అమ్మ ఒడి,colloquial
-q_090,ఆసరా పెన్షన్ సాయం ఎంత అందుతుంది మాకు?,BENEFITS,ఆసరా పెన్షన్,colloquial
+q_016,రైతు భరోసా పథకం ఎవరికి వర్తిస్తుంది?,ELIGIBILITY,రైతు భరోసా,standard
+q_017,రైతు బంధు పథకం ఎవరికి వర్తిస్తుంది?,ELIGIBILITY,రైతు బంధు,standard
+q_018,ఆరోగ్యశ్రీ పథకం ఎవరికి వర్తిస్తుంది?,ELIGIBILITY,ఆరోగ్యశ్రీ,standard
+q_019,అమ్మ ఒడి పథకం ఎవరికి వర్తిస్తుంది?,ELIGIBILITY,అమ్మ ఒడి,standard
+q_020,ఆసరా పెన్షన్ పథకం ఎవరికి వర్తిస్తుంది?,ELIGIBILITY,ఆసరా పెన్షన్,standard
+q_021,రైతు భరోసా అర్హుల జాబితా ఎక్కడ చూడాలి?,ELIGIBILITY,రైతు భరోసా,standard
+q_022,రైతు బంధు అర్హుల జాబితా ఎక్కడ చూడాలి?,ELIGIBILITY,రైతు బంధు,standard
+q_023,ఆరోగ్యశ్రీ అర్హుల జాబితా ఎక్కడ చూడాలి?,ELIGIBILITY,ఆరోగ్యశ్రీ,standard
+q_024,అమ్మ ఒడి అర్హుల జాబితా ఎక్కడ చూడాలి?,ELIGIBILITY,అమ్మ ఒడి,standard
+q_025,ఆసరా పెన్షన్ అర్హుల జాబితా ఎక్కడ చూడాలి?,ELIGIBILITY,ఆసరా పెన్షన్,standard
+q_026,రైతు భరోసా పథకం ఎవరికి అందుతుంది?,ELIGIBILITY,రైతు భరోసా,standard
+q_027,రైతు బంధు పథకం ఎవరికి అందుతుంది?,ELIGIBILITY,రైతు బంధు,standard
+q_028,ఆరోగ్యశ్రీ పథకం ఎవరికి అందుతుంది?,ELIGIBILITY,ఆరోగ్యశ్రీ,standard
+q_029,అమ్మ ఒడి పథకం ఎవరికి అందుతుంది?,ELIGIBILITY,అమ్మ ఒడి,standard
+q_030,ఆసరా పెన్షన్ పథకం ఎవరికి అందుతుంది?,ELIGIBILITY,ఆసరా పెన్షన్,standard
+q_031,రైతు భరోసా కు అర్హత ఉందా అని ఎలా తెలుసుకోవాలి?,ELIGIBILITY,రైతు భరోసా,standard
+q_032,రైతు బంధు కు అర్హత ఉందా అని ఎలా తెలుసుకోవాలి?,ELIGIBILITY,రైతు బంధు,standard
+q_033,ఆరోగ్యశ్రీ కు అర్హత ఉందా అని ఎలా తెలుసుకోవాలి?,ELIGIBILITY,ఆరోగ్యశ్రీ,standard
+q_034,అమ్మ ఒడి కు అర్హత ఉందా అని ఎలా తెలుసుకోవాలి?,ELIGIBILITY,అమ్మ ఒడి,standard
+q_035,ఆసరా పెన్షన్ కు అర్హత ఉందా అని ఎలా తెలుసుకోవాలి?,ELIGIBILITY,ఆసరా పెన్షన్,standard
+q_036,రైతు భరోసా కు వయస్సు పరిమితి ఏమిటి?,ELIGIBILITY,రైతు భరోసా,standard
+q_037,రైతు బంధు కు వయస్సు పరిమితి ఏమిటి?,ELIGIBILITY,రైతు బంధు,standard
+q_038,ఆరోగ్యశ్రీ కు వయస్సు పరిమితి ఏమిటి?,ELIGIBILITY,ఆరోగ్యశ్రీ,standard
+q_039,అమ్మ ఒడి కు వయస్సు పరిమితి ఏమిటి?,ELIGIBILITY,అమ్మ ఒడి,standard
+q_040,ఆసరా పెన్షన్ కు వయస్సు పరిమితి ఏమిటి?,ELIGIBILITY,ఆసరా పెన్షన్,standard
+q_041,రైతు భరోసా ఎవరికి వస్తది ఎవరికి రాదు?,ELIGIBILITY,రైతు భరోసా,dialect_telangana
+q_042,రైతు బంధు ఎవరికి వస్తది ఎవరికి రాదు?,ELIGIBILITY,రైతు బంధు,dialect_telangana
+q_043,ఆరోగ్యశ్రీ ఎవరికి వస్తది ఎవరికి రాదు?,ELIGIBILITY,ఆరోగ్యశ్రీ,dialect_telangana
+q_044,అమ్మ ఒడి ఎవరికి వస్తది ఎవరికి రాదు?,ELIGIBILITY,అమ్మ ఒడి,dialect_telangana
+q_045,ఆసరా పెన్షన్ ఎవరికి వస్తది ఎవరికి రాదు?,ELIGIBILITY,ఆసరా పెన్షన్,dialect_telangana
+q_046,రైతు భరోసా కి వయస్సు పరిమితి ఎంత ఉండాలె?,ELIGIBILITY,రైతు భరోసా,dialect_telangana
+q_047,రైతు బంధు కి వయస్సు పరిమితి ఎంత ఉండాలె?,ELIGIBILITY,రైతు బంధు,dialect_telangana
+q_048,ఆరోగ్యశ్రీ కి వయస్సు పరిమితి ఎంత ఉండాలె?,ELIGIBILITY,ఆరోగ్యశ్రీ,dialect_telangana
+q_049,అమ్మ ఒడి కి వయస్సు పరిమితి ఎంత ఉండాలె?,ELIGIBILITY,అమ్మ ఒడి,dialect_telangana
+q_050,ఆసరా పెన్షన్ కి వయస్సు పరిమితి ఎంత ఉండాలె?,ELIGIBILITY,ఆసరా పెన్షన్,dialect_telangana
+q_051,రైతు భరోసా మాకు వస్తదా అర్హత ఉందా?,ELIGIBILITY,రైతు భరోసా,dialect_telangana
+q_052,రైతు బంధు మాకు వస్తదా అర్హత ఉందా?,ELIGIBILITY,రైతు బంధు,dialect_telangana
+q_053,ఆరోగ్యశ్రీ మాకు వస్తదా అర్హత ఉందా?,ELIGIBILITY,ఆరోగ్యశ్రీ,dialect_telangana
+q_054,అమ్మ ఒడి మాకు వస్తదా అర్హత ఉందా?,ELIGIBILITY,అమ్మ ఒడి,dialect_telangana
+q_055,ఆసరా పెన్షన్ మాకు వస్తదా అర్హత ఉందా?,ELIGIBILITY,ఆసరా పెన్షన్,dialect_telangana
+q_056,రైతు భరోసా రూల్స్ మరియు నిబంధనలు ఏమిటి?,ELIGIBILITY,రైతు భరోసా,dialect_telangana
+q_057,రైతు బంధు రూల్స్ మరియు నిబంధనలు ఏమిటి?,ELIGIBILITY,రైతు బంధు,dialect_telangana
+q_058,ఆరోగ్యశ్రీ రూల్స్ మరియు నిబంధనలు ఏమిటి?,ELIGIBILITY,ఆరోగ్యశ్రీ,dialect_telangana
+q_059,అమ్మ ఒడి రూల్స్ మరియు నిబంధనలు ఏమిటి?,ELIGIBILITY,అమ్మ ఒడి,dialect_telangana
+q_060,ఆసరా పెన్షన్ రూల్స్ మరియు నిబంధనలు ఏమిటి?,ELIGIBILITY,ఆసరా పెన్షన్,dialect_telangana
+q_061,రైతు భరోసా ఎవరికి వర్తిస్తదో చెప్పండి?,ELIGIBILITY,రైతు భరోసా,dialect_telangana
+q_062,రైతు బంధు ఎవరికి వర్తిస్తదో చెప్పండి?,ELIGIBILITY,రైతు బంధు,dialect_telangana
+q_063,ఆరోగ్యశ్రీ ఎవరికి వర్తిస్తదో చెప్పండి?,ELIGIBILITY,ఆరోగ్యశ్రీ,dialect_telangana
+q_064,అమ్మ ఒడి ఎవరికి వర్తిస్తదో చెప్పండి?,ELIGIBILITY,అమ్మ ఒడి,dialect_telangana
+q_065,ఆసరా పెన్షన్ ఎవరికి వర్తిస్తదో చెప్పండి?,ELIGIBILITY,ఆసరా పెన్షన్,dialect_telangana
+q_066,రైతు భరోసా బాపతు అర్హత ఎవరికి ఉంటాది?,ELIGIBILITY,రైతు భరోసా,dialect_rayalaseema
+q_067,రైతు బంధు బాపతు అర్హత ఎవరికి ఉంటాది?,ELIGIBILITY,రైతు బంధు,dialect_rayalaseema
+q_068,ఆరోగ్యశ్రీ బాపతు అర్హత ఎవరికి ఉంటాది?,ELIGIBILITY,ఆరోగ్యశ్రీ,dialect_rayalaseema
+q_069,అమ్మ ఒడి బాపతు అర్హత ఎవరికి ఉంటాది?,ELIGIBILITY,అమ్మ ఒడి,dialect_rayalaseema
+q_070,ఆసరా పెన్షన్ బాపతు అర్హత ఎవరికి ఉంటాది?,ELIGIBILITY,ఆసరా పెన్షన్,dialect_rayalaseema
+q_071,రైతు భరోసా ఏ వాళ్ళకు వస్తాది?,ELIGIBILITY,రైతు భరోసా,dialect_rayalaseema
+q_072,రైతు బంధు ఏ వాళ్ళకు వస్తాది?,ELIGIBILITY,రైతు బంధు,dialect_rayalaseema
+q_073,ఆరోగ్యశ్రీ ఏ వాళ్ళకు వస్తాది?,ELIGIBILITY,ఆరోగ్యశ్రీ,dialect_rayalaseema
+q_074,అమ్మ ఒడి ఏ వాళ్ళకు వస్తాది?,ELIGIBILITY,అమ్మ ఒడి,dialect_rayalaseema
+q_075,ఆసరా పెన్షన్ ఏ వాళ్ళకు వస్తాది?,ELIGIBILITY,ఆసరా పెన్షన్,dialect_rayalaseema
+q_076,రైతు భరోసా ద్వారా ఎంత మొత్తం లభిస్తుంది?,BENEFITS,రైతు భరోసా,standard
+q_077,రైతు బంధు ద్వారా ఎంత మొత్తం లభిస్తుంది?,BENEFITS,రైతు బంధు,standard
+q_078,ఆరోగ్యశ్రీ ద్వారా ఎంత మొత్తం లభిస్తుంది?,BENEFITS,ఆరోగ్యశ్రీ,standard
+q_079,అమ్మ ఒడి ద్వారా ఎంత మొత్తం లభిస్తుంది?,BENEFITS,అమ్మ ఒడి,standard
+q_080,ఆసరా పెన్షన్ ద్వారా ఎంత మొత్తం లభిస్తుంది?,BENEFITS,ఆసరా పెన్షన్,standard
+q_081,రైతు భరోసా పథకం ఆర్థిక సహాయం ఎంత?,BENEFITS,రైతు భరోసా,standard
+q_082,రైతు బంధు పథకం ఆర్థిక సహాయం ఎంత?,BENEFITS,రైతు బంధు,standard
+q_083,ఆరోగ్యశ్రీ పథకం ఆర్థిక సహాయం ఎంత?,BENEFITS,ఆరోగ్యశ్రీ,standard
+q_084,అమ్మ ఒడి పథకం ఆర్థిక సహాయం ఎంత?,BENEFITS,అమ్మ ఒడి,standard
+q_085,ఆసరా పెన్షన్ పథకం ఆర్థిక సహాయం ఎంత?,BENEFITS,ఆసరా పెన్షన్,standard
+q_086,రైతు భరోసా లో ఏడాదికి ఎన్ని విడతల్లో ఇస్తారు?,BENEFITS,రైతు భరోసా,standard
+q_087,రైతు బంధు లో ఏడాదికి ఎన్ని విడతల్లో ఇస్తారు?,BENEFITS,రైతు బంధు,standard
+q_088,ఆరోగ్యశ్రీ లో ఏడాదికి ఎన్ని విడతల్లో ఇస్తారు?,BENEFITS,ఆరోగ్యశ్రీ,standard
+q_089,అమ్మ ఒడి లో ఏడాదికి ఎన్ని విడతల్లో ఇస్తారు?,BENEFITS,అమ్మ ఒడి,standard
+q_090,ఆసరా పెన్షన్ లో ఏడాదికి ఎన్ని విడతల్లో ఇస్తారు?,BENEFITS,ఆసరా పెన్షన్,standard
 q_091,రైతు భరోసా కింద బ్యాంకు ఖాతాలో ఎంత జమ అవుతుంది?,BENEFITS,రైతు భరోసా,standard
 q_092,రైతు బంధు కింద బ్యాంకు ఖాతాలో ఎంత జమ అవుతుంది?,BENEFITS,రైతు బంధు,standard
 q_093,ఆరోగ్యశ్రీ కింద బ్యాంకు ఖాతాలో ఎంత జమ అవుతుంది?,BENEFITS,ఆరోగ్యశ్రీ,standard
 q_094,అమ్మ ఒడి కింద బ్యాంకు ఖాతాలో ఎంత జమ అవుతుంది?,BENEFITS,అమ్మ ఒడి,standard
 q_095,ఆసరా పెన్షన్ కింద బ్యాంకు ఖాతాలో ఎంత జమ అవుతుంది?,BENEFITS,ఆసరా పెన్షన్,standard
-q_096,రైతు భరోసా పైసలు పడ్డాయా లేదా ఎలా తెలుసుకోవాలి?,BENEFITS,రైతు భరోసా,dialect_telangana
-q_097,రైతు బంధు పైసలు పడ్డాయా లేదా ఎలా తెలుసుకోవాలి?,BENEFITS,రైతు బంధు,dialect_telangana
-q_098,ఆరోగ్యశ్రీ పైసలు పడ్డాయా లేదా ఎలా తెలుసుకోవాలి?,BENEFITS,ఆరోగ్యశ్రీ,dialect_telangana
-q_099,అమ్మ ఒడి పైసలు పడ్డాయా లేదా ఎలా తెలుసుకోవాలి?,BENEFITS,అమ్మ ఒడి,dialect_telangana
-q_100,ఆసరా పెన్షన్ పైసలు పడ్డాయా లేదా ఎలా తెలుసుకోవాలి?,BENEFITS,ఆసరా పెన్షన్,dialect_telangana
-q_101,రైతు భరోసా దరఖాస్తుకు కావలసిన ధ్రువీకరణ పత్రాలు ఏవి?,REQUIRED_DOCUMENTS,రైతు భరోసా,standard
-q_102,రైతు బంధు దరఖాస్తుకు కావలసిన ధ్రువీకరణ పత్రాలు ఏవి?,REQUIRED_DOCUMENTS,రైతు బంధు,standard
-q_103,ఆరోగ్యశ్రీ దరఖాస్తుకు కావలసిన ధ్రువీకరణ పత్రాలు ఏవి?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,standard
-q_104,అమ్మ ఒడి దరఖాస్తుకు కావలసిన ధ్రువీకరణ పత్రాలు ఏవి?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,standard
-q_105,ఆసరా పెన్షన్ దరఖాస్తుకు కావలసిన ధ్రువీకరణ పత్రాలు ఏవి?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,standard
-q_106,రైతు భరోసా కోసం ఏమేం కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,రైతు భరోసా,dialect_telangana
-q_107,రైతు బంధు కోసం ఏమేం కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,రైతు బంధు,dialect_telangana
-q_108,ఆరోగ్యశ్రీ కోసం ఏమేం కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,dialect_telangana
-q_109,అమ్మ ఒడి కోసం ఏమేం కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,dialect_telangana
-q_110,ఆసరా పెన్షన్ కోసం ఏమేం కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,dialect_telangana
-q_111,రైతు భరోసా కి ఆధార్ కార్డు రేషన్ కార్డు తప్పనిసరిగా ఉండాలా?,REQUIRED_DOCUMENTS,రైతు భరోసా,standard
-q_112,రైతు బంధు కి ఆధార్ కార్డు రేషన్ కార్డు తప్పనిసరిగా ఉండాలా?,REQUIRED_DOCUMENTS,రైతు బంధు,standard
-q_113,ఆరోగ్యశ్రీ కి ఆధార్ కార్డు రేషన్ కార్డు తప్పనిసరిగా ఉండాలా?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,standard
-q_114,అమ్మ ఒడి కి ఆధార్ కార్డు రేషన్ కార్డు తప్పనిసరిగా ఉండాలా?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,standard
-q_115,ఆసరా పెన్షన్ కి ఆధార్ కార్డు రేషన్ కార్డు తప్పనిసరిగా ఉండాలా?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,standard
-q_116,రైతు భరోసా బాపతు డాక్యుమెంట్లు ఏమి కావాలి?,REQUIRED_DOCUMENTS,రైతు భరోసా,dialect_rayalaseema
-q_117,రైతు బంధు బాపతు డాక్యుమెంట్లు ఏమి కావాలి?,REQUIRED_DOCUMENTS,రైతు బంధు,dialect_rayalaseema
-q_118,ఆరోగ్యశ్రీ బాపతు డాక్యుమెంట్లు ఏమి కావాలి?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,dialect_rayalaseema
-q_119,అమ్మ ఒడి బాపతు డాక్యుమెంట్లు ఏమి కావాలి?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,dialect_rayalaseema
-q_120,ఆసరా పెన్షన్ బాపతు డాక్యుమెంట్లు ఏమి కావాలి?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,dialect_rayalaseema
-q_121,రైతు భరోసా కి పట్టాదారు పాస్ పుస్తకం అవసరమా?,REQUIRED_DOCUMENTS,రైతు భరోసా,standard
-q_122,రైతు బంధు కి పట్టాదారు పాస్ పుస్తకం అవసరమా?,REQUIRED_DOCUMENTS,రైతు బంధు,standard
-q_123,ఆరోగ్యశ్రీ కి పట్టాదారు పాస్ పుస్తకం అవసరమా?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,standard
-q_124,అమ్మ ఒడి కి పట్టాదారు పాస్ పుస్తకం అవసరమా?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,standard
-q_125,ఆసరా పెన్షన్ కి పట్టాదారు పాస్ పుస్తకం అవసరమా?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,standard
-q_126,రైతు భరోసా రిజిస్ట్రేషన్ కోసం ఏ పత్రాలు సమర్పించాలి?,REQUIRED_DOCUMENTS,రైతు భరోసా,standard
-q_127,రైతు బంధు రిజిస్ట్రేషన్ కోసం ఏ పత్రాలు సమర్పించాలి?,REQUIRED_DOCUMENTS,రైతు బంధు,standard
-q_128,ఆరోగ్యశ్రీ రిజిస్ట్రేషన్ కోసం ఏ పత్రాలు సమర్పించాలి?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,standard
-q_129,అమ్మ ఒడి రిజిస్ట్రేషన్ కోసం ఏ పత్రాలు సమర్పించాలి?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,standard
-q_130,ఆసరా పెన్షన్ రిజిస్ట్రేషన్ కోసం ఏ పత్రాలు సమర్పించాలి?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,standard
-q_131,రైతు భరోసా కి ఏమేమి కాగితాలు జతచేయాలి?,REQUIRED_DOCUMENTS,రైతు భరోసా,dialect_telangana
-q_132,రైతు బంధు కి ఏమేమి కాగితాలు జతచేయాలి?,REQUIRED_DOCUMENTS,రైతు బంధు,dialect_telangana
-q_133,ఆరోగ్యశ్రీ కి ఏమేమి కాగితాలు జతచేయాలి?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,dialect_telangana
-q_134,అమ్మ ఒడి కి ఏమేమి కాగితాలు జతచేయాలి?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,dialect_telangana
-q_135,ఆసరా పెన్షన్ కి ఏమేమి కాగితాలు జతచేయాలి?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,dialect_telangana
-q_136,రైతు భరోసా కోసం బ్యాంకు పాస్ బుక్ జిరాక్స్ కావాలా?,REQUIRED_DOCUMENTS,రైతు భరోసా,colloquial
-q_137,రైతు బంధు కోసం బ్యాంకు పాస్ బుక్ జిరాక్స్ కావాలా?,REQUIRED_DOCUMENTS,రైతు బంధు,colloquial
-q_138,ఆరోగ్యశ్రీ కోసం బ్యాంకు పాస్ బుక్ జిరాక్స్ కావాలా?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,colloquial
-q_139,అమ్మ ఒడి కోసం బ్యాంకు పాస్ బుక్ జిరాక్స్ కావాలా?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,colloquial
-q_140,ఆసరా పెన్షన్ కోసం బ్యాంకు పాస్ బుక్ జిరాక్స్ కావాలా?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,colloquial
-q_141,రైతు భరోసా కు ఏ సర్టిఫికెట్లు అవసరం?,REQUIRED_DOCUMENTS,రైతు భరోసా,colloquial
-q_142,రైతు బంధు కు ఏ సర్టిఫికెట్లు అవసరం?,REQUIRED_DOCUMENTS,రైతు బంధు,colloquial
-q_143,ఆరోగ్యశ్రీ కు ఏ సర్టిఫికెట్లు అవసరం?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,colloquial
-q_144,అమ్మ ఒడి కు ఏ సర్టిఫికెట్లు అవసరం?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,colloquial
-q_145,ఆసరా పెన్షన్ కు ఏ సర్టిఫికెట్లు అవసరం?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,colloquial
-q_146,రైతు భరోసా డాక్యుమెంట్లు ఎక్కడ వెరిఫై చేయించాలి?,REQUIRED_DOCUMENTS,రైతు భరోసా,standard
-q_147,రైతు బంధు డాక్యుమెంట్లు ఎక్కడ వెరిఫై చేయించాలి?,REQUIRED_DOCUMENTS,రైతు బంధు,standard
-q_148,ఆరోగ్యశ్రీ డాక్యుమెంట్లు ఎక్కడ వెరిఫై చేయించాలి?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,standard
-q_149,అమ్మ ఒడి డాక్యుమెంట్లు ఎక్కడ వెరిఫై చేయించాలి?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,standard
-q_150,ఆసరా పెన్షన్ డాక్యుమెంట్లు ఎక్కడ వెరిఫై చేయించాలి?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,standard
-q_151,రైతు భరోసా కి ఎలా దరఖాస్తు చేసుకోవాలి?,APPLICATION_PROCEDURE,రైతు భరోసా,standard
-q_152,రైతు బంధు కి ఎలా దరఖాస్తు చేసుకోవాలి?,APPLICATION_PROCEDURE,రైతు బంధు,standard
-q_153,ఆరోగ్యశ్రీ కి ఎలా దరఖాస్తు చేసుకోవాలి?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,standard
-q_154,అమ్మ ఒడి కి ఎలా దరఖాస్తు చేసుకోవాలి?,APPLICATION_PROCEDURE,అమ్మ ఒడి,standard
-q_155,ఆసరా పెన్షన్ కి ఎలా దరఖాస్తు చేసుకోవాలి?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,standard
-q_156,రైతు భరోసా దరఖాస్తు ఎట్ల చేసుకోవాలె?,APPLICATION_PROCEDURE,రైతు భరోసా,dialect_telangana
-q_157,రైతు బంధు దరఖాస్తు ఎట్ల చేసుకోవాలె?,APPLICATION_PROCEDURE,రైతు బంధు,dialect_telangana
-q_158,ఆరోగ్యశ్రీ దరఖాస్తు ఎట్ల చేసుకోవాలె?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,dialect_telangana
-q_159,అమ్మ ఒడి దరఖాస్తు ఎట్ల చేసుకోవాలె?,APPLICATION_PROCEDURE,అమ్మ ఒడి,dialect_telangana
-q_160,ఆసరా పెన్షన్ దరఖాస్తు ఎట్ల చేసుకోవాలె?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,dialect_telangana
-q_161,రైతు భరోసా కోసం ఎక్కడ అప్లై చేయాలి?,APPLICATION_PROCEDURE,రైతు భరోసా,colloquial
-q_162,రైతు బంధు కోసం ఎక్కడ అప్లై చేయాలి?,APPLICATION_PROCEDURE,రైతు బంధు,colloquial
-q_163,ఆరోగ్యశ్రీ కోసం ఎక్కడ అప్లై చేయాలి?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,colloquial
-q_164,అమ్మ ఒడి కోసం ఎక్కడ అప్లై చేయాలి?,APPLICATION_PROCEDURE,అమ్మ ఒడి,colloquial
-q_165,ఆసరా పెన్షన్ కోసం ఎక్కడ అప్లై చేయాలి?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,colloquial
-q_166,రైతు భరోసా కి మీసేవా లేదా సచివాలయంలో దరఖాస్తు చేయవచ్చా?,APPLICATION_PROCEDURE,రైతు భరోసా,standard
-q_167,రైతు బంధు కి మీసేవా లేదా సచివాలయంలో దరఖాస్తు చేయవచ్చా?,APPLICATION_PROCEDURE,రైతు బంధు,standard
-q_168,ఆరోగ్యశ్రీ కి మీసేవా లేదా సచివాలయంలో దరఖాస్తు చేయవచ్చా?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,standard
-q_169,అమ్మ ఒడి కి మీసేవా లేదా సచివాలయంలో దరఖాస్తు చేయవచ్చా?,APPLICATION_PROCEDURE,అమ్మ ఒడి,standard
-q_170,ఆసరా పెన్షన్ కి మీసేవా లేదా సచివాలయంలో దరఖాస్తు చేయవచ్చా?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,standard
-q_171,రైతు భరోసా ఆన్‌లైన్ లో అప్లై చేసే విధానం ఏమిటి?,APPLICATION_PROCEDURE,రైతు భరోసా,standard
-q_172,రైతు బంధు ఆన్‌లైన్ లో అప్లై చేసే విధానం ఏమిటి?,APPLICATION_PROCEDURE,రైతు బంధు,standard
-q_173,ఆరోగ్యశ్రీ ఆన్‌లైన్ లో అప్లై చేసే విధానం ఏమిటి?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,standard
-q_174,అమ్మ ఒడి ఆన్‌లైన్ లో అప్లై చేసే విధానం ఏమిటి?,APPLICATION_PROCEDURE,అమ్మ ఒడి,standard
-q_175,ఆసరా పెన్షన్ ఆన్‌లైన్ లో అప్లై చేసే విధానం ఏమిటి?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,standard
-q_176,రైతు భరోసా ఫారం ఎక్కడ దొరుకుతుంది?,APPLICATION_PROCEDURE,రైతు భరోసా,colloquial
-q_177,రైతు బంధు ఫారం ఎక్కడ దొరుకుతుంది?,APPLICATION_PROCEDURE,రైతు బంధు,colloquial
-q_178,ఆరోగ్యశ్రీ ఫారం ఎక్కడ దొరుకుతుంది?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,colloquial
-q_179,అమ్మ ఒడి ఫారం ఎక్కడ దొరుకుతుంది?,APPLICATION_PROCEDURE,అమ్మ ఒడి,colloquial
-q_180,ఆసరా పెన్షన్ ఫారం ఎక్కడ దొరుకుతుంది?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,colloquial
-q_181,రైతు భరోసా దరఖాస్తు గడువు తేదీ ఎప్పుడు?,APPLICATION_PROCEDURE,రైతు భరోసా,standard
-q_182,రైతు బంధు దరఖాస్తు గడువు తేదీ ఎప్పుడు?,APPLICATION_PROCEDURE,రైతు బంధు,standard
-q_183,ఆరోగ్యశ్రీ దరఖాస్తు గడువు తేదీ ఎప్పుడు?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,standard
-q_184,అమ్మ ఒడి దరఖాస్తు గడువు తేదీ ఎప్పుడు?,APPLICATION_PROCEDURE,అమ్మ ఒడి,standard
-q_185,ఆసరా పెన్షన్ దరఖాస్తు గడువు తేదీ ఎప్పుడు?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,standard
-q_186,రైతు భరోసా కి యాడ దరఖాస్తు ఇవ్వాల?,APPLICATION_PROCEDURE,రైతు భరోసా,dialect_rayalaseema
-q_187,రైతు బంధు కి యాడ దరఖాస్తు ఇవ్వాల?,APPLICATION_PROCEDURE,రైతు బంధు,dialect_rayalaseema
-q_188,ఆరోగ్యశ్రీ కి యాడ దరఖాస్తు ఇవ్వాల?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,dialect_rayalaseema
-q_189,అమ్మ ఒడి కి యాడ దరఖాస్తు ఇవ్వాల?,APPLICATION_PROCEDURE,అమ్మ ఒడి,dialect_rayalaseema
-q_190,ఆసరా పెన్షన్ కి యాడ దరఖాస్తు ఇవ్వాల?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,dialect_rayalaseema
-q_191,రైతు భరోసా రిజిస్ట్రేషన్ ఎలా పూర్తి చేయాలి?,APPLICATION_PROCEDURE,రైతు భరోసా,standard
-q_192,రైతు బంధు రిజిస్ట్రేషన్ ఎలా పూర్తి చేయాలి?,APPLICATION_PROCEDURE,రైతు బంధు,standard
-q_193,ఆరోగ్యశ్రీ రిజిస్ట్రేషన్ ఎలా పూర్తి చేయాలి?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,standard
-q_194,అమ్మ ఒడి రిజిస్ట్రేషన్ ఎలా పూర్తి చేయాలి?,APPLICATION_PROCEDURE,అమ్మ ఒడి,standard
-q_195,ఆసరా పెన్షన్ రిజిస్ట్రేషన్ ఎలా పూర్తి చేయాలి?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,standard
-q_196,రైతు భరోసా స్టేటస్ ఎలా చెక్ చేసుకోవాలి?,APPLICATION_PROCEDURE,రైతు భరోసా,colloquial
-q_197,రైతు బంధు స్టేటస్ ఎలా చెక్ చేసుకోవాలి?,APPLICATION_PROCEDURE,రైతు బంధు,colloquial
-q_198,ఆరోగ్యశ్రీ స్టేటస్ ఎలా చెక్ చేసుకోవాలి?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,colloquial
-q_199,అమ్మ ఒడి స్టేటస్ ఎలా చెక్ చేసుకోవాలి?,APPLICATION_PROCEDURE,అమ్మ ఒడి,colloquial
-q_200,ఆసరా పెన్షన్ స్టేటస్ ఎలా చెక్ చేసుకోవాలి?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,colloquial
+q_096,రైతు భరోసా అందించే సేవలు మరియు సహాయం ఏమిటి?,BENEFITS,రైతు భరోసా,standard
+q_097,రైతు బంధు అందించే సేవలు మరియు సహాయం ఏమిటి?,BENEFITS,రైతు బంధు,standard
+q_098,ఆరోగ్యశ్రీ అందించే సేవలు మరియు సహాయం ఏమిటి?,BENEFITS,ఆరోగ్యశ్రీ,standard
+q_099,అమ్మ ఒడి అందించే సేవలు మరియు సహాయం ఏమిటి?,BENEFITS,అమ్మ ఒడి,standard
+q_100,ఆసరా పెన్షన్ అందించే సేవలు మరియు సహాయం ఏమిటి?,BENEFITS,ఆసరా పెన్షన్,standard
+q_101,రైతు భరోసా ద్వారా ఏయే వైద్య సేవలు అందుతాయి?,BENEFITS,రైతు భరోసా,standard
+q_102,రైతు బంధు ద్వారా ఏయే వైద్య సేవలు అందుతాయి?,BENEFITS,రైతు బంధు,standard
+q_103,ఆరోగ్యశ్రీ ద్వారా ఏయే వైద్య సేవలు అందుతాయి?,BENEFITS,ఆరోగ్యశ్రీ,standard
+q_104,అమ్మ ఒడి ద్వారా ఏయే వైద్య సేవలు అందుతాయి?,BENEFITS,అమ్మ ఒడి,standard
+q_105,ఆసరా పెన్షన్ ద్వారా ఏయే వైద్య సేవలు అందుతాయి?,BENEFITS,ఆసరా పెన్షన్,standard
+q_106,రైతు భరోసా కింద ఎన్ని పైసలు ఇస్తారు?,BENEFITS,రైతు భరోసా,dialect_telangana
+q_107,రైతు బంధు కింద ఎన్ని పైసలు ఇస్తారు?,BENEFITS,రైతు బంధు,dialect_telangana
+q_108,ఆరోగ్యశ్రీ కింద ఎన్ని పైసలు ఇస్తారు?,BENEFITS,ఆరోగ్యశ్రీ,dialect_telangana
+q_109,అమ్మ ఒడి కింద ఎన్ని పైసలు ఇస్తారు?,BENEFITS,అమ్మ ఒడి,dialect_telangana
+q_110,ఆసరా పెన్షన్ కింద ఎన్ని పైసలు ఇస్తారు?,BENEFITS,ఆసరా పెన్షన్,dialect_telangana
+q_111,రైతు భరోసా పైసలు ఎప్పుడొస్తయి సర్కారు నుంచి?,BENEFITS,రైతు భరోసా,dialect_telangana
+q_112,రైతు బంధు పైసలు ఎప్పుడొస్తయి సర్కారు నుంచి?,BENEFITS,రైతు బంధు,dialect_telangana
+q_113,ఆరోగ్యశ్రీ పైసలు ఎప్పుడొస్తయి సర్కారు నుంచి?,BENEFITS,ఆరోగ్యశ్రీ,dialect_telangana
+q_114,అమ్మ ఒడి పైసలు ఎప్పుడొస్తయి సర్కారు నుంచి?,BENEFITS,అమ్మ ఒడి,dialect_telangana
+q_115,ఆసరా పెన్షన్ పైసలు ఎప్పుడొస్తయి సర్కారు నుంచి?,BENEFITS,ఆసరా పెన్షన్,dialect_telangana
+q_116,రైతు భరోసా సాయం ఎంత అందుతుంది మాకు?,BENEFITS,రైతు భరోసా,dialect_telangana
+q_117,రైతు బంధు సాయం ఎంత అందుతుంది మాకు?,BENEFITS,రైతు బంధు,dialect_telangana
+q_118,ఆరోగ్యశ్రీ సాయం ఎంత అందుతుంది మాకు?,BENEFITS,ఆరోగ్యశ్రీ,dialect_telangana
+q_119,అమ్మ ఒడి సాయం ఎంత అందుతుంది మాకు?,BENEFITS,అమ్మ ఒడి,dialect_telangana
+q_120,ఆసరా పెన్షన్ సాయం ఎంత అందుతుంది మాకు?,BENEFITS,ఆసరా పెన్షన్,dialect_telangana
+q_121,రైతు భరోసా పైసలు పడ్డాయా లేదా ఎలా తెలుసుకోవాలి?,BENEFITS,రైతు భరోసా,dialect_telangana
+q_122,రైతు బంధు పైసలు పడ్డాయా లేదా ఎలా తెలుసుకోవాలి?,BENEFITS,రైతు బంధు,dialect_telangana
+q_123,ఆరోగ్యశ్రీ పైసలు పడ్డాయా లేదా ఎలా తెలుసుకోవాలి?,BENEFITS,ఆరోగ్యశ్రీ,dialect_telangana
+q_124,అమ్మ ఒడి పైసలు పడ్డాయా లేదా ఎలా తెలుసుకోవాలి?,BENEFITS,అమ్మ ఒడి,dialect_telangana
+q_125,ఆసరా పెన్షన్ పైసలు పడ్డాయా లేదా ఎలా తెలుసుకోవాలి?,BENEFITS,ఆసరా పెన్షన్,dialect_telangana
+q_126,రైతు భరోసా ఎంత డబ్బు ఇస్తారు?,BENEFITS,రైతు భరోసా,dialect_telangana
+q_127,రైతు బంధు ఎంత డబ్బు ఇస్తారు?,BENEFITS,రైతు బంధు,dialect_telangana
+q_128,ఆరోగ్యశ్రీ ఎంత డబ్బు ఇస్తారు?,BENEFITS,ఆరోగ్యశ్రీ,dialect_telangana
+q_129,అమ్మ ఒడి ఎంత డబ్బు ఇస్తారు?,BENEFITS,అమ్మ ఒడి,dialect_telangana
+q_130,ఆసరా పెన్షన్ ఎంత డబ్బు ఇస్తారు?,BENEFITS,ఆసరా పెన్షన్,dialect_telangana
+q_131,రైతు భరోసా సొమ్ము ఖాతాలో ఎప్పుడు పడుతుంది?,BENEFITS,రైతు భరోసా,dialect_rayalaseema
+q_132,రైతు బంధు సొమ్ము ఖాతాలో ఎప్పుడు పడుతుంది?,BENEFITS,రైతు బంధు,dialect_rayalaseema
+q_133,ఆరోగ్యశ్రీ సొమ్ము ఖాతాలో ఎప్పుడు పడుతుంది?,BENEFITS,ఆరోగ్యశ్రీ,dialect_rayalaseema
+q_134,అమ్మ ఒడి సొమ్ము ఖాతాలో ఎప్పుడు పడుతుంది?,BENEFITS,అమ్మ ఒడి,dialect_rayalaseema
+q_135,ఆసరా పెన్షన్ సొమ్ము ఖాతాలో ఎప్పుడు పడుతుంది?,BENEFITS,ఆసరా పెన్షన్,dialect_rayalaseema
+q_136,రైతు భరోసా పైసలు ఎంత వస్తాయి?,BENEFITS,రైతు భరోసా,dialect_rayalaseema
+q_137,రైతు బంధు పైసలు ఎంత వస్తాయి?,BENEFITS,రైతు బంధు,dialect_rayalaseema
+q_138,ఆరోగ్యశ్రీ పైసలు ఎంత వస్తాయి?,BENEFITS,ఆరోగ్యశ్రీ,dialect_rayalaseema
+q_139,అమ్మ ఒడి పైసలు ఎంత వస్తాయి?,BENEFITS,అమ్మ ఒడి,dialect_rayalaseema
+q_140,ఆసరా పెన్షన్ పైసలు ఎంత వస్తాయి?,BENEFITS,ఆసరా పెన్షన్,dialect_rayalaseema
+q_141,రైతు భరోసా డబ్బులు ఎప్పుడు వస్తాయి?,BENEFITS,రైతు భరోసా,colloquial
+q_142,రైతు బంధు డబ్బులు ఎప్పుడు వస్తాయి?,BENEFITS,రైతు బంధు,colloquial
+q_143,ఆరోగ్యశ్రీ డబ్బులు ఎప్పుడు వస్తాయి?,BENEFITS,ఆరోగ్యశ్రీ,colloquial
+q_144,అమ్మ ఒడి డబ్బులు ఎప్పుడు వస్తాయి?,BENEFITS,అమ్మ ఒడి,colloquial
+q_145,ఆసరా పెన్షన్ డబ్బులు ఎప్పుడు వస్తాయి?,BENEFITS,ఆసరా పెన్షన్,colloquial
+q_146,రైతు భరోసా దరఖాస్తుకు కావలసిన ధ్రువీకరణ పత్రాలు ఏవి?,REQUIRED_DOCUMENTS,రైతు భరోసా,standard
+q_147,రైతు బంధు దరఖాస్తుకు కావలసిన ధ్రువీకరణ పత్రాలు ఏవి?,REQUIRED_DOCUMENTS,రైతు బంధు,standard
+q_148,ఆరోగ్యశ్రీ దరఖాస్తుకు కావలసిన ధ్రువీకరణ పత్రాలు ఏవి?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,standard
+q_149,అమ్మ ఒడి దరఖాస్తుకు కావలసిన ధ్రువీకరణ పత్రాలు ఏవి?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,standard
+q_150,ఆసరా పెన్షన్ దరఖాస్తుకు కావలసిన ధ్రువీకరణ పత్రాలు ఏవి?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,standard
+q_151,రైతు భరోసా కి ఆధార్ కార్డు రేషన్ కార్డు తప్పనిసరిగా ఉండాలా?,REQUIRED_DOCUMENTS,రైతు భరోసా,standard
+q_152,రైతు బంధు కి ఆధార్ కార్డు రేషన్ కార్డు తప్పనిసరిగా ఉండాలా?,REQUIRED_DOCUMENTS,రైతు బంధు,standard
+q_153,ఆరోగ్యశ్రీ కి ఆధార్ కార్డు రేషన్ కార్డు తప్పనిసరిగా ఉండాలా?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,standard
+q_154,అమ్మ ఒడి కి ఆధార్ కార్డు రేషన్ కార్డు తప్పనిసరిగా ఉండాలా?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,standard
+q_155,ఆసరా పెన్షన్ కి ఆధార్ కార్డు రేషన్ కార్డు తప్పనిసరిగా ఉండాలా?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,standard
+q_156,రైతు భరోసా కి పట్టాదారు పాస్ పుస్తకం అవసరమా?,REQUIRED_DOCUMENTS,రైతు భరోసా,standard
+q_157,రైతు బంధు కి పట్టాదారు పాస్ పుస్తకం అవసరమా?,REQUIRED_DOCUMENTS,రైతు బంధు,standard
+q_158,ఆరోగ్యశ్రీ కి పట్టాదారు పాస్ పుస్తకం అవసరమా?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,standard
+q_159,అమ్మ ఒడి కి పట్టాదారు పాస్ పుస్తకం అవసరమా?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,standard
+q_160,ఆసరా పెన్షన్ కి పట్టాదారు పాస్ పుస్తకం అవసరమా?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,standard
+q_161,రైతు భరోసా రిజిస్ట్రేషన్ కోసం ఏ పత్రాలు సమర్పించాలి?,REQUIRED_DOCUMENTS,రైతు భరోసా,standard
+q_162,రైతు బంధు రిజిస్ట్రేషన్ కోసం ఏ పత్రాలు సమర్పించాలి?,REQUIRED_DOCUMENTS,రైతు బంధు,standard
+q_163,ఆరోగ్యశ్రీ రిజిస్ట్రేషన్ కోసం ఏ పత్రాలు సమర్పించాలి?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,standard
+q_164,అమ్మ ఒడి రిజిస్ట్రేషన్ కోసం ఏ పత్రాలు సమర్పించాలి?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,standard
+q_165,ఆసరా పెన్షన్ రిజిస్ట్రేషన్ కోసం ఏ పత్రాలు సమర్పించాలి?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,standard
+q_166,రైతు భరోసా డాక్యుమెంట్లు ఎక్కడ వెరిఫై చేయించాలి?,REQUIRED_DOCUMENTS,రైతు భరోసా,standard
+q_167,రైతు బంధు డాక్యుమెంట్లు ఎక్కడ వెరిఫై చేయించాలి?,REQUIRED_DOCUMENTS,రైతు బంధు,standard
+q_168,ఆరోగ్యశ్రీ డాక్యుమెంట్లు ఎక్కడ వెరిఫై చేయించాలి?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,standard
+q_169,అమ్మ ఒడి డాక్యుమెంట్లు ఎక్కడ వెరిఫై చేయించాలి?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,standard
+q_170,ఆసరా పెన్షన్ డాక్యుమెంట్లు ఎక్కడ వెరిఫై చేయించాలి?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,standard
+q_171,రైతు భరోసా కు ఏ సర్టిఫికెట్లు అవసరం?,REQUIRED_DOCUMENTS,రైతు భరోసా,standard
+q_172,రైతు బంధు కు ఏ సర్టిఫికెట్లు అవసరం?,REQUIRED_DOCUMENTS,రైతు బంధు,standard
+q_173,ఆరోగ్యశ్రీ కు ఏ సర్టిఫికెట్లు అవసరం?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,standard
+q_174,అమ్మ ఒడి కు ఏ సర్టిఫికెట్లు అవసరం?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,standard
+q_175,ఆసరా పెన్షన్ కు ఏ సర్టిఫికెట్లు అవసరం?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,standard
+q_176,రైతు భరోసా కోసం ఏమేం కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,రైతు భరోసా,dialect_telangana
+q_177,రైతు బంధు కోసం ఏమేం కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,రైతు బంధు,dialect_telangana
+q_178,ఆరోగ్యశ్రీ కోసం ఏమేం కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,dialect_telangana
+q_179,అమ్మ ఒడి కోసం ఏమేం కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,dialect_telangana
+q_180,ఆసరా పెన్షన్ కోసం ఏమేం కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,dialect_telangana
+q_181,రైతు భరోసా కి ఏమేమి కాగితాలు జతచేయాలి?,REQUIRED_DOCUMENTS,రైతు భరోసా,dialect_telangana
+q_182,రైతు బంధు కి ఏమేమి కాగితాలు జతచేయాలి?,REQUIRED_DOCUMENTS,రైతు బంధు,dialect_telangana
+q_183,ఆరోగ్యశ్రీ కి ఏమేమి కాగితాలు జతచేయాలి?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,dialect_telangana
+q_184,అమ్మ ఒడి కి ఏమేమి కాగితాలు జతచేయాలి?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,dialect_telangana
+q_185,ఆసరా పెన్షన్ కి ఏమేమి కాగితాలు జతచేయాలి?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,dialect_telangana
+q_186,రైతు భరోసా కి ఏమేం పత్రాలు కావాలి?,REQUIRED_DOCUMENTS,రైతు భరోసా,dialect_telangana
+q_187,రైతు బంధు కి ఏమేం పత్రాలు కావాలి?,REQUIRED_DOCUMENTS,రైతు బంధు,dialect_telangana
+q_188,ఆరోగ్యశ్రీ కి ఏమేం పత్రాలు కావాలి?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,dialect_telangana
+q_189,అమ్మ ఒడి కి ఏమేం పత్రాలు కావాలి?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,dialect_telangana
+q_190,ఆసరా పెన్షన్ కి ఏమేం పత్రాలు కావాలి?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,dialect_telangana
+q_191,రైతు భరోసా బాపతు డాక్యుమెంట్లు ఏమి కావాలి?,REQUIRED_DOCUMENTS,రైతు భరోసా,dialect_rayalaseema
+q_192,రైతు బంధు బాపతు డాక్యుమెంట్లు ఏమి కావాలి?,REQUIRED_DOCUMENTS,రైతు బంధు,dialect_rayalaseema
+q_193,ఆరోగ్యశ్రీ బాపతు డాక్యుమెంట్లు ఏమి కావాలి?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,dialect_rayalaseema
+q_194,అమ్మ ఒడి బాపతు డాక్యుమెంట్లు ఏమి కావాలి?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,dialect_rayalaseema
+q_195,ఆసరా పెన్షన్ బాపతు డాక్యుమెంట్లు ఏమి కావాలి?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,dialect_rayalaseema
+q_196,రైతు భరోసా కు ఏ కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,రైతు భరోసా,dialect_rayalaseema
+q_197,రైతు బంధు కు ఏ కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,రైతు బంధు,dialect_rayalaseema
+q_198,ఆరోగ్యశ్రీ కు ఏ కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,dialect_rayalaseema
+q_199,అమ్మ ఒడి కు ఏ కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,dialect_rayalaseema
+q_200,ఆసరా పెన్షన్ కు ఏ కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,dialect_rayalaseema
+q_201,రైతు భరోసా కోసం బ్యాంకు పాస్ బుక్ జిరాక్స్ కావాలా?,REQUIRED_DOCUMENTS,రైతు భరోసా,colloquial
+q_202,రైతు బంధు కోసం బ్యాంకు పాస్ బుక్ జిరాక్స్ కావాలా?,REQUIRED_DOCUMENTS,రైతు బంధు,colloquial
+q_203,ఆరోగ్యశ్రీ కోసం బ్యాంకు పాస్ బుక్ జిరాక్స్ కావాలా?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ,colloquial
+q_204,అమ్మ ఒడి కోసం బ్యాంకు పాస్ బుక్ జిరాక్స్ కావాలా?,REQUIRED_DOCUMENTS,అమ్మ ఒడి,colloquial
+q_205,ఆసరా పెన్షన్ కోసం బ్యాంకు పాస్ బుక్ జిరాక్స్ కావాలా?,REQUIRED_DOCUMENTS,ఆసరా పెన్షన్,colloquial
+q_206,రైతు భరోసా కి ఎలా దరఖాస్తు చేసుకోవాలి?,APPLICATION_PROCEDURE,రైతు భరోసా,standard
+q_207,రైతు బంధు కి ఎలా దరఖాస్తు చేసుకోవాలి?,APPLICATION_PROCEDURE,రైతు బంధు,standard
+q_208,ఆరోగ్యశ్రీ కి ఎలా దరఖాస్తు చేసుకోవాలి?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,standard
+q_209,అమ్మ ఒడి కి ఎలా దరఖాస్తు చేసుకోవాలి?,APPLICATION_PROCEDURE,అమ్మ ఒడి,standard
+q_210,ఆసరా పెన్షన్ కి ఎలా దరఖాస్తు చేసుకోవాలి?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,standard
+q_211,రైతు భరోసా కి మీసేవా లేదా సచివాలయంలో దరఖాస్తు చేయవచ్చా?,APPLICATION_PROCEDURE,రైతు భరోసా,standard
+q_212,రైతు బంధు కి మీసేవా లేదా సచివాలయంలో దరఖాస్తు చేయవచ్చా?,APPLICATION_PROCEDURE,రైతు బంధు,standard
+q_213,ఆరోగ్యశ్రీ కి మీసేవా లేదా సచివాలయంలో దరఖాస్తు చేయవచ్చా?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,standard
+q_214,అమ్మ ఒడి కి మీసేవా లేదా సచివాలయంలో దరఖాస్తు చేయవచ్చా?,APPLICATION_PROCEDURE,అమ్మ ఒడి,standard
+q_215,ఆసరా పెన్షన్ కి మీసేవా లేదా సచివాలయంలో దరఖాస్తు చేయవచ్చా?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,standard
+q_216,రైతు భరోసా ఆన్‌లైన్ లో అప్లై చేసే విధానం ఏమిటి?,APPLICATION_PROCEDURE,రైతు భరోసా,standard
+q_217,రైతు బంధు ఆన్‌లైన్ లో అప్లై చేసే విధానం ఏమిటి?,APPLICATION_PROCEDURE,రైతు బంధు,standard
+q_218,ఆరోగ్యశ్రీ ఆన్‌లైన్ లో అప్లై చేసే విధానం ఏమిటి?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,standard
+q_219,అమ్మ ఒడి ఆన్‌లైన్ లో అప్లై చేసే విధానం ఏమిటి?,APPLICATION_PROCEDURE,అమ్మ ఒడి,standard
+q_220,ఆసరా పెన్షన్ ఆన్‌లైన్ లో అప్లై చేసే విధానం ఏమిటి?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,standard
+q_221,రైతు భరోసా దరఖాస్తు గడువు తేదీ ఎప్పుడు?,APPLICATION_PROCEDURE,రైతు భరోసా,standard
+q_222,రైతు బంధు దరఖాస్తు గడువు తేదీ ఎప్పుడు?,APPLICATION_PROCEDURE,రైతు బంధు,standard
+q_223,ఆరోగ్యశ్రీ దరఖాస్తు గడువు తేదీ ఎప్పుడు?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,standard
+q_224,అమ్మ ఒడి దరఖాస్తు గడువు తేదీ ఎప్పుడు?,APPLICATION_PROCEDURE,అమ్మ ఒడి,standard
+q_225,ఆసరా పెన్షన్ దరఖాస్తు గడువు తేదీ ఎప్పుడు?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,standard
+q_226,రైతు భరోసా రిజిస్ట్రేషన్ ఎలా పూర్తి చేయాలి?,APPLICATION_PROCEDURE,రైతు భరోసా,standard
+q_227,రైతు బంధు రిజిస్ట్రేషన్ ఎలా పూర్తి చేయాలి?,APPLICATION_PROCEDURE,రైతు బంధు,standard
+q_228,ఆరోగ్యశ్రీ రిజిస్ట్రేషన్ ఎలా పూర్తి చేయాలి?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,standard
+q_229,అమ్మ ఒడి రిజిస్ట్రేషన్ ఎలా పూర్తి చేయాలి?,APPLICATION_PROCEDURE,అమ్మ ఒడి,standard
+q_230,ఆసరా పెన్షన్ రిజిస్ట్రేషన్ ఎలా పూర్తి చేయాలి?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,standard
+q_231,రైతు భరోసా స్టేటస్ ఎలా చెక్ చేసుకోవాలి?,APPLICATION_PROCEDURE,రైతు భరోసా,standard
+q_232,రైతు బంధు స్టేటస్ ఎలా చెక్ చేసుకోవాలి?,APPLICATION_PROCEDURE,రైతు బంధు,standard
+q_233,ఆరోగ్యశ్రీ స్టేటస్ ఎలా చెక్ చేసుకోవాలి?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,standard
+q_234,అమ్మ ఒడి స్టేటస్ ఎలా చెక్ చేసుకోవాలి?,APPLICATION_PROCEDURE,అమ్మ ఒడి,standard
+q_235,ఆసరా పెన్షన్ స్టేటస్ ఎలా చెక్ చేసుకోవాలి?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,standard
+q_236,రైతు భరోసా దరఖాస్తు ఎట్ల చేసుకోవాలె?,APPLICATION_PROCEDURE,రైతు భరోసా,dialect_telangana
+q_237,రైతు బంధు దరఖాస్తు ఎట్ల చేసుకోవాలె?,APPLICATION_PROCEDURE,రైతు బంధు,dialect_telangana
+q_238,ఆరోగ్యశ్రీ దరఖాస్తు ఎట్ల చేసుకోవాలె?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,dialect_telangana
+q_239,అమ్మ ఒడి దరఖాస్తు ఎట్ల చేసుకోవాలె?,APPLICATION_PROCEDURE,అమ్మ ఒడి,dialect_telangana
+q_240,ఆసరా పెన్షన్ దరఖాస్తు ఎట్ల చేసుకోవాలె?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,dialect_telangana
+q_241,రైతు భరోసా లో రిజిస్ట్రేషన్ ఎలా చేయించుకోవాలె?,APPLICATION_PROCEDURE,రైతు భరోసా,dialect_telangana
+q_242,రైతు బంధు లో రిజిస్ట్రేషన్ ఎలా చేయించుకోవాలె?,APPLICATION_PROCEDURE,రైతు బంధు,dialect_telangana
+q_243,ఆరోగ్యశ్రీ లో రిజిస్ట్రేషన్ ఎలా చేయించుకోవాలె?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,dialect_telangana
+q_244,అమ్మ ఒడి లో రిజిస్ట్రేషన్ ఎలా చేయించుకోవాలె?,APPLICATION_PROCEDURE,అమ్మ ఒడి,dialect_telangana
+q_245,ఆసరా పెన్షన్ లో రిజిస్ట్రేషన్ ఎలా చేయించుకోవాలె?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,dialect_telangana
+q_246,రైతు భరోసా కి యాడ దరఖాస్తు ఇవ్వాల?,APPLICATION_PROCEDURE,రైతు భరోసా,dialect_rayalaseema
+q_247,రైతు బంధు కి యాడ దరఖాస్తు ఇవ్వాల?,APPLICATION_PROCEDURE,రైతు బంధు,dialect_rayalaseema
+q_248,ఆరోగ్యశ్రీ కి యాడ దరఖాస్తు ఇవ్వాల?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,dialect_rayalaseema
+q_249,అమ్మ ఒడి కి యాడ దరఖాస్తు ఇవ్వాల?,APPLICATION_PROCEDURE,అమ్మ ఒడి,dialect_rayalaseema
+q_250,ఆసరా పెన్షన్ కి యాడ దరఖాస్తు ఇవ్వాల?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,dialect_rayalaseema
+q_251,రైతు భరోసా కు ఎక్కడ పెట్టాలో చెప్పండి?,APPLICATION_PROCEDURE,రైతు భరోసా,dialect_rayalaseema
+q_252,రైతు బంధు కు ఎక్కడ పెట్టాలో చెప్పండి?,APPLICATION_PROCEDURE,రైతు బంధు,dialect_rayalaseema
+q_253,ఆరోగ్యశ్రీ కు ఎక్కడ పెట్టాలో చెప్పండి?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,dialect_rayalaseema
+q_254,అమ్మ ఒడి కు ఎక్కడ పెట్టాలో చెప్పండి?,APPLICATION_PROCEDURE,అమ్మ ఒడి,dialect_rayalaseema
+q_255,ఆసరా పెన్షన్ కు ఎక్కడ పెట్టాలో చెప్పండి?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,dialect_rayalaseema
+q_256,రైతు భరోసా కోసం ఎక్కడ అప్లై చేయాలి?,APPLICATION_PROCEDURE,రైతు భరోసా,colloquial
+q_257,రైతు బంధు కోసం ఎక్కడ అప్లై చేయాలి?,APPLICATION_PROCEDURE,రైతు బంధు,colloquial
+q_258,ఆరోగ్యశ్రీ కోసం ఎక్కడ అప్లై చేయాలి?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,colloquial
+q_259,అమ్మ ఒడి కోసం ఎక్కడ అప్లై చేయాలి?,APPLICATION_PROCEDURE,అమ్మ ఒడి,colloquial
+q_260,ఆసరా పెన్షన్ కోసం ఎక్కడ అప్లై చేయాలి?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,colloquial
+q_261,రైతు భరోసా ఫారం ఎక్కడ దొరుకుతుంది?,APPLICATION_PROCEDURE,రైతు భరోసా,colloquial
+q_262,రైతు బంధు ఫారం ఎక్కడ దొరుకుతుంది?,APPLICATION_PROCEDURE,రైతు బంధు,colloquial
+q_263,ఆరోగ్యశ్రీ ఫారం ఎక్కడ దొరుకుతుంది?,APPLICATION_PROCEDURE,ఆరోగ్యశ్రీ,colloquial
+q_264,అమ్మ ఒడి ఫారం ఎక్కడ దొరుకుతుంది?,APPLICATION_PROCEDURE,అమ్మ ఒడి,colloquial
+q_265,ఆసరా పెన్షన్ ఫారం ఎక్కడ దొరుకుతుంది?,APPLICATION_PROCEDURE,ఆసరా పెన్షన్,colloquial
