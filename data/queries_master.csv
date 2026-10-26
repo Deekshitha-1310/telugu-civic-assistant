@@ -1,0 +1,33 @@
+id,standard_query,dialect_query,intent_label,target_scheme,ground_truth_chunk_id
+1,రైతు భరోసా పథకం ఆర్థిక సహాయం ఎప్పుడు అందుతుంది?,రైతు బంధు పైసలు ఎప్పుడొస్తయి?,BENEFITS,RYTHU_BHAROSA,rythu_benefits_01
+2,రైతు బంధు పెట్టుబడి సహాయం ఎంత లభిస్తుంది?,రైతు బంధు పైసలు ఎంతొస్తయి?,BENEFITS,RYTHU_BHAROSA,rythu_benefits_01
+3,రైతు భరోసా పథకానికి అర్హులైన రైతులు ఎవరు?,రైతు బంధు ఎవరికిస్తరు ఎవురు అర్హులు?,ELIGIBILITY,RYTHU_BHAROSA,rythu_eligibility_02
+4,కౌలు రైతులు రైతు బంధు పథకానికి అర్హులేనా?,కౌలు రైతులకు పైసలు ఇస్తరా లేదా?,ELIGIBILITY,RYTHU_BHAROSA,rythu_eligibility_02
+5,రైతు భరోసా దరఖాస్తుకు ఏ ఏ పత్రాలు కావాలి?,రైతు బంధుకు ఏ కాగితాలు కావాలె?,REQUIRED_DOCUMENTS,RYTHU_BHAROSA,rythu_docs_03
+6,రైతు బంధు కోసం పట్టాదారు పాస్ బుక్ సమర్పించాలా?,రైతు బంధుకు పాస్ పుస్తకం ఉండాల్నా?,REQUIRED_DOCUMENTS,RYTHU_BHAROSA,rythu_docs_03
+7,రైతు భరోసా పథకానికి ఎలా దరఖాస్తు చేసుకోవాలి?,రైతు బంధు ఫారం ఎట్లా పెట్టాలె?,APPLICATION_PROCEDURE,RYTHU_BHAROSA,rythu_apply_04
+8,రైతు బంధు దరఖాస్తు ఎక్కడ సమర్పించాలి?,రైతు బంధు అప్లికేషన్ ఎక్కడ ఇయ్యాలె?,APPLICATION_PROCEDURE,RYTHU_BHAROSA,rythu_apply_04
+9,ఆరోగ్యశ్రీ ద్వారా ఎంత వరకు ఉచిత వైద్యం లభిస్తుంది?,ఆరోగ్యశ్రీల ఎన్ని పైసల దాకా ఉచిత వైద్యం?,BENEFITS,AAROGYASRI,aarogya_benefits_01
+10,ఆరోగ్యశ్రీ ఆసుపత్రిలో ఏ ఏ చికిత్సలు ఉచితం?,దవాఖానల ఏ రోగాలకు ఫ్రీ ట్రీట్మెంట్?,BENEFITS,AAROGYASRI,aarogya_benefits_01
+11,ఆరోగ్యశ్రీ కార్డు పొందేందుకు ఎవరు అర్హులు?,ఆరోగ్యశ్రీ కార్డు ఎవరికి ఇస్తరు?,ELIGIBILITY,AAROGYASRI,aarogya_eligibility_02
+12,ఆదాయ పరిమితి ఎంత ఉంటే ఆరోగ్యశ్రీ కార్డు వస్తుంది?,ఆదాయం ఎంత ఉంటే ఆరోగ్యశ్రీ వస్తది?,ELIGIBILITY,AAROGYASRI,aarogya_eligibility_02
+13,ఆరోగ్యశ్రీ కార్డు దరఖాస్తుకు కావలసిన పత్రాలు ఏమిటి?,ఆరోగ్యశ్రీకి ఏమేం డాక్యుమెంట్లు కావాలె?,REQUIRED_DOCUMENTS,AAROGYASRI,aarogya_docs_03
+14,ఆరోగ్యశ్రీకి తెల్ల రేషన్ కార్డు తప్పనిసరిగా ఉండాలా?,రేషన్ కార్డు లేకుంటే ఆరోగ్యశ్రీ రాదా?,REQUIRED_DOCUMENTS,AAROGYASRI,aarogya_docs_03
+15,ఆరోగ్యశ్రీ కార్డు ఎలా దరఖాస్తు చేసుకోవాలి?,ఆరోగ్యశ్రీ కార్డు ఎట్లా తీసుకోవాలె?,APPLICATION_PROCEDURE,AAROGYASRI,aarogya_apply_04
+16,ఆసుపత్రిలో ఆరోగ్య మిత్ర సహాయం ఎలా పొందాలి?,దవాఖానల ఆరోగ్య మిత్రను ఎట్లా కలవాలె?,APPLICATION_PROCEDURE,AAROGYASRI,aarogya_apply_04
+17,అమ్మ ఒడి పథకం కింద ఎంత ఆర్థిక సహాయం ఇస్తారు?,అమ్మ ఒడి పైసలు ఎంత వస్తయి?,BENEFITS,AMMA_VODI,ammavodi_benefits_01
+18,అమ్మ ఒడి డబ్బులు ఎవరి ఖాతాలో జమ చేస్తారు?,అమ్మ ఒడి పైసలు తల్లి ఖాతాల పడతయా?,BENEFITS,AMMA_VODI,ammavodi_benefits_01
+19,అమ్మ ఒడి పథకానికి ఎవరు అర్హులు?,అమ్మ ఒడి ఎవరికి వస్తది ఎవురు అర్హులు?,ELIGIBILITY,AMMA_VODI,ammavodi_eligibility_02
+20,పాఠశాల హాజరు ఎంత శాతం ఉంటే అమ్మ ఒడి వస్తుంది?,స్కూల్ హాజరు ఎంత ఉండాలె అమ్మ ఒడి రావాలంటే?,ELIGIBILITY,AMMA_VODI,ammavodi_eligibility_02
+21,అమ్మ ఒడి దరఖాస్తుకు కావలసిన ధృవీకరణ పత్రాలు ఏమిటి?,అమ్మ ఒడికి ఏమేం సర్టిఫికెట్లు ఇయ్యాలె?,REQUIRED_DOCUMENTS,AMMA_VODI,ammavodi_docs_03
+22,అమ్మ ఒడి కోసం బ్యాంక్ ఖాతా వివరాలు ఇవ్వాలా?,అమ్మ ఒడికి బ్యాంక్ పాస్ బుక్ కావాల్నా?,REQUIRED_DOCUMENTS,AMMA_VODI,ammavodi_docs_03
+23,అమ్మ ఒడి నమోదు ప్రక్రియ ఏమిటి?,అమ్మ ఒడి పేరు ఎట్లా ఎక్కించుకోవాలె?,APPLICATION_PROCEDURE,AMMA_VODI,ammavodi_apply_04
+24,పాఠశాలలో ప్రధానోపాధ్యాయుడిని ఎలా సంప్రదించాలి?,బడి హెచ్ఎమ్ దగ్గర ఎట్లా రిజిస్టర్ చేయాలె?,APPLICATION_PROCEDURE,AMMA_VODI,ammavodi_apply_04
+25,ఆసరా పింఛను కింద నెలకు ఎంత మొత్తం చెల్లిస్తారు?,ఆసరా పెన్షన్ నెలకు ఎన్ని పైసలు ఇస్తరు?,BENEFITS,AASARA_PENSION,aasara_benefits_01
+26,దివ్యాంగులకు ఆసరా పెన్షన్ ఎంత లభిస్తుంది?,వికలాంగులకు పెన్షన్ పైసలు ఎంతొస్తయి?,BENEFITS,AASARA_PENSION,aasara_benefits_01
+27,వృద్ధాప్య పింఛనుకు కనీస వయస్సు ఎంత ఉండాలి?,ముసలి పెన్షన్ రావాలంటే ఎన్ని ఏండ్లు ఉండాలె?,ELIGIBILITY,AASARA_PENSION,aasara_eligibility_02
+28,వితంతు పెన్షన్ కు ఎవరు అర్హులు?,భర్త లేని వాళ్లకు పెన్షన్ ఎవరికి ఇస్తరు?,ELIGIBILITY,AASARA_PENSION,aasara_eligibility_02
+29,ఆసరా పెన్షన్ కు కావలసిన పత్రాలు ఏమిటి?,పెన్షన్ రావాలంటే ఏ కాగితాలు పెట్టాలె?,REQUIRED_DOCUMENTS,AASARA_PENSION,aasara_docs_03
+30,దివ్యాంగ పెన్షన్ కోసం సదరం సర్టిఫికెట్ అవసరమా?,సదరం సర్టిఫికెట్ లేకుంటే పెన్షన్ రాదా?,REQUIRED_DOCUMENTS,AASARA_PENSION,aasara_docs_03
+31,ఆసరా పెన్షన్ దరఖాస్తు విధానం ఏమిటి?,ఆసరా పెన్షన్ ఎట్లా దరఖాస్తు చేయాలె?,APPLICATION_PROCEDURE,AASARA_PENSION,aasara_apply_04
+32,గ్రామ సచివాలయంలో పెన్షన్ ఫారం ఎలా ఇవ్వాలి?,సచివాలయంల పెన్షన్ అప్లికేషన్ ఎవరికియ్యాలె?,APPLICATION_PROCEDURE,AASARA_PENSION,aasara_apply_04
