@@ -152,13 +152,22 @@ def run_noise_augmentation():
             print(f"Error setting up audio: {e}")
             return
 
+    market_file = os.path.join(noise_dir, "market_babble.wav")
     traffic_audio, sr_noise = read_wav(traffic_file)
-    print(f"Loaded traffic noise reference ({len(traffic_audio)/sr_noise:.1f}s, {sr_noise} Hz)")
+    market_audio = read_wav(market_file)[0] if os.path.exists(market_file) else traffic_audio
+
+    # Composite environmental noise: street traffic + crowded market babble
+    min_len = min(len(traffic_audio), len(market_audio))
+    composite_noise = 0.55 * traffic_audio[:min_len] + 0.45 * market_audio[:min_len]
+    print(f"Loaded noise profiles: Traffic ({len(traffic_audio)/sr_noise:.1f}s) & Market Babble")
 
     snr_levels = [
-        (15.0, "snr_15db", "Mild Noise (Quiet Office)"),
-        (10.0, "snr_10db", "Moderate Noise (Street Traffic)"),
-        (5.0,  "snr_5db",  "Heavy Noise (Crowded Market/Babble)")
+        (15.0,  "snr_15db",       "Mild Noise (Quiet Office)"),
+        (10.0,  "snr_10db",       "Moderate Noise (Street Traffic)"),
+        (5.0,   "snr_5db",        "Heavy Noise (Market / Panchayat)"),
+        (0.0,   "snr_0db",        "Severe Noise (Noise Power = Speech Power)"),
+        (-3.0,  "snr_minus3db",   "Extreme Noise (Noise is 2x Louder than Telugu)"),
+        (-5.0,  "snr_minus5db",   "Overwhelming Noise (Noise is 3.16x Louder than Telugu)")
     ]
 
     audio_files = sorted([f for f in os.listdir(raw_dir) if f.endswith(".wav")])
@@ -180,7 +189,7 @@ def run_noise_augmentation():
             trimmed = trim_silence(speech)
             p_speech = float(np.mean(trimmed ** 2))
 
-            noisy_audio = mix_noise_at_snr(speech, traffic_audio, snr)
+            noisy_audio = mix_noise_at_snr(speech, composite_noise, snr)
 
             out_path = os.path.join(target_folder, fname)
             write_wav(out_path, noisy_audio, sr_speech)
@@ -190,7 +199,7 @@ def run_noise_augmentation():
             actual_snr = 10 * np.log10(p_speech / (p_noise + 1e-9))
             print(f"    • {fname:<14} -> Target: {snr:4.1f} dB | Measured: {actual_snr:4.1f} dB")
 
-    print("\n✅ All noisy audio sets (15 dB, 10 dB, 5 dB) generated successfully!")
+    print("\n✅ All noisy audio sets (15 dB down to -5 dB extreme noise) generated successfully!")
     print("=" * 65 + "\n")
 
 
