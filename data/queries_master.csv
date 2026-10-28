@@ -30,4 +30,20 @@ id,standard_query,dialect_query,intent_label,target_scheme,ground_truth_chunk_id
 29,ఆసరా పెన్షన్ కు కావలసిన పత్రాలు ఏమిటి?,పెన్షన్ రావాలంటే ఏ కాగితాలు పెట్టాలె?,REQUIRED_DOCUMENTS,AASARA_PENSION,aasara_docs_03
 30,దివ్యాంగ పెన్షన్ కోసం సదరం సర్టిఫికెట్ అవసరమా?,సదరం సర్టిఫికెట్ లేకుంటే పెన్షన్ రాదా?,REQUIRED_DOCUMENTS,AASARA_PENSION,aasara_docs_03
 31,ఆసరా పెన్షన్ దరఖాస్తు విధానం ఏమిటి?,ఆసరా పెన్షన్ ఎట్లా దరఖాస్తు చేయాలె?,APPLICATION_PROCEDURE,AASARA_PENSION,aasara_apply_04
-32,గ్రామ సచివాలయంలో పెన్షన్ ఫారం ఎలా ఇవ్వాలి?,సచివాలయంల పెన్షన్ అప్లికేషన్ ఎవరికియ్యాలె?,APPLICATION_PROCEDURE,AASARA_PENSION,aasara_apply_04
+32,గ్రామ సచివాలయంలో పెన్షన్ ఫారం ఎలా ఇవ్వాలి?,సచివాలయంల పెన్షన్ అప్లికేషన్ ఎవరికియ్యాలె?,APPLICATION_PROCEDURE,AAROGYASRI,aasara_apply_04
+33,రైతు భరోసా ఆర్థిక సహాయం ఎప్పుడు అందుతుంది?,రైతు భరోసా డబ్బులు ఎప్పుడిత్తారప్పా?,BENEFITS,RYTHU_BHAROSA,rythu_benefits_01
+34,రైతు భరోసా పెట్టుబడి సాయం ఎంత లభిస్తుంది?,రైతు భరోసా సాయం ఎట్టాగస్తాది బాబూ?,BENEFITS,RYTHU_BHAROSA,rythu_benefits_01
+35,భూమి లేని కౌలు రైతులకు సహాయం అందుతుందా?,భూమి లేని కౌలు రైతులకి ఏమన్నా ఇత్తారా?,ELIGIBILITY,RYTHU_BHAROSA,rythu_eligibility_02
+36,రైతు బంధు దరఖాస్తు పత్రాలు ఎక్కడ సమర్పించాలి?,రైతు బంధు కాగితాలు ఎక్కడీయాలండి?,APPLICATION_PROCEDURE,RYTHU_BHAROSA,rythu_apply_04
+37,ఆరోగ్యశ్రీ ఆసుపత్రిలో ఏ ఏ చికిత్సలు ఉచితం?,ఆరోగ్యశ్రీ ఆస్పత్రిల ఏ రోగాలకి ఉచితంగా చూస్తారప్పా?,BENEFITS,AAROGYASRI,aarogya_benefits_01
+38,ఆరోగ్యశ్రీ కార్డు అన్ని ఆసుపత్రుల్లో చెల్లుతుందా?,ఆస్పత్రిలో ఆరోగ్యశ్రీ కార్డు పనికివత్తాదా లేదా?,ELIGIBILITY,AAROGYASRI,aarogya_eligibility_02
+39,ఆరోగ్యశ్రీ కార్డు దరఖాస్తుకు ఏ పత్రాలు కావాలి?,ఆరోగ్యశ్రీ కార్డుకి ఏమేం కాగితాలు పెట్టాలప్పా?,REQUIRED_DOCUMENTS,AAROGYASRI,aarogya_docs_03
+40,ఆసుపత్రిలో ఆరోగ్య మిత్ర ఎక్కడ ఉంటారు?,ఆరోగ్య మిత్ర దవాఖానల ఎక్కడ కూర్చుంటడు?,APPLICATION_PROCEDURE,AAROGYASRI,aarogya_apply_04
+41,అమ్మ ఒడి డబ్బులు తల్లుల ఖాతాలో ఎప్పుడు వేస్తారు?,అమ్మ ఒడి డబ్బులు తల్లులకి ఎప్పుడిత్తారు?,BENEFITS,AMMA_VODI,ammavodi_benefits_01
+42,పాఠశాలకు వెళ్లే విద్యార్థులకు అమ్మ ఒడి వస్తుందా?,పిల్లలు స్కూలుకి వెళ్తే అమ్మ ఒడి పైసలు వత్తాయా?,ELIGIBILITY,AMMA_VODI,ammavodi_eligibility_02
+43,అమ్మ ఒడి పథకానికి ఆధార్ కార్డు సమర్పించాలా?,అమ్మ ఒడికి ఏమేం ఆధార్ జిరాక్స్ లు ఇయ్యాలె?,REQUIRED_DOCUMENTS,AMMA_VODI,ammavodi_docs_03
+44,పాఠశాల ప్రధానోపాధ్యాయుడికి దరఖాస్తు ఎప్పుడు ఇవ్వాలి?,బడి హెడ్మాస్టరుకి ఎప్పుడు అర్జీ ఇయ్యాలప్పా?,APPLICATION_PROCEDURE,AMMA_VODI,ammavodi_apply_04
+45,వృద్ధాప్య పింఛను నెలకు ఎంత చెల్లిస్తారు?,ముసలోళ్ల పెన్షన్ నెలకు ఎంతిత్తారప్పా?,BENEFITS,AASARA_PENSION,aasara_benefits_01
+46,దివ్యాంగులకు పింఛను సహాయం ఎంత లభిస్తుంది?,వికలాంగులకి పింఛను సాయం ఎంతస్తాదండి?,BENEFITS,AASARA_PENSION,aasara_benefits_01
+47,దివ్యాంగ ధృవీకరణ కోసం సదరం క్యాంప్ ఎక్కడ జరుగుతుంది?,సదరం సర్టిఫికెట్ క్యాంప్ ఎక్కడ పెడతరు?,REQUIRED_DOCUMENTS,AASARA_PENSION,aasara_docs_03
+48,గ్రామ సచివాలయంలో పెన్షన్ దరఖాస్తు ఎవరికి సమర్పించాలి?,సచివాలయంల పెన్షన్ ఆర్జీ ఎవరికియ్యాలప్పా?,APPLICATION_PROCEDURE,AASARA_PENSION,aasara_apply_04

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "sample_01",
+    "file": "sample_01.wav",
+    "dialect_query": "రైతు బంధు పైసలు ఎప్పుడొస్తయి",
+    "standard_query": "రైతు భరోసా పథకం ఆర్థిక సహాయం ఎప్పుడు అందుతుంది?",
+    "dialect_zone": "Telangana",
+    "intent": "BENEFITS",
+    "scheme": "RYTHU_BHAROSA",
+    "duration_sec": 5.46
+  },
+  {
+    "id": "sample_02",
+    "file": "sample_02.wav",
+    "dialect_query": "ఆరోగ్యశ్రీ కార్డు ఎలా తీసుకోవాలి",
+    "standard_query": "ఆరోగ్యశ్రీ కార్డు ఎలా తీసుకోవాలి",
+    "dialect_zone": "Coastal / Standard",
+    "intent": "APPLICATION_PROCEDURE",
+    "scheme": "AAROGYASRI",
+    "duration_sec": 3.09
+  },
+  {
+    "id": "sample_03",
+    "file": "sample_03.wav",
+    "dialect_query": "అమ్మ ఒడి పథకానికి ఎవరు అర్హులు",
+    "standard_query": "అమ్మ ఒడి పథకానికి ఎవరు అర్హులు",
+    "dialect_zone": "Standard Formal",
+    "intent": "ELIGIBILITY",
+    "scheme": "AMMA_VODI",
+    "duration_sec": 3.02
+  },
+  {
+    "id": "sample_04",
+    "file": "sample_04.wav",
+    "dialect_query": "ఆసరా పెన్షన్ దరఖాస్తు విధానం ఏమిటి",
+    "standard_query": "ఆసరా పెన్షన్ దరఖాస్తు విధానం ఏమిటి",
+    "dialect_zone": "Standard Formal",
+    "intent": "APPLICATION_PROCEDURE",
+    "scheme": "AASARA_PENSION",
+    "duration_sec": 3.76
+  },
+  {
+    "id": "sample_05",
+    "file": "sample_05.wav",
+    "dialect_query": "రైతు భరోసా ఆర్థిక సహాయం ఎంత",
+    "standard_query": "రైతు బంధు పెట్టుబడి సహాయం ఎంత లభిస్తుంది?",
+    "dialect_zone": "Standard Formal",
+    "intent": "BENEFITS",
+    "scheme": "RYTHU_BHAROSA",
+    "duration_sec": 3.69
+  },
+  {
+    "id": "sample_06",
+    "file": "sample_06.wav",
+    "dialect_query": "దవాఖానల ఏ రోగాలకు ఫ్రీ ట్రీట్మెంట్",
+    "standard_query": "ఆరోగ్యశ్రీ ఆసుపత్రిలో ఏ ఏ చికిత్సలు ఉచితం?",
+    "dialect_zone": "Telangana",
+    "intent": "BENEFITS",
+    "scheme": "AAROGYASRI",
+    "duration_sec": 3.48
+  },
+  {
+    "id": "sample_07",
+    "file": "sample_07.wav",
+    "dialect_query": "అమ్మ ఒడి పైసలు తల్లి ఖాతాల పడతయా",
+    "standard_query": "అమ్మ ఒడి డబ్బులు ఎవరి ఖాతాలో జమ చేస్తారు?",
+    "dialect_zone": "Telangana",
+    "intent": "BENEFITS",
+    "scheme": "AMMA_VODI",
+    "duration_sec": 3.62
+  },
+  {
+    "id": "sample_08",
+    "file": "sample_08.wav",
+    "dialect_query": "ముసలి పెన్షన్ రావాలంటే ఎన్ని ఏండ్లు ఉండాలె",
+    "standard_query": "వృద్ధాప్య పింఛనుకు కనీస వయస్సు ఎంత ఉండాలి?",
+    "dialect_zone": "Telangana",
+    "intent": "ELIGIBILITY",
+    "scheme": "AASARA_PENSION",
+    "duration_sec": 4.02
+  },
+  {
+    "id": "sample_09",
+    "file": "sample_09.wav",
+    "dialect_query": "రైతు భరోసా సాయం ఎట్టాగస్తాది బాబూ",
+    "standard_query": "రైతు భరోసా పెట్టుబడి సాయం ఎంత లభిస్తుంది?",
+    "dialect_zone": "Uttarandhra",
+    "intent": "BENEFITS",
+    "scheme": "RYTHU_BHAROSA",
+    "duration_sec": 4.95
+  },
+  {
+    "id": "sample_10",
+    "file": "sample_10.wav",
+    "dialect_query": "ఆరోగ్యశ్రీ ఆస్పత్రిల ఏ రోగాలకి ఉచితంగా చూస్తారప్పా",
+    "standard_query": "ఆరోగ్యశ్రీ ఆసుపత్రిలో ఏ ఏ చికిత్సలు ఉచితం?",
+    "dialect_zone": "Rayalaseema",
+    "intent": "BENEFITS",
+    "scheme": "AAROGYASRI",
+    "duration_sec": 4.06
+  },
+  {
+    "id": "sample_11",
+    "file": "sample_11.wav",
+    "dialect_query": "రైతు బంధుకు ఏ కాగితాలు కావాలె",
+    "standard_query": "రైతు భరోసా దరఖాస్తుకు ఏ ఏ పత్రాలు కావాలి?",
+    "dialect_zone": "Telangana",
+    "intent": "REQUIRED_DOCUMENTS",
+    "scheme": "RYTHU_BHAROSA",
+    "duration_sec": 3.23
+  }
+]
