@@ -1,0 +1,25 @@
+{
+  "categories": [
+    "PURPOSE", "ELIGIBILITY", "BENEFITS", "REQUIRED_DOCUMENTS",
+    "APPLICATION_PROCEDURE", "DEADLINES", "STATUS_CHECK", "RENEWAL",
+    "GRIEVANCE", "HELPLINE", "FAQ", "EXCEPTIONS"
+  ],
+  "schemes": {
+    "రైతు బంధు / రైతు భరోసా": {
+      "questions": [
+        {"id": "purpose-en", "category": "PURPOSE", "text": "What is the purpose of Rythu Bharosa?", "variants": ["రైతు భరోసా పథకం లక్ష్యం ఏమిటి?"]},
+        {"id": "eligibility-te", "category": "ELIGIBILITY", "text": "రైతు భరోసాకు ఎవరు అర్హులు?", "variants": ["Who is eligible for Rythu Bharosa?"]},
+        {"id": "benefit-en", "category": "BENEFITS", "text": "How much is paid and how often?", "variants": ["రైతు భరోసాలో ఎంత డబ్బు ఎప్పుడు వస్తుంది?"]},
+        {"id": "documents-followup", "category": "REQUIRED_DOCUMENTS", "text": "What documents are needed?", "variants": ["ఏ పత్రాలు కావాలి?"]},
+        {"id": "apply-te", "category": "APPLICATION_PROCEDURE", "text": "ఎలా దరఖాస్తు చేసుకోవాలి?", "variants": ["How do I apply for Rythu Bharosa?"]},
+        {"id": "deadline-en", "category": "DEADLINES", "text": "When is the application deadline?", "variants": ["దరఖాస్తు చివరి తేదీ ఎప్పుడు?"]},
+        {"id": "status-en", "category": "STATUS_CHECK", "text": "How can I check my payment status?", "variants": ["నా చెల్లింపు స్థితి ఎలా చూడాలి?"]},
+        {"id": "grievance-en", "category": "GRIEVANCE", "text": "Where can I complain or appeal?", "variants": ["ఫిర్యాదు ఎక్కడ చేయాలి?"]},
+        {"id": "exception-te", "category": "EXCEPTIONS", "evidence_category": "ELIGIBILITY", "text": "కౌలు రైతులకు ఈ పథకం వర్తిస్తుందా?", "variants": ["Are tenant farmers eligible for Rythu Bharosa?"]}
+      ]
+    },
+    "వైఎస్ఆర్ ఆరోగ్యశ్రీ": {"questions": []},
+    "జగనన్న అమ్మ ఒడి": {"questions": []},
+    "ఆసరా పెన్షన్ / పెన్షన్ కానుక": {"questions": []}
+  }
+}

@@ -1,0 +1,9 @@
+question_id,telugu_prompt,expected_intent,expected_scheme
+q01,రైతు బంధు పథకానికి ఎవరు అర్హులు?,ELIGIBILITY,రైతు బంధు
+q02,రైతు బంధు పథకం వల్ల ఎంత డబ్బు వస్తుంది?,BENEFITS,రైతు బంధు
+q03,ఆరోగ్యశ్రీకి ఏ పత్రాలు కావాలి?,REQUIRED_DOCUMENTS,ఆరోగ్యశ్రీ
+q04,ఆరోగ్యశ్రీ ద్వారా ఏ ప్రయోజనాలు లభిస్తాయి?,BENEFITS,ఆరోగ్యశ్రీ
+q05,అమ్మ ఒడి పథకానికి ఎలా దరఖాస్తు చేయాలి?,APPLICATION_PROCEDURE,అమ్మ ఒడి
+q06,అమ్మ ఒడి పథకానికి ఎవరు అర్హులు?,ELIGIBILITY,అమ్మ ఒడి
+q07,ఆసరా పెన్షన్ కోసం ఏ పత్రాలు కావాలి?,REQUIRED_DOCUMENTS,ఆసరా
+q08,ఆసరా పెన్షన్ ఎలా దరఖాస్తు చేసుకోవాలి?,APPLICATION_PROCEDURE,ఆసరా

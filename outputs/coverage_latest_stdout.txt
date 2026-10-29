@@ -1,0 +1,1717 @@
+﻿{
+  "schemes": {
+    "ఆసరా పెన్షన్ / పెన్షన్ కానుక": {
+      "records": 4,
+      "evidence_categories": [
+        "APPLICATION_PROCEDURE",
+        "BENEFITS",
+        "ELIGIBILITY",
+        "REQUIRED_DOCUMENTS"
+      ],
+      "source_urls": [
+        "https://aasara.telangana.gov.in"
+      ],
+      "official_source_count": 1,
+      "official_domains": [
+        "aasara.telangana.gov.in"
+      ],
+      "verified_source_count": 0,
+      "accessed_unverified_source_count": 0,
+      "legacy_source_count": 1,
+      "missing_categories": [
+        "PURPOSE",
+        "DEADLINES",
+        "STATUS_CHECK",
+        "RENEWAL",
+        "GRIEVANCE",
+        "HELPLINE",
+        "FAQ",
+        "EXCEPTIONS"
+      ],
+      "category_status": {
+        "PURPOSE": "not_found",
+        "ELIGIBILITY": "legacy_only",
+        "BENEFITS": "legacy_only",
+        "REQUIRED_DOCUMENTS": "legacy_only",
+        "APPLICATION_PROCEDURE": "legacy_only",
+        "DEADLINES": "not_found",
+        "STATUS_CHECK": "not_found",
+        "RENEWAL": "not_found",
+        "GRIEVANCE": "not_found",
+        "HELPLINE": "not_found",
+        "FAQ": "not_found",
+        "EXCEPTIONS": "not_found"
+      },
+      "question_count": 12,
+      "questions_with_evidence": 4,
+      "questions_with_verified_evidence": 0,
+      "questions_with_valid_source_evidence": 4,
+      "questions": [
+        {
+          "id": "ఆసరా పెన్షన్ / పెన్షన్ కానుక-purpose",
+          "category": "PURPOSE",
+          "text": "What is the purpose of ఆసరా పెన్షన్ / పెన్షన్ కానుక?",
+          "variants": [
+            "ఆసరా పెన్షన్ / పెన్షన్ కానుక లక్ష్యం ఏమిటి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What is the purpose of ఆసరా పెన్షన్ / పెన్షన్ కానుక?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "ఆసరా పెన్షన్ / పెన్షన్ కానుక లక్ష్యం ఏమిటి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "ఆసరా పెన్షన్ / పెన్షన్ కానుక-eligibility-te",
+          "category": "ELIGIBILITY",
+          "text": "ఈ పథకానికి ఎవరు అర్హులు?",
+          "variants": [
+            "Who is eligible for ఆసరా పెన్షన్ / పెన్షన్ కానుక?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "ap_elig_13"
+          ],
+          "source_urls": [
+            "https://aasara.telangana.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "ఈ పథకానికి ఎవరు అర్హులు?",
+              "evidence_doc_ids": [
+                "ap_elig_13"
+              ]
+            },
+            {
+              "text": "Who is eligible for ఆసరా పెన్షన్ / పెన్షన్ కానుక?",
+              "evidence_doc_ids": [
+                "ap_elig_13"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ఆసరా పెన్షన్ / పెన్షన్ కానుక-benefits",
+          "category": "BENEFITS",
+          "text": "What benefits and amounts are provided?",
+          "variants": [
+            "ఆసరా పెన్షన్ / పెన్షన్ కానుకలో ఎంత డబ్బు వస్తుంది?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "ap_ben_14"
+          ],
+          "source_urls": [
+            "https://aasara.telangana.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "What benefits and amounts are provided?",
+              "evidence_doc_ids": [
+                "ap_ben_14"
+              ]
+            },
+            {
+              "text": "ఆసరా పెన్షన్ / పెన్షన్ కానుకలో ఎంత డబ్బు వస్తుంది?",
+              "evidence_doc_ids": [
+                "ap_ben_14"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ఆసరా పెన్షన్ / పెన్షన్ కానుక-documents",
+          "category": "REQUIRED_DOCUMENTS",
+          "text": "What documents are needed?",
+          "variants": [
+            "ఏ పత్రాలు కావాలి?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "ap_docs_15"
+          ],
+          "source_urls": [
+            "https://aasara.telangana.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "What documents are needed?",
+              "evidence_doc_ids": [
+                "ap_docs_15"
+              ]
+            },
+            {
+              "text": "ఏ పత్రాలు కావాలి?",
+              "evidence_doc_ids": [
+                "ap_docs_15"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ఆసరా పెన్షన్ / పెన్షన్ కానుక-apply-te",
+          "category": "APPLICATION_PROCEDURE",
+          "text": "ఎలా దరఖాస్తు చేసుకోవాలి?",
+          "variants": [
+            "How do I apply for ఆసరా పెన్షన్ / పెన్షన్ కానుక?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "ap_proc_16"
+          ],
+          "source_urls": [
+            "https://aasara.telangana.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "ఎలా దరఖాస్తు చేసుకోవాలి?",
+              "evidence_doc_ids": [
+                "ap_proc_16"
+              ]
+            },
+            {
+              "text": "How do I apply for ఆసరా పెన్షన్ / పెన్షన్ కానుక?",
+              "evidence_doc_ids": [
+                "ap_proc_16"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ఆసరా పెన్షన్ / పెన్షన్ కానుక-deadline",
+          "category": "DEADLINES",
+          "text": "What is the deadline or application period?",
+          "variants": [
+            "దరఖాస్తు చివరి తేదీ ఎప్పుడు?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What is the deadline or application period?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "దరఖాస్తు చివరి తేదీ ఎప్పుడు?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "ఆసరా పెన్షన్ / పెన్షన్ కానుక-status",
+          "category": "STATUS_CHECK",
+          "text": "How can I check my application or payment status?",
+          "variants": [
+            "నా చెల్లింపు స్థితి ఎలా చూడాలి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "How can I check my application or payment status?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "నా చెల్లింపు స్థితి ఎలా చూడాలి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "ఆసరా పెన్షన్ / పెన్షన్ కానుక-renewal",
+          "category": "RENEWAL",
+          "text": "How do I renew the benefit?",
+          "variants": [
+            "Do I need to renew it?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "How do I renew the benefit?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "Do I need to renew it?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "ఆసరా పెన్షన్ / పెన్షన్ కానుక-grievance",
+          "category": "GRIEVANCE",
+          "text": "Where can I complain or appeal?",
+          "variants": [
+            "ఫిర్యాదు ఎక్కడ చేయాలి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "Where can I complain or appeal?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "ఫిర్యాదు ఎక్కడ చేయాలి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "ఆసరా పెన్షన్ / పెన్షన్ కానుక-helpline",
+          "category": "HELPLINE",
+          "text": "What is the official helpline?",
+          "variants": [
+            "హెల్ప్‌లైన్ నంబర్ ఏమిటి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What is the official helpline?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "హెల్ప్‌లైన్ నంబర్ ఏమిటి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "ఆసరా పెన్షన్ / పెన్షన్ కానుక-faq",
+          "category": "FAQ",
+          "text": "What frequently asked questions are answered officially?",
+          "variants": [
+            "Are there official FAQs?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What frequently asked questions are answered officially?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "Are there official FAQs?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "ఆసరా పెన్షన్ / పెన్షన్ కానుక-exception",
+          "category": "EXCEPTIONS",
+          "text": "What important exclusions or exceptions apply?",
+          "variants": [
+            "ఈ పథకానికి వర్తించని వారు ఎవరు?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What important exclusions or exceptions apply?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "ఈ పథకానికి వర్తించని వారు ఎవరు?",
+              "evidence_doc_ids": []
+            }
+          ]
+        }
+      ]
+    },
+    "జగనన్న అమ్మ ఒడి": {
+      "records": 4,
+      "evidence_categories": [
+        "APPLICATION_PROCEDURE",
+        "BENEFITS",
+        "ELIGIBILITY",
+        "REQUIRED_DOCUMENTS"
+      ],
+      "source_urls": [
+        "https://jaganannaammavodi.ap.gov.in"
+      ],
+      "official_source_count": 1,
+      "official_domains": [
+        "jaganannaammavodi.ap.gov.in"
+      ],
+      "verified_source_count": 0,
+      "accessed_unverified_source_count": 0,
+      "legacy_source_count": 1,
+      "missing_categories": [
+        "PURPOSE",
+        "DEADLINES",
+        "STATUS_CHECK",
+        "RENEWAL",
+        "GRIEVANCE",
+        "HELPLINE",
+        "FAQ",
+        "EXCEPTIONS"
+      ],
+      "category_status": {
+        "PURPOSE": "not_found",
+        "ELIGIBILITY": "legacy_only",
+        "BENEFITS": "legacy_only",
+        "REQUIRED_DOCUMENTS": "legacy_only",
+        "APPLICATION_PROCEDURE": "legacy_only",
+        "DEADLINES": "not_found",
+        "STATUS_CHECK": "not_found",
+        "RENEWAL": "not_found",
+        "GRIEVANCE": "not_found",
+        "HELPLINE": "not_found",
+        "FAQ": "not_found",
+        "EXCEPTIONS": "not_found"
+      },
+      "question_count": 12,
+      "questions_with_evidence": 4,
+      "questions_with_verified_evidence": 0,
+      "questions_with_valid_source_evidence": 4,
+      "questions": [
+        {
+          "id": "జగనన్న అమ్మ ఒడి-purpose",
+          "category": "PURPOSE",
+          "text": "What is the purpose of జగనన్న అమ్మ ఒడి?",
+          "variants": [
+            "జగనన్న అమ్మ ఒడి లక్ష్యం ఏమిటి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What is the purpose of జగనన్న అమ్మ ఒడి?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "జగనన్న అమ్మ ఒడి లక్ష్యం ఏమిటి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "జగనన్న అమ్మ ఒడి-eligibility-te",
+          "category": "ELIGIBILITY",
+          "text": "ఈ పథకానికి ఎవరు అర్హులు?",
+          "variants": [
+            "Who is eligible for జగనన్న అమ్మ ఒడి?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "av_elig_09"
+          ],
+          "source_urls": [
+            "https://jaganannaammavodi.ap.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "ఈ పథకానికి ఎవరు అర్హులు?",
+              "evidence_doc_ids": [
+                "av_elig_09"
+              ]
+            },
+            {
+              "text": "Who is eligible for జగనన్న అమ్మ ఒడి?",
+              "evidence_doc_ids": [
+                "av_elig_09"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "జగనన్న అమ్మ ఒడి-benefits",
+          "category": "BENEFITS",
+          "text": "What benefits and amounts are provided?",
+          "variants": [
+            "జగనన్న అమ్మ ఒడిలో ఎంత డబ్బు వస్తుంది?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "av_ben_10"
+          ],
+          "source_urls": [
+            "https://jaganannaammavodi.ap.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "What benefits and amounts are provided?",
+              "evidence_doc_ids": [
+                "av_ben_10"
+              ]
+            },
+            {
+              "text": "జగనన్న అమ్మ ఒడిలో ఎంత డబ్బు వస్తుంది?",
+              "evidence_doc_ids": [
+                "av_ben_10"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "జగనన్న అమ్మ ఒడి-documents",
+          "category": "REQUIRED_DOCUMENTS",
+          "text": "What documents are needed?",
+          "variants": [
+            "ఏ పత్రాలు కావాలి?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "av_docs_11"
+          ],
+          "source_urls": [
+            "https://jaganannaammavodi.ap.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "What documents are needed?",
+              "evidence_doc_ids": [
+                "av_docs_11"
+              ]
+            },
+            {
+              "text": "ఏ పత్రాలు కావాలి?",
+              "evidence_doc_ids": [
+                "av_docs_11"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "జగనన్న అమ్మ ఒడి-apply-te",
+          "category": "APPLICATION_PROCEDURE",
+          "text": "ఎలా దరఖాస్తు చేసుకోవాలి?",
+          "variants": [
+            "How do I apply for జగనన్న అమ్మ ఒడి?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "av_proc_12"
+          ],
+          "source_urls": [
+            "https://jaganannaammavodi.ap.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "ఎలా దరఖాస్తు చేసుకోవాలి?",
+              "evidence_doc_ids": [
+                "av_proc_12"
+              ]
+            },
+            {
+              "text": "How do I apply for జగనన్న అమ్మ ఒడి?",
+              "evidence_doc_ids": [
+                "av_proc_12"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "జగనన్న అమ్మ ఒడి-deadline",
+          "category": "DEADLINES",
+          "text": "What is the deadline or application period?",
+          "variants": [
+            "దరఖాస్తు చివరి తేదీ ఎప్పుడు?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What is the deadline or application period?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "దరఖాస్తు చివరి తేదీ ఎప్పుడు?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "జగనన్న అమ్మ ఒడి-status",
+          "category": "STATUS_CHECK",
+          "text": "How can I check my application or payment status?",
+          "variants": [
+            "నా చెల్లింపు స్థితి ఎలా చూడాలి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "How can I check my application or payment status?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "నా చెల్లింపు స్థితి ఎలా చూడాలి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "జగనన్న అమ్మ ఒడి-renewal",
+          "category": "RENEWAL",
+          "text": "How do I renew the benefit?",
+          "variants": [
+            "Do I need to renew it?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "How do I renew the benefit?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "Do I need to renew it?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "జగనన్న అమ్మ ఒడి-grievance",
+          "category": "GRIEVANCE",
+          "text": "Where can I complain or appeal?",
+          "variants": [
+            "ఫిర్యాదు ఎక్కడ చేయాలి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "Where can I complain or appeal?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "ఫిర్యాదు ఎక్కడ చేయాలి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "జగనన్న అమ్మ ఒడి-helpline",
+          "category": "HELPLINE",
+          "text": "What is the official helpline?",
+          "variants": [
+            "హెల్ప్‌లైన్ నంబర్ ఏమిటి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What is the official helpline?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "హెల్ప్‌లైన్ నంబర్ ఏమిటి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "జగనన్న అమ్మ ఒడి-faq",
+          "category": "FAQ",
+          "text": "What frequently asked questions are answered officially?",
+          "variants": [
+            "Are there official FAQs?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What frequently asked questions are answered officially?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "Are there official FAQs?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "జగనన్న అమ్మ ఒడి-exception",
+          "category": "EXCEPTIONS",
+          "text": "What important exclusions or exceptions apply?",
+          "variants": [
+            "ఈ పథకానికి వర్తించని వారు ఎవరు?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What important exclusions or exceptions apply?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "ఈ పథకానికి వర్తించని వారు ఎవరు?",
+              "evidence_doc_ids": []
+            }
+          ]
+        }
+      ]
+    },
+    "రైతు బంధు / రైతు భరోసా": {
+      "records": 8,
+      "evidence_categories": [
+        "APPLICATION_PROCEDURE",
+        "BENEFITS",
+        "ELIGIBILITY",
+        "PURPOSE",
+        "REQUIRED_DOCUMENTS"
+      ],
+      "source_urls": [
+        "https://apagrisnet.gov.in",
+        "https://rythubharosa.telangana.gov.in/",
+        "https://rythubharosa.telangana.gov.in/ContactUs.aspx",
+        "https://rythubharosa.telangana.gov.in/Forms.aspx",
+        "https://rythubharosa.telangana.gov.in/gos_circulars.aspx"
+      ],
+      "official_source_count": 5,
+      "official_domains": [
+        "apagrisnet.gov.in",
+        "rythubharosa.telangana.gov.in"
+      ],
+      "verified_source_count": 0,
+      "accessed_unverified_source_count": 4,
+      "legacy_source_count": 1,
+      "missing_categories": [
+        "DEADLINES",
+        "STATUS_CHECK",
+        "RENEWAL",
+        "GRIEVANCE",
+        "HELPLINE",
+        "FAQ",
+        "EXCEPTIONS"
+      ],
+      "category_status": {
+        "PURPOSE": "official_accessed_unverified",
+        "ELIGIBILITY": "legacy_only",
+        "BENEFITS": "legacy_only",
+        "REQUIRED_DOCUMENTS": "legacy_only",
+        "APPLICATION_PROCEDURE": "official_accessed_unverified",
+        "DEADLINES": "not_found",
+        "STATUS_CHECK": "not_found",
+        "RENEWAL": "not_found",
+        "GRIEVANCE": "not_found",
+        "HELPLINE": "not_found",
+        "FAQ": "not_found",
+        "EXCEPTIONS": "not_found"
+      },
+      "question_count": 9,
+      "questions_with_evidence": 6,
+      "questions_with_verified_evidence": 0,
+      "questions_with_valid_source_evidence": 6,
+      "questions": [
+        {
+          "id": "purpose-en",
+          "category": "PURPOSE",
+          "text": "What is the purpose of Rythu Bharosa?",
+          "variants": [
+            "రైతు భరోసా పథకం లక్ష్యం ఏమిటి?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "official_accessed_currentness_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "web_5d50c552d066f0ec"
+          ],
+          "source_urls": [
+            "https://rythubharosa.telangana.gov.in/"
+          ],
+          "source_classifications": [
+            "official_primary"
+          ],
+          "variant_results": [
+            {
+              "text": "What is the purpose of Rythu Bharosa?",
+              "evidence_doc_ids": [
+                "web_5d50c552d066f0ec"
+              ]
+            },
+            {
+              "text": "రైతు భరోసా పథకం లక్ష్యం ఏమిటి?",
+              "evidence_doc_ids": [
+                "web_5d50c552d066f0ec"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "eligibility-te",
+          "category": "ELIGIBILITY",
+          "text": "రైతు భరోసాకు ఎవరు అర్హులు?",
+          "variants": [
+            "Who is eligible for Rythu Bharosa?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "rb_elig_01"
+          ],
+          "source_urls": [
+            "https://apagrisnet.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "రైతు భరోసాకు ఎవరు అర్హులు?",
+              "evidence_doc_ids": [
+                "rb_elig_01"
+              ]
+            },
+            {
+              "text": "Who is eligible for Rythu Bharosa?",
+              "evidence_doc_ids": [
+                "rb_elig_01"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "benefit-en",
+          "category": "BENEFITS",
+          "text": "How much is paid and how often?",
+          "variants": [
+            "రైతు భరోసాలో ఎంత డబ్బు ఎప్పుడు వస్తుంది?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "rb_ben_02"
+          ],
+          "source_urls": [
+            "https://apagrisnet.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "How much is paid and how often?",
+              "evidence_doc_ids": [
+                "rb_ben_02"
+              ]
+            },
+            {
+              "text": "రైతు భరోసాలో ఎంత డబ్బు ఎప్పుడు వస్తుంది?",
+              "evidence_doc_ids": [
+                "rb_ben_02"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "documents-followup",
+          "category": "REQUIRED_DOCUMENTS",
+          "text": "What documents are needed?",
+          "variants": [
+            "ఏ పత్రాలు కావాలి?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "rb_docs_03"
+          ],
+          "source_urls": [
+            "https://apagrisnet.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "What documents are needed?",
+              "evidence_doc_ids": [
+                "rb_docs_03"
+              ]
+            },
+            {
+              "text": "ఏ పత్రాలు కావాలి?",
+              "evidence_doc_ids": [
+                "rb_docs_03"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "apply-te",
+          "category": "APPLICATION_PROCEDURE",
+          "text": "ఎలా దరఖాస్తు చేసుకోవాలి?",
+          "variants": [
+            "How do I apply for Rythu Bharosa?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "official_accessed_currentness_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "rb_proc_04",
+            "web_be5892aa2f7231ec",
+            "web_01ec84a81899a521",
+            "web_e7ddd8d44a8b038f"
+          ],
+          "source_urls": [
+            "https://apagrisnet.gov.in",
+            "https://rythubharosa.telangana.gov.in/ContactUs.aspx",
+            "https://rythubharosa.telangana.gov.in/Forms.aspx",
+            "https://rythubharosa.telangana.gov.in/gos_circulars.aspx"
+          ],
+          "source_classifications": [
+            "legacy_unverified",
+            "official_primary"
+          ],
+          "variant_results": [
+            {
+              "text": "ఎలా దరఖాస్తు చేసుకోవాలి?",
+              "evidence_doc_ids": [
+                "rb_proc_04",
+                "web_be5892aa2f7231ec",
+                "web_01ec84a81899a521",
+                "web_e7ddd8d44a8b038f"
+              ]
+            },
+            {
+              "text": "How do I apply for Rythu Bharosa?",
+              "evidence_doc_ids": [
+                "web_01ec84a81899a521",
+                "web_e7ddd8d44a8b038f",
+                "web_be5892aa2f7231ec",
+                "rb_proc_04"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "deadline-en",
+          "category": "DEADLINES",
+          "text": "When is the application deadline?",
+          "variants": [
+            "దరఖాస్తు చివరి తేదీ ఎప్పుడు?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "When is the application deadline?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "దరఖాస్తు చివరి తేదీ ఎప్పుడు?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "status-en",
+          "category": "STATUS_CHECK",
+          "text": "How can I check my payment status?",
+          "variants": [
+            "నా చెల్లింపు స్థితి ఎలా చూడాలి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "How can I check my payment status?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "నా చెల్లింపు స్థితి ఎలా చూడాలి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "grievance-en",
+          "category": "GRIEVANCE",
+          "text": "Where can I complain or appeal?",
+          "variants": [
+            "ఫిర్యాదు ఎక్కడ చేయాలి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "Where can I complain or appeal?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "ఫిర్యాదు ఎక్కడ చేయాలి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "exception-te",
+          "category": "EXCEPTIONS",
+          "evidence_category": "ELIGIBILITY",
+          "text": "కౌలు రైతులకు ఈ పథకం వర్తిస్తుందా?",
+          "variants": [
+            "Are tenant farmers eligible for Rythu Bharosa?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "rb_elig_01"
+          ],
+          "source_urls": [
+            "https://apagrisnet.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "కౌలు రైతులకు ఈ పథకం వర్తిస్తుందా?",
+              "evidence_doc_ids": [
+                "rb_elig_01"
+              ]
+            },
+            {
+              "text": "Are tenant farmers eligible for Rythu Bharosa?",
+              "evidence_doc_ids": [
+                "rb_elig_01"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "వైఎస్ఆర్ ఆరోగ్యశ్రీ": {
+      "records": 4,
+      "evidence_categories": [
+        "APPLICATION_PROCEDURE",
+        "BENEFITS",
+        "ELIGIBILITY",
+        "REQUIRED_DOCUMENTS"
+      ],
+      "source_urls": [
+        "https://aarogyasri.ap.gov.in"
+      ],
+      "official_source_count": 1,
+      "official_domains": [
+        "aarogyasri.ap.gov.in"
+      ],
+      "verified_source_count": 0,
+      "accessed_unverified_source_count": 0,
+      "legacy_source_count": 1,
+      "missing_categories": [
+        "PURPOSE",
+        "DEADLINES",
+        "STATUS_CHECK",
+        "RENEWAL",
+        "GRIEVANCE",
+        "HELPLINE",
+        "FAQ",
+        "EXCEPTIONS"
+      ],
+      "category_status": {
+        "PURPOSE": "not_found",
+        "ELIGIBILITY": "legacy_only",
+        "BENEFITS": "legacy_only",
+        "REQUIRED_DOCUMENTS": "legacy_only",
+        "APPLICATION_PROCEDURE": "legacy_only",
+        "DEADLINES": "not_found",
+        "STATUS_CHECK": "not_found",
+        "RENEWAL": "not_found",
+        "GRIEVANCE": "not_found",
+        "HELPLINE": "not_found",
+        "FAQ": "not_found",
+        "EXCEPTIONS": "not_found"
+      },
+      "question_count": 12,
+      "questions_with_evidence": 4,
+      "questions_with_verified_evidence": 0,
+      "questions_with_valid_source_evidence": 4,
+      "questions": [
+        {
+          "id": "వైఎస్ఆర్ ఆరోగ్యశ్రీ-purpose",
+          "category": "PURPOSE",
+          "text": "What is the purpose of వైఎస్ఆర్ ఆరోగ్యశ్రీ?",
+          "variants": [
+            "వైఎస్ఆర్ ఆరోగ్యశ్రీ లక్ష్యం ఏమిటి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What is the purpose of వైఎస్ఆర్ ఆరోగ్యశ్రీ?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "వైఎస్ఆర్ ఆరోగ్యశ్రీ లక్ష్యం ఏమిటి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "వైఎస్ఆర్ ఆరోగ్యశ్రీ-eligibility-te",
+          "category": "ELIGIBILITY",
+          "text": "ఈ పథకానికి ఎవరు అర్హులు?",
+          "variants": [
+            "Who is eligible for వైఎస్ఆర్ ఆరోగ్యశ్రీ?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "as_elig_05"
+          ],
+          "source_urls": [
+            "https://aarogyasri.ap.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "ఈ పథకానికి ఎవరు అర్హులు?",
+              "evidence_doc_ids": [
+                "as_elig_05"
+              ]
+            },
+            {
+              "text": "Who is eligible for వైఎస్ఆర్ ఆరోగ్యశ్రీ?",
+              "evidence_doc_ids": [
+                "as_elig_05"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "వైఎస్ఆర్ ఆరోగ్యశ్రీ-benefits",
+          "category": "BENEFITS",
+          "text": "What benefits and amounts are provided?",
+          "variants": [
+            "వైఎస్ఆర్ ఆరోగ్యశ్రీలో ఎంత డబ్బు వస్తుంది?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "as_ben_06"
+          ],
+          "source_urls": [
+            "https://aarogyasri.ap.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "What benefits and amounts are provided?",
+              "evidence_doc_ids": [
+                "as_ben_06"
+              ]
+            },
+            {
+              "text": "వైఎస్ఆర్ ఆరోగ్యశ్రీలో ఎంత డబ్బు వస్తుంది?",
+              "evidence_doc_ids": [
+                "as_ben_06"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "వైఎస్ఆర్ ఆరోగ్యశ్రీ-documents",
+          "category": "REQUIRED_DOCUMENTS",
+          "text": "What documents are needed?",
+          "variants": [
+            "ఏ పత్రాలు కావాలి?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "as_docs_07"
+          ],
+          "source_urls": [
+            "https://aarogyasri.ap.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "What documents are needed?",
+              "evidence_doc_ids": [
+                "as_docs_07"
+              ]
+            },
+            {
+              "text": "ఏ పత్రాలు కావాలి?",
+              "evidence_doc_ids": [
+                "as_docs_07"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "వైఎస్ఆర్ ఆరోగ్యశ్రీ-apply-te",
+          "category": "APPLICATION_PROCEDURE",
+          "text": "ఎలా దరఖాస్తు చేసుకోవాలి?",
+          "variants": [
+            "How do I apply for వైఎస్ఆర్ ఆరోగ్యశ్రీ?"
+          ],
+          "evidence_found": true,
+          "retrieval_found": true,
+          "grounded_answer": true,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": true,
+          "relevance_status": "legacy_unverified",
+          "failure_reason": null,
+          "evidence_doc_ids": [
+            "as_proc_08"
+          ],
+          "source_urls": [
+            "https://aarogyasri.ap.gov.in"
+          ],
+          "source_classifications": [
+            "legacy_unverified"
+          ],
+          "variant_results": [
+            {
+              "text": "ఎలా దరఖాస్తు చేసుకోవాలి?",
+              "evidence_doc_ids": [
+                "as_proc_08"
+              ]
+            },
+            {
+              "text": "How do I apply for వైఎస్ఆర్ ఆరోగ్యశ్రీ?",
+              "evidence_doc_ids": [
+                "as_proc_08"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "వైఎస్ఆర్ ఆరోగ్యశ్రీ-deadline",
+          "category": "DEADLINES",
+          "text": "What is the deadline or application period?",
+          "variants": [
+            "దరఖాస్తు చివరి తేదీ ఎప్పుడు?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What is the deadline or application period?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "దరఖాస్తు చివరి తేదీ ఎప్పుడు?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "వైఎస్ఆర్ ఆరోగ్యశ్రీ-status",
+          "category": "STATUS_CHECK",
+          "text": "How can I check my application or payment status?",
+          "variants": [
+            "నా చెల్లింపు స్థితి ఎలా చూడాలి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "How can I check my application or payment status?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "నా చెల్లింపు స్థితి ఎలా చూడాలి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "వైఎస్ఆర్ ఆరోగ్యశ్రీ-renewal",
+          "category": "RENEWAL",
+          "text": "How do I renew the benefit?",
+          "variants": [
+            "Do I need to renew it?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "How do I renew the benefit?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "Do I need to renew it?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "వైఎస్ఆర్ ఆరోగ్యశ్రీ-grievance",
+          "category": "GRIEVANCE",
+          "text": "Where can I complain or appeal?",
+          "variants": [
+            "ఫిర్యాదు ఎక్కడ చేయాలి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "Where can I complain or appeal?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "ఫిర్యాదు ఎక్కడ చేయాలి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "వైఎస్ఆర్ ఆరోగ్యశ్రీ-helpline",
+          "category": "HELPLINE",
+          "text": "What is the official helpline?",
+          "variants": [
+            "హెల్ప్‌లైన్ నంబర్ ఏమిటి?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What is the official helpline?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "హెల్ప్‌లైన్ నంబర్ ఏమిటి?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "వైఎస్ఆర్ ఆరోగ్యశ్రీ-faq",
+          "category": "FAQ",
+          "text": "What frequently asked questions are answered officially?",
+          "variants": [
+            "Are there official FAQs?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What frequently asked questions are answered officially?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "Are there official FAQs?",
+              "evidence_doc_ids": []
+            }
+          ]
+        },
+        {
+          "id": "వైఎస్ఆర్ ఆరోగ్యశ్రీ-exception",
+          "category": "EXCEPTIONS",
+          "text": "What important exclusions or exceptions apply?",
+          "variants": [
+            "ఈ పథకానికి వర్తించని వారు ఎవరు?"
+          ],
+          "evidence_found": false,
+          "retrieval_found": false,
+          "grounded_answer": false,
+          "unsupported_answer": false,
+          "verified_evidence_found": false,
+          "valid_source_evidence_found": false,
+          "relevance_status": "missing_knowledge",
+          "failure_reason": "A_missing_knowledge",
+          "evidence_doc_ids": [],
+          "source_urls": [],
+          "source_classifications": [],
+          "variant_results": [
+            {
+              "text": "What important exclusions or exceptions apply?",
+              "evidence_doc_ids": []
+            },
+            {
+              "text": "ఈ పథకానికి వర్తించని వారు ఎవరు?",
+              "evidence_doc_ids": []
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "corpus_records": 20,
+  "metrics": {
+    "question_count": 45,
+    "evidence_coverage": 0.4,
+    "verified_evidence_coverage": 0.0,
+    "retrieval_recall": 1.0,
+    "grounded_answer_rate": 1.0,
+    "unnecessary_abstention_rate": 0.0,
+    "correct_abstention_rate": 0.6,
+    "unsupported_answer_rate": 0.0,
+    "scheme_category_isolation": true,
+    "metric_note": "Evidence and retrieval metrics are corpus/retriever checks. Verified coverage requires verification_status=verified_current; no source is marked that way by the current ingestion run."
+  }
+}

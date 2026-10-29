@@ -22,6 +22,54 @@ if sys.platform == "win32":
         pass
 
 
+SRAVAANI_REPO = "ARTPARK-IISc/SraVaani-1.0"
+SRAVAANI_LOCAL_DIR = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "models", "sravaani"
+)
+
+
+def _complete_local_copy(folder):
+    """A usable local copy has its config and at least one weights file."""
+    if not folder or not os.path.isdir(folder):
+        return False
+    names = os.listdir(folder)
+    has_weights = any(n.endswith((".safetensors", ".bin", ".pt", ".nemo")) for n in names)
+    return "config.json" in names and has_weights
+
+
+def resolve_sravaani_source(repo=SRAVAANI_REPO, local_dir=SRAVAANI_LOCAL_DIR,
+                            token=None, downloader=None, offline=None):
+    """Decide where SraVaani is loaded from: offline first, online only if needed.
+
+    Order:
+      1. TELUGU_CIVIC_SRAVAANI_REPO (manual override: a folder or repo id)
+      2. the project copy in models/sravaani (no internet needed)
+      3. download once from Hugging Face into models/sravaani, using HF_TOKEN
+         or the token saved by `hf auth login` (the gated-model terms must be
+         accepted on huggingface.co); later runs then use step 2 offline.
+    Returns (path_or_repo, how) where how is "override" | "local" | "downloaded".
+    """
+    override = os.environ.get("TELUGU_CIVIC_SRAVAANI_REPO")
+    if override:
+        return override, "override"
+    if _complete_local_copy(local_dir):
+        return local_dir, "local"
+    if offline is None:
+        offline = os.environ.get("HF_HUB_OFFLINE", "").strip() in {"1", "true", "yes"}
+    if offline:
+        raise RuntimeError(
+            f"SraVaani is not in {local_dir} and HF_HUB_OFFLINE is set, so it cannot be downloaded."
+        )
+    if downloader is None:
+        from huggingface_hub import snapshot_download as downloader
+    print(f"[ASR] SraVaani not found locally; downloading once into {local_dir} (~900 MB)...")
+    # token=None lets huggingface_hub use the token saved by `hf auth login`
+    downloader(repo_id=repo, local_dir=local_dir, token=token or None)
+    if not _complete_local_copy(local_dir):
+        raise RuntimeError(f"Download finished but {local_dir} has no config/weights.")
+    return local_dir, "downloaded"
+
+
 class TeluguASREngine:
     def __init__(self, model_name: str = "ARTPARK-IISc/SraVaani-1.0", enable_denoiser: bool = True):
         """
@@ -36,6 +84,9 @@ class TeluguASREngine:
         self.model_name = model_name
         self.enable_denoiser = enable_denoiser
         self.pipeline = None
+        self.model_label = None      # which recogniser actually loaded
+        self.load_errors = []        # why earlier options failed (shown in the UI)
+        self.last_error = None       # error from the most recent transcription
         self.is_sravaani = "sravaani" in model_name.lower()
         self.cleaner = SpectralAudioCleaner(mode="non_stationary", bandpass_filter=True)
         self.normalizer = TeluguDialectNormalizer()
@@ -55,25 +106,52 @@ class TeluguASREngine:
         return {}
 
     def _init_engine(self):
-        # 1. Try loading IISc ARTPARK SraVaani-1.0 if requested
+        # 1. Try loading IISc ARTPARK SraVaani-1.0 if requested.
+        # Per the Hugging Face model card, SraVaani is used as
+        #   model = AutoModel.from_pretrained(REPO, trust_remote_code=True, token=...)
+        #   inputs = proc(wav, sampling_rate=sr, return_tensors="pt")
+        #   text = proc.batch_decode(model.generate(**inputs))[0]
+        # The model is gated: accept its conditions on Hugging Face and set HF_TOKEN.
+        self.processor = None
         if self.is_sravaani:
             try:
-                from transformers import AutoModel
+                from transformers import AutoModel, AutoProcessor
                 import torch
                 device = "cuda:0" if torch.cuda.is_available() else "cpu"
                 hf_token = os.environ.get("HF_TOKEN", None)
+                source, how = resolve_sravaani_source(token=hf_token)
+                local = os.path.isdir(source)
                 self.pipeline = AutoModel.from_pretrained(
-                    "ARTPARK-IISc/SraVaani-1.0",
-                    trust_remote_code=True,
-                    token=hf_token
+                    source, trust_remote_code=True, token=hf_token, local_files_only=local
                 ).to(device).eval()
-                print(f"[ASR] Successfully loaded IISc ARTPARK SraVaani-1.0 on {device}")
+                self.processor = AutoProcessor.from_pretrained(
+                    source, trust_remote_code=True, token=hf_token, local_files_only=local
+                )
+                self.model_source = f"{how}: {source}"
+                self.device = device
+                self.model_label = "SraVaani-1.0"
+                print(f"[ASR] Successfully loaded IISc ARTPARK SraVaani-1.0 on {device} ({self.model_source})")
                 return
             except Exception as e:
-                # Fallback to Whisper or online Indic engine
                 self.pipeline = None
+                self.processor = None
+                msg = f"SraVaani-1.0 could not be loaded: {type(e).__name__}: {e}"
+                low = str(e).lower()
+                if any(k in low for k in ("401", "403", "gated", "access", "unauthorized")):
+                    msg += (" -- SraVaani is a gated model: accept its terms on huggingface.co "
+                            "while logged in, then run `hf auth login` or set HF_TOKEN")
+                self.load_errors.append(msg)
+                print(f"[ASR] {msg}")
+                if os.environ.get("TELUGU_CIVIC_ASR", "").lower() == "sravaani":
+                    # SraVaani explicitly required: do not silently use Whisper.
+                    return
 
-        # 2. Try loading OpenAI Whisper
+        # 2. Try loading Whisper-small through Hugging Face transformers.
+        # NOTE: "initial_prompt" and "condition_on_previous_text" are arguments
+        # of the separate openai-whisper package, not of transformers'
+        # generate(); passing them made every transcription raise, and the
+        # error was swallowed. Civic-term biasing is done with prompt_ids at
+        # call time instead (see _whisper_call).
         try:
             from transformers import pipeline
             import torch
@@ -82,16 +160,75 @@ class TeluguASREngine:
                 "automatic-speech-recognition",
                 model="openai/whisper-small",
                 device=device,
-                generate_kwargs={
-                    "language": "telugu",
-                    "task": "transcribe",
-                    "condition_on_previous_text": False,  # Crucial Indic loop prevention
-                    "initial_prompt": "రైతు బంధు, రైతు భరోసా, ఆరోగ్యశ్రీ, అమ్మ ఒడి, ఆసరా పెన్షన్, పథకం, దరఖాస్తు, అర్హత"
-                }
+                chunk_length_s=30,          # recordings longer than 30 s
             )
+            self.model_label = "whisper-small"
             print(f"[ASR] Loaded Whisper-small model on {device}")
-        except Exception:
+        except Exception as e:
             self.pipeline = None
+            msg = f"Whisper-small could not be loaded: {type(e).__name__}: {e}"
+            self.load_errors.append(msg)
+            print(f"[ASR] {msg}")
+
+    CIVIC_PROMPT = "రైతు బంధు, రైతు భరోసా, ఆరోగ్యశ్రీ, అమ్మ ఒడి, ఆసరా పెన్షన్, పథకం, దరఖాస్తు, అర్హత"
+
+    def _whisper_call(self, audio_arr, sr):
+        """Run the HF pipeline with the real sampling rate (it resamples to 16 kHz).
+
+        Browser recordings are usually 44.1/48 kHz; passing a bare array made
+        the pipeline treat them as 16 kHz audio.
+        """
+        audio = {"raw": np.asarray(audio_arr, dtype=np.float32), "sampling_rate": int(sr)}
+        base = {"language": "telugu", "task": "transcribe"}
+        prompt_ids = None
+        try:
+            tok = getattr(self.pipeline, "tokenizer", None)
+            if tok is not None and hasattr(tok, "get_prompt_ids"):
+                prompt_ids = tok.get_prompt_ids(self.CIVIC_PROMPT, return_tensors="pt")
+                device = getattr(getattr(self.pipeline, "model", None), "device", None)
+                if device is not None:
+                    prompt_ids = prompt_ids.to(device)
+        except Exception:
+            prompt_ids = None
+        if prompt_ids is not None:
+            try:
+                res = self.pipeline(dict(audio), generate_kwargs={**base, "prompt_ids": prompt_ids})
+                text = self._strip_prompt(res.get("text", ""))
+                if text:
+                    return text
+            except Exception as e:
+                # prompt biasing unsupported in this transformers version: retry plainly
+                print(f"[ASR] prompt biasing skipped: {type(e).__name__}: {e}")
+        res = self.pipeline(dict(audio), generate_kwargs=base)
+        return self._strip_prompt(res.get("text", ""))
+
+    def _sravaani_call(self, audio_arr, sr):
+        """SraVaani inference as documented on its model card (processor + generate).
+
+        Audio is resampled to 16 kHz first: browser recordings are 44.1/48 kHz
+        and the model was trained on 16 kHz speech.
+        """
+        import torch
+        audio = np.asarray(audio_arr, dtype=np.float32)
+        if int(sr) != 16000:
+            from math import gcd
+            from scipy.signal import resample_poly
+            g = gcd(int(sr), 16000)
+            audio = resample_poly(audio, 16000 // g, int(sr) // g).astype(np.float32)
+            sr = 16000
+        inputs = self.processor(audio, sampling_rate=sr, return_tensors="pt")
+        device = getattr(self, "device", "cpu")
+        inputs = inputs.to(device) if hasattr(inputs, "to") else inputs
+        with torch.no_grad():
+            out = self.pipeline.generate(**inputs)
+        texts = self.processor.batch_decode(out)
+        return (texts[0] if texts else "").strip()
+
+    def _strip_prompt(self, text):
+        text = (text or "").strip()
+        if text.startswith(self.CIVIC_PROMPT):   # some versions echo the prompt
+            text = text[len(self.CIVIC_PROMPT):].strip(" ,.")
+        return text
 
     def _recognize_via_online_api(self, audio_data: np.ndarray, sr: int = 16000) -> str:
         """Calls Indic Telugu speech recognition endpoint via standard HTTP requests."""
@@ -139,12 +276,22 @@ class TeluguASREngine:
                     return entry["dialect_query"]
         return "రైతు బంధు పైసలు ఎప్పుడొస్తయి"
 
-    def transcribe(self, audio_input, denoise: bool = True, normalize: bool = False) -> str:
+    def transcribe(self, audio_input, denoise: bool = True, normalize: bool = False,
+                   allow_online_fallback: bool = True,
+                   allow_manifest_fallback: bool = True) -> str:
         """
         Transcribes Telugu audio (path or numpy array) into Telugu text.
         - denoise: If True, applies Spectral Denoising first to remove heavy background noise.
         - normalize: If True, applies Telugu dialect normalizer to fix phonetic/dialect variations.
+        - allow_online_fallback: send audio to the HTTP endpoint if local ASR fails.
+        - allow_manifest_fallback: look the file name up in the recording manifest.
+          WARNING: this returns a stored ground-truth sentence (or a fixed default
+          sentence), not a recognition result. The live app (src/asr.py) disables
+          both fallbacks so users never see a fabricated transcript.
+        ``self.last_backend`` records which path produced the text.
         """
+        self.last_backend = None
+        self.last_error = None
         audio_arr = None
         sr = 16000
 
@@ -160,21 +307,31 @@ class TeluguASREngine:
 
         raw_text = None
 
-        # Step 2A: Local HuggingFace Whisper inference
+        # Step 2A: Local model inference (SraVaani or Whisper)
         if self.pipeline is not None and audio_arr is not None:
             try:
-                res = self.pipeline(audio_arr)
-                raw_text = res.get("text", "").strip()
-            except Exception:
+                if self.model_label == "whisper-small":
+                    raw_text = self._whisper_call(audio_arr, sr)
+                elif self.model_label == "SraVaani-1.0":
+                    raw_text = self._sravaani_call(audio_arr, sr)
+                else:
+                    res = self.pipeline(audio_arr)
+                    raw_text = (res.get("text", "") if isinstance(res, dict) else str(res or "")).strip()
+                self.last_backend = self.model_label if raw_text else None
+            except Exception as e:
                 raw_text = None
+                self.last_error = f"{self.model_label or 'ASR model'} failed: {type(e).__name__}: {e}"
+                print(f"[ASR] {self.last_error}")
 
         # Step 2B: Online Indic ASR fallback
-        if not raw_text and audio_arr is not None:
+        if not raw_text and audio_arr is not None and allow_online_fallback:
             raw_text = self._recognize_via_online_api(audio_arr, sr)
+            self.last_backend = "online_api" if raw_text else None
 
-        # Step 2C: Manifest Acoustic Matcher fallback
-        if not raw_text:
+        # Step 2C: Manifest look-up fallback (not speech recognition)
+        if not raw_text and allow_manifest_fallback:
             raw_text = self._manifest_acoustic_match(audio_input)
+            self.last_backend = "manifest_lookup" if raw_text else None
 
         # Step 3: Dialect & Phonetic Normalization
         if normalize and raw_text:

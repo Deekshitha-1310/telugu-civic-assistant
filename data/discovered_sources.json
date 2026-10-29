@@ -1,0 +1,1163 @@
+{
+  "discovered": [
+    {
+      "title": "myScheme",
+      "url": "https://www.myscheme.gov.in/",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/",
+      "final_url": "https://www.myscheme.gov.in/",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:24.459719+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 0,
+      "useful": true,
+      "robots_warning": "robots.txt unavailable: URLError: <urlopen error _ssl.c:983: The handshake operation timed out>"
+    },
+    {
+      "title": "Telangana State Portal | Govt Services Accessibility Tools Increase Text Decrease Text Grayscale High Contrast Negative Contrast Light Background Links Underline Readable Font Reset",
+      "url": "https://www.telangana.gov.in/",
+      "role": "discovery",
+      "evidence": false,
+      "source_classification": "official_secondary",
+      "scheme": "Telangana government schemes",
+      "state": "Telangana",
+      "authority": "telangana.gov.in",
+      "topic": "Scheme discovery",
+      "category": "GENERAL",
+      "original_url": "https://www.telangana.gov.in/",
+      "final_url": "https://www.telangana.gov.in/",
+      "source_domain": "www.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:32:25.871884+00:00",
+      "document_date": null,
+      "discovery_depth": 0,
+      "useful": true,
+      "robots_warning": null
+    },
+    {
+      "title": "Frequently Asked Questions",
+      "url": "https://www.myscheme.gov.in/faqs",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/faqs",
+      "final_url": "https://www.myscheme.gov.in/faqs",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:30.146778+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 1,
+      "useful": true,
+      "robots_warning": null
+    },
+    {
+      "title": "About Us",
+      "url": "https://www.myscheme.gov.in/about",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/about",
+      "final_url": "https://www.myscheme.gov.in/about",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:27.192889+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 1,
+      "useful": true,
+      "robots_warning": null
+    },
+    {
+      "title": "Accessibility Statement",
+      "url": "https://www.myscheme.gov.in/accessibility-statement",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/accessibility-statement",
+      "final_url": "https://www.myscheme.gov.in/accessibility-statement",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:27.754441+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 1,
+      "useful": true,
+      "robots_warning": null
+    },
+    {
+      "title": "Disclaimer",
+      "url": "https://www.myscheme.gov.in/disclaimer",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/disclaimer",
+      "final_url": "https://www.myscheme.gov.in/disclaimer",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:29.556973+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 1,
+      "useful": true,
+      "robots_warning": null
+    },
+    {
+      "title": "Screen Reader",
+      "url": "https://www.myscheme.gov.in/screen-reader",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/screen-reader",
+      "final_url": "https://www.myscheme.gov.in/screen-reader",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:30.699689+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 1,
+      "useful": true,
+      "robots_warning": null
+    },
+    {
+      "title": "Telangana Secretariat – Official Department Contacts Accessibility Tools Increase Text Decrease Text Grayscale High Contrast Negative Contrast Light Background Links Underline Readable Font Reset",
+      "url": "https://www.telangana.gov.in/contacts/secretariat/",
+      "role": "discovery",
+      "evidence": false,
+      "source_classification": "official_secondary",
+      "scheme": "Telangana government schemes",
+      "state": "Telangana",
+      "authority": "telangana.gov.in",
+      "topic": "Scheme discovery",
+      "category": "GENERAL",
+      "original_url": "https://www.telangana.gov.in/contacts/secretariat/",
+      "final_url": "https://www.telangana.gov.in/contacts/secretariat/",
+      "source_domain": "www.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:33:53.694813+00:00",
+      "document_date": null,
+      "discovery_depth": 1,
+      "useful": true,
+      "robots_warning": null
+    }
+  ],
+  "all_visited": [
+    {
+      "title": "myScheme",
+      "url": "https://www.myscheme.gov.in/",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/",
+      "final_url": "https://www.myscheme.gov.in/",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:24.459719+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 0,
+      "useful": true,
+      "robots_warning": "robots.txt unavailable: URLError: <urlopen error _ssl.c:983: The handshake operation timed out>"
+    },
+    {
+      "title": "AP State Portal",
+      "url": "https://www.ap.gov.in/",
+      "role": "discovery",
+      "evidence": false,
+      "source_classification": "official_secondary",
+      "scheme": "Andhra Pradesh government schemes",
+      "state": "Andhra Pradesh",
+      "authority": "ap.gov.in",
+      "topic": "Scheme discovery",
+      "category": "GENERAL",
+      "original_url": "https://www.ap.gov.in/",
+      "final_url": "https://www.ap.gov.in/",
+      "source_domain": "www.ap.gov.in",
+      "fetched_at": "2026-10-28T07:32:24.910068+00:00",
+      "document_date": null,
+      "discovery_depth": 0,
+      "useful": false,
+      "robots_warning": null
+    },
+    {
+      "title": "Telangana State Portal | Govt Services Accessibility Tools Increase Text Decrease Text Grayscale High Contrast Negative Contrast Light Background Links Underline Readable Font Reset",
+      "url": "https://www.telangana.gov.in/",
+      "role": "discovery",
+      "evidence": false,
+      "source_classification": "official_secondary",
+      "scheme": "Telangana government schemes",
+      "state": "Telangana",
+      "authority": "telangana.gov.in",
+      "topic": "Scheme discovery",
+      "category": "GENERAL",
+      "original_url": "https://www.telangana.gov.in/",
+      "final_url": "https://www.telangana.gov.in/",
+      "source_domain": "www.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:32:25.871884+00:00",
+      "document_date": null,
+      "discovery_depth": 0,
+      "useful": true,
+      "robots_warning": null
+    },
+    {
+      "title": "Rythu Bharosa - Telangana",
+      "url": "https://rythubharosa.telangana.gov.in/",
+      "role": "scheme_evidence",
+      "evidence": true,
+      "scheme_identifier": "RYTHU_BHAROSA_TG",
+      "published_date": null,
+      "updated_date": null,
+      "scheme": "రైతు బంధు / రైతు భరోసా",
+      "state": "Telangana",
+      "authority": "rythubharosa.telangana.gov.in",
+      "source_classification": "official_primary",
+      "topic": "Purpose and target beneficiaries",
+      "category": "PURPOSE",
+      "original_url": "https://rythubharosa.telangana.gov.in/",
+      "final_url": "https://rythubharosa.telangana.gov.in/",
+      "source_domain": "rythubharosa.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:18:28.847593+00:00",
+      "document_date": null,
+      "discovery_depth": 0,
+      "useful": false,
+      "robots_warning": null
+    },
+    {
+      "title": "Contact Us",
+      "url": "https://www.myscheme.gov.in/contact",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/contact",
+      "final_url": "https://www.myscheme.gov.in/contact",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:28.443241+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 1,
+      "useful": false,
+      "robots_warning": null
+    },
+    {
+      "title": "Frequently Asked Questions",
+      "url": "https://www.myscheme.gov.in/faqs",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/faqs",
+      "final_url": "https://www.myscheme.gov.in/faqs",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:30.146778+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 1,
+      "useful": true,
+      "robots_warning": null
+    },
+    {
+      "title": "About Us",
+      "url": "https://www.myscheme.gov.in/about",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/about",
+      "final_url": "https://www.myscheme.gov.in/about",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:27.192889+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 1,
+      "useful": true,
+      "robots_warning": null
+    },
+    {
+      "title": "Accessibility Statement",
+      "url": "https://www.myscheme.gov.in/accessibility-statement",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/accessibility-statement",
+      "final_url": "https://www.myscheme.gov.in/accessibility-statement",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:27.754441+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 1,
+      "useful": true,
+      "robots_warning": null
+    },
+    {
+      "title": "myScheme Dashboard",
+      "url": "https://www.myscheme.gov.in/dashboard",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/dashboard",
+      "final_url": "https://www.myscheme.gov.in/dashboard",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:29.009490+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 1,
+      "useful": false,
+      "robots_warning": null
+    },
+    {
+      "title": "Disclaimer",
+      "url": "https://www.myscheme.gov.in/disclaimer",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/disclaimer",
+      "final_url": "https://www.myscheme.gov.in/disclaimer",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:29.556973+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 1,
+      "useful": true,
+      "robots_warning": null
+    },
+    {
+      "title": "Screen Reader",
+      "url": "https://www.myscheme.gov.in/screen-reader",
+      "role": "discovery",
+      "evidence": false,
+      "scheme": "Central Government schemes",
+      "state": "Central Government",
+      "authority": "myscheme.gov.in",
+      "topic": "Government welfare schemes",
+      "category": "GENERAL",
+      "original_url": "https://www.myscheme.gov.in/screen-reader",
+      "final_url": "https://www.myscheme.gov.in/screen-reader",
+      "source_domain": "www.myscheme.gov.in",
+      "fetched_at": "2026-10-28T07:32:30.699689+00:00",
+      "document_date": "18/09/2026",
+      "discovery_depth": 1,
+      "useful": true,
+      "robots_warning": null
+    },
+    {
+      "title": "Telangana Contact Us – Official Contacts Accessibility Tools Increase Text Decrease Text Grayscale High Contrast Negative Contrast Light Background Links Underline Readable Font Reset",
+      "url": "https://www.telangana.gov.in/contacts/contact-us/",
+      "role": "discovery",
+      "evidence": false,
+      "source_classification": "official_secondary",
+      "scheme": "Telangana government schemes",
+      "state": "Telangana",
+      "authority": "telangana.gov.in",
+      "topic": "Scheme discovery",
+      "category": "GENERAL",
+      "original_url": "https://www.telangana.gov.in/contacts/contact-us/",
+      "final_url": "https://www.telangana.gov.in/contacts/contact-us/",
+      "source_domain": "www.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:32:41.406017+00:00",
+      "document_date": null,
+      "discovery_depth": 1,
+      "useful": false,
+      "robots_warning": null
+    },
+    {
+      "title": "Telangana District Officials – Contacts Accessibility Tools Increase Text Decrease Text Grayscale High Contrast Negative Contrast Light Background Links Underline Readable Font Reset",
+      "url": "https://www.telangana.gov.in/contacts/district-officials/",
+      "role": "discovery",
+      "evidence": false,
+      "source_classification": "official_secondary",
+      "scheme": "Telangana government schemes",
+      "state": "Telangana",
+      "authority": "telangana.gov.in",
+      "topic": "Scheme discovery",
+      "category": "GENERAL",
+      "original_url": "https://www.telangana.gov.in/contacts/district-officials/",
+      "final_url": "https://www.telangana.gov.in/contacts/district-officials/",
+      "source_domain": "www.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:33:48.658464+00:00",
+      "document_date": null,
+      "discovery_depth": 1,
+      "useful": false,
+      "robots_warning": null
+    },
+    {
+      "title": "Telangana Emergency Contacts – Official Helplines Accessibility Tools Increase Text Decrease Text Grayscale High Contrast Negative Contrast Light Background Links Underline Readable Font Reset",
+      "url": "https://www.telangana.gov.in/contacts/emergency-contacts/",
+      "role": "discovery",
+      "evidence": false,
+      "source_classification": "official_secondary",
+      "scheme": "Telangana government schemes",
+      "state": "Telangana",
+      "authority": "telangana.gov.in",
+      "topic": "Scheme discovery",
+      "category": "GENERAL",
+      "original_url": "https://www.telangana.gov.in/contacts/emergency-contacts/",
+      "final_url": "https://www.telangana.gov.in/contacts/emergency-contacts/",
+      "source_domain": "www.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:33:49.409852+00:00",
+      "document_date": null,
+      "discovery_depth": 1,
+      "useful": false,
+      "robots_warning": null
+    },
+    {
+      "title": "Telangana Hospitals – Official Contact Details Accessibility Tools Increase Text Decrease Text Grayscale High Contrast Negative Contrast Light Background Links Underline Readable Font Reset",
+      "url": "https://www.telangana.gov.in/contacts/hospitals/",
+      "role": "discovery",
+      "evidence": false,
+      "source_classification": "official_secondary",
+      "scheme": "Telangana government schemes",
+      "state": "Telangana",
+      "authority": "telangana.gov.in",
+      "topic": "Scheme discovery",
+      "category": "GENERAL",
+      "original_url": "https://www.telangana.gov.in/contacts/hospitals/",
+      "final_url": "https://www.telangana.gov.in/contacts/hospitals/",
+      "source_domain": "www.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:33:52.143646+00:00",
+      "document_date": null,
+      "discovery_depth": 1,
+      "useful": false,
+      "robots_warning": null
+    },
+    {
+      "title": "Telangana Press & Media Contacts – Official State Details Accessibility Tools Increase Text Decrease Text Grayscale High Contrast Negative Contrast Light Background Links Underline Readable Font Reset",
+      "url": "https://www.telangana.gov.in/contacts/press-media/",
+      "role": "discovery",
+      "evidence": false,
+      "source_classification": "official_secondary",
+      "scheme": "Telangana government schemes",
+      "state": "Telangana",
+      "authority": "telangana.gov.in",
+      "topic": "Scheme discovery",
+      "category": "GENERAL",
+      "original_url": "https://www.telangana.gov.in/contacts/press-media/",
+      "final_url": "https://www.telangana.gov.in/contacts/press-media/",
+      "source_domain": "www.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:33:52.609581+00:00",
+      "document_date": null,
+      "discovery_depth": 1,
+      "useful": false,
+      "robots_warning": null
+    },
+    {
+      "title": "Telangana Public Utility Contacts – Official Service Details Accessibility Tools Increase Text Decrease Text Grayscale High Contrast Negative Contrast Light Background Links Underline Readable Font Reset",
+      "url": "https://www.telangana.gov.in/contacts/public-utility-contacts/",
+      "role": "discovery",
+      "evidence": false,
+      "source_classification": "official_secondary",
+      "scheme": "Telangana government schemes",
+      "state": "Telangana",
+      "authority": "telangana.gov.in",
+      "topic": "Scheme discovery",
+      "category": "GENERAL",
+      "original_url": "https://www.telangana.gov.in/contacts/public-utility-contacts/",
+      "final_url": "https://www.telangana.gov.in/contacts/public-utility-contacts/",
+      "source_domain": "www.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:33:53.280191+00:00",
+      "document_date": null,
+      "discovery_depth": 1,
+      "useful": false,
+      "robots_warning": null
+    },
+    {
+      "title": "Telangana Secretariat – Official Department Contacts Accessibility Tools Increase Text Decrease Text Grayscale High Contrast Negative Contrast Light Background Links Underline Readable Font Reset",
+      "url": "https://www.telangana.gov.in/contacts/secretariat/",
+      "role": "discovery",
+      "evidence": false,
+      "source_classification": "official_secondary",
+      "scheme": "Telangana government schemes",
+      "state": "Telangana",
+      "authority": "telangana.gov.in",
+      "topic": "Scheme discovery",
+      "category": "GENERAL",
+      "original_url": "https://www.telangana.gov.in/contacts/secretariat/",
+      "final_url": "https://www.telangana.gov.in/contacts/secretariat/",
+      "source_domain": "www.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:33:53.694813+00:00",
+      "document_date": null,
+      "discovery_depth": 1,
+      "useful": true,
+      "robots_warning": null
+    },
+    {
+      "title": "Rythu Bharosa - Telangana",
+      "url": "https://rythubharosa.telangana.gov.in/ContactUs.aspx",
+      "role": "scheme_evidence",
+      "evidence": true,
+      "scheme_identifier": "RYTHU_BHAROSA_TG",
+      "published_date": null,
+      "updated_date": null,
+      "scheme": "రైతు బంధు / రైతు భరోసా",
+      "state": "Telangana",
+      "authority": "rythubharosa.telangana.gov.in",
+      "source_classification": "official_primary",
+      "topic": "Purpose and target beneficiaries",
+      "category": "PURPOSE",
+      "original_url": "https://rythubharosa.telangana.gov.in/ContactUs.aspx",
+      "final_url": "https://rythubharosa.telangana.gov.in/ContactUs.aspx",
+      "source_domain": "rythubharosa.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:18:30.268618+00:00",
+      "document_date": null,
+      "discovery_depth": 1,
+      "useful": false,
+      "robots_warning": null
+    },
+    {
+      "title": "Rythu Bharosa - Telangana",
+      "url": "https://rythubharosa.telangana.gov.in/Forms.aspx",
+      "role": "scheme_evidence",
+      "evidence": true,
+      "scheme_identifier": "RYTHU_BHAROSA_TG",
+      "published_date": null,
+      "updated_date": null,
+      "scheme": "రైతు బంధు / రైతు భరోసా",
+      "state": "Telangana",
+      "authority": "rythubharosa.telangana.gov.in",
+      "source_classification": "official_primary",
+      "topic": "Purpose and target beneficiaries",
+      "category": "PURPOSE",
+      "original_url": "https://rythubharosa.telangana.gov.in/Forms.aspx",
+      "final_url": "https://rythubharosa.telangana.gov.in/Forms.aspx",
+      "source_domain": "rythubharosa.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:18:30.629841+00:00",
+      "document_date": null,
+      "discovery_depth": 1,
+      "useful": false,
+      "robots_warning": null
+    },
+    {
+      "title": "Rythu Bharosa - Telangana",
+      "url": "https://rythubharosa.telangana.gov.in/gos_circulars.aspx",
+      "role": "scheme_evidence",
+      "evidence": true,
+      "scheme_identifier": "RYTHU_BHAROSA_TG",
+      "published_date": null,
+      "updated_date": null,
+      "scheme": "రైతు బంధు / రైతు భరోసా",
+      "state": "Telangana",
+      "authority": "rythubharosa.telangana.gov.in",
+      "source_classification": "official_primary",
+      "topic": "Purpose and target beneficiaries",
+      "category": "PURPOSE",
+      "original_url": "https://rythubharosa.telangana.gov.in/gos_circulars.aspx",
+      "final_url": "https://rythubharosa.telangana.gov.in/gos_circulars.aspx",
+      "source_domain": "rythubharosa.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:18:29.905177+00:00",
+      "document_date": null,
+      "discovery_depth": 1,
+      "useful": false,
+      "robots_warning": null
+    },
+    {
+      "title": "Rythu Bharosa - Telangana",
+      "url": "https://rythubharosa.telangana.gov.in/Default_Eng.aspx",
+      "role": "scheme_evidence",
+      "evidence": true,
+      "scheme_identifier": "RYTHU_BHAROSA_TG",
+      "published_date": null,
+      "updated_date": null,
+      "scheme": "రైతు బంధు / రైతు భరోసా",
+      "state": "Telangana",
+      "authority": "rythubharosa.telangana.gov.in",
+      "source_classification": "official_primary",
+      "topic": "Purpose and target beneficiaries",
+      "category": "PURPOSE",
+      "original_url": "https://rythubharosa.telangana.gov.in/Default_Eng.aspx",
+      "final_url": "https://rythubharosa.telangana.gov.in/Default_Eng.aspx",
+      "source_domain": "rythubharosa.telangana.gov.in",
+      "fetched_at": "2026-10-28T07:18:29.538473+00:00",
+      "document_date": null,
+      "discovery_depth": 1,
+      "useful": false,
+      "robots_warning": null
+    }
+  ],
+  "failures": [
+    {
+      "url": "https://apagrisnet.gov.in",
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'apagrisnet.gov.in'. (_ssl.c:1000)>"
+    },
+    {
+      "url": "https://aasara.telangana.gov.in",
+      "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'aasara.telangana.gov.in'. (_ssl.c:1000)>"
+    },
+    {
+      "url": "https://aarogyasri.ap.gov.in",
+      "error": "URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "url": "https://jaganannaammavodi.ap.gov.in",
+      "error": "URLError: <urlopen error [Errno 11001] getaddrinfo failed>"
+    },
+    {
+      "url": "https://www.telangana.gov.in/contacts/hods/",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  ],
+  "skipped": [
+    {
+      "url": "https://www.myscheme.gov.in/terms-conditions",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/information-and-public-relations/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/information-technology-electronics-and-communications/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/faqs/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/government-orders/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/rti/information-commission/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/services/public-utility-forms/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/wp-content/uploads/2023/12/Telangana-Economy-2023.pdf",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/wp-content/uploads/2023/12/Telangana-State-at-a-Glance-2023.pdf",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/wp-content/uploads/2024/03/Telangana-Magazine-March-2024_Telugu.pdf",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/wp-content/uploads/2024/03/Telangana-Magazine-March-2024_Urdu.pdf",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/wp-content/uploads/2026/02/Recruitment-Notification-for-AGNIVEER-2027.pdf",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/about/awards/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/about/districts/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/about/history/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/about/language-culture/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/about/state-profile/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/about/state-symbols/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/accessibility/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/annual-reports/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/budget-2026-2027/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/cm-relief-fund/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/agriculture-and-co-operation/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/animal-husbandry-and-fisheries/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/archaeology/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/backward-classes-welfare/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/cinematography/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/consumer-affairs-food-civil-supplies/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/endowments/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/energy/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/environment-forests/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/finance/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/general-administration-political/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/handlooms-textiles/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/health-medical-family-welfare-science-technology/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/higher-education/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/home-department/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/housing/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/industries-and-commerce/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/irrigation-and-cad/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/labour-employment-training-and-factories/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/law/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/legislative-affairs/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/mines-geology/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/minorities-welfare/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/municipal-administration-urban-development/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/panchayat-raj-and-rural-development/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/planning/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/public-enterprises/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/revenue-commercial-taxes/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/revenue-prohibition-excise/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/revenue-registration-and-stamps/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/revenue/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/roads-and-buildings/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/school-education-se-wing/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/social-welfare/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/sports-and-youth-services/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/transport/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/tribal-welfare/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/women-and-child-development/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/departments/youth-advancement/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/disclaimer/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/district-web-directory/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/downloads/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/downloads/calendar-2026/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/downloads/calendar/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/downloads/emblem-photos/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/gallery/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/gazette/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/government-initiatives/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/government/advisors/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/government/chief-minister/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/government/chief-secretary/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/government/council-of-ministers/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/government/deputy-chief-minister/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/government/governor/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/government/mps-rs-ls/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/help/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/invest-in-telangana/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/judiciary/chief-justice/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/judiciary/high-court/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/learning-in-telangana/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/legislature/legislative-assembly-speaker/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/legislature/legislative-council-chairman/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/legislature/members-of-legislative-assembly/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/legislature/members-of-legislative-council/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/living-in-telangana/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/news/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/news/2026/10/honble-cm-sri-a-revanth-reddy-participated-in-the-inauguration-of-the-southern-regional-police-coordination-committee-srpcc-meeting-at-iccc-banjara-hills-hyd/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/news/press-releases/2026/10/%e0%b0%a4%e0%b1%81%e0%b0%ae%e0%b1%8d%e0%b0%ae%e0%b0%bf%e0%b0%a1%e0%b0%bf%e0%b0%b9%e0%b1%86%e0%b0%9f%e0%b1%8d%e0%b0%9f%e0%b0%bf-%e0%b0%a8%e0%b1%80%e0%b0%9f%e0%b0%bf%e0%b0%aa%e0%b0%be%e0%b0%b0%e0%b1%81/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/news/press-releases/2026/10/%e0%b0%a4%e0%b1%81%e0%b0%ae%e0%b1%8d%e0%b0%ae%e0%b0%bf%e0%b0%a1%e0%b0%bf%e0%b0%b9%e0%b1%86%e0%b0%9f%e0%b1%8d%e0%b0%9f%e0%b0%bf-%e0%b0%ac%e0%b1%8d%e0%b0%af%e0%b0%be%e0%b0%b0%e0%b1%87%e0%b0%9c%e0%b1%8d/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/news/press-releases/2026/10/honble-cm-sri-a-revanth-reddy-invited-honble-maharashtra-cm-sri-devendra-fadnavis-to-participate-in-the-invest-telangana-global-summit/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/news/press-releases/2026/10/honble-cm-sri-a-revanth-reddy-participated-in-raksha-expo-2026-curtain-raiser-at-falaknuma-palace-hyderabad/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/news/whats-new/2026/05/applications-are-invited-from-the-eligible-persons-for-filling-up-the-post-of-chairperson-in-real-estate-regulatory-authority-of-telangana-state/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/other-important-links/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/other-state-web-directory/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/rti/rti-act/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/screen-reader/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/security-policy/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/services/central-services/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/services/meeseva-services/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/services/state-services/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/sitemap/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/state-industrial-policy/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/state-web-directory/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/telangana-budget-2023-2024/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/telangana-state-song/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/telangana-tourism/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/tenders/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/terms-and-conditions/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/video-gallery/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/website-policies/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/working-in-telangana/",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/wp-content/uploads/2023/05/bathukamma.jpg",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/wp-content/uploads/2023/05/legislature.png",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/wp-content/uploads/2023/05/telangana-heritage-scaled-1.jpg",
+      "reason": "crawl_budget"
+    },
+    {
+      "url": "https://www.telangana.gov.in/wp-content/uploads/2023/05/tworks.jpg",
+      "reason": "crawl_budget"
+    }
+  ],
+  "domains": [
+    "rythubharosa.telangana.gov.in",
+    "www.ap.gov.in",
+    "www.myscheme.gov.in",
+    "www.telangana.gov.in"
+  ],
+  "source_attempts": {
+    "https://www.myscheme.gov.in/": {
+      "attempted": true,
+      "success": true
+    },
+    "https://www.ap.gov.in/": {
+      "attempted": true,
+      "success": true
+    },
+    "https://www.telangana.gov.in/": {
+      "attempted": true,
+      "success": true
+    },
+    "https://rythubharosa.telangana.gov.in/": {
+      "attempted": true,
+      "success": true
+    },
+    "https://apagrisnet.gov.in": {
+      "attempted": true,
+      "success": false
+    },
+    "https://aasara.telangana.gov.in": {
+      "attempted": true,
+      "success": false
+    },
+    "https://aarogyasri.ap.gov.in": {
+      "attempted": true,
+      "success": false
+    },
+    "https://jaganannaammavodi.ap.gov.in": {
+      "attempted": true,
+      "success": false
+    }
+  },
+  "successful_pages": [
+    "https://www.myscheme.gov.in/",
+    "https://www.ap.gov.in/",
+    "https://www.telangana.gov.in/",
+    "https://rythubharosa.telangana.gov.in/",
+    "https://www.myscheme.gov.in/contact",
+    "https://www.myscheme.gov.in/faqs",
+    "https://www.myscheme.gov.in/about",
+    "https://www.myscheme.gov.in/accessibility-statement",
+    "https://www.myscheme.gov.in/dashboard",
+    "https://www.myscheme.gov.in/disclaimer",
+    "https://www.myscheme.gov.in/screen-reader",
+    "https://www.telangana.gov.in/contacts/contact-us/",
+    "https://www.telangana.gov.in/contacts/district-officials/",
+    "https://www.telangana.gov.in/contacts/emergency-contacts/",
+    "https://www.telangana.gov.in/contacts/hospitals/",
+    "https://www.telangana.gov.in/contacts/press-media/",
+    "https://www.telangana.gov.in/contacts/public-utility-contacts/",
+    "https://www.telangana.gov.in/contacts/secretariat/",
+    "https://rythubharosa.telangana.gov.in/ContactUs.aspx",
+    "https://rythubharosa.telangana.gov.in/Forms.aspx",
+    "https://rythubharosa.telangana.gov.in/gos_circulars.aspx",
+    "https://rythubharosa.telangana.gov.in/Default_Eng.aspx"
+  ]
+}

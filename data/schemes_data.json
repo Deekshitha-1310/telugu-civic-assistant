@@ -1,130 +1,924 @@
 [
   {
-    "id": "rythu_benefits_01",
-    "scheme": "రైతు బంధు / రైతు భరోసా",
-    "section": "BENEFITS",
-    "title": "రైతు బంధు / రైతు భరోసా ఆర్థిక సహాయం మరియు నిధుల జమ",
-    "text": "రైతు బంధు మరియు రైతు భరోసా పథకం కింద అర్హులైన రైతులకు పెట్టుబడి సహాయంగా ఎకరాకు సంవత్సరానికి రూ. 10,000 నుండి రూ. 13,500 వరకు ఆర్థిక సహాయం అందించబడుతుంది. ఈ మొత్తం ఖరీఫ్ మరియు రబీ రెండు పంట సీజన్లలో విడతల వారీగా నేరుగా రైతుల బ్యాంక్ ఖాతాల్లో (DBT) జమ చేయబడుతుంది. పైసలు సాధారణంగా సీజన్ ప్రారంభంలో మే-జూన్ మరియు నవంబర్-డిసెంబర్ నెలల్లో అందుతాయి.",
-    "source_url": "https://apagrisnet.gov.in"
+    "doc_id": "rb_elig_01",
+    "scheme": "రైతు భరోసా",
+    "category": "ELIGIBILITY",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Telangana",
+    "authority": "Agriculture & Cooperation Department, Government of Telangana",
+    "source_url": "https://rythubharosa.telangana.gov.in",
+    "source_title": "Telangana Rythu Bharosa official scheme overview (transition to Rythu Bharosa)",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "ELIGIBILITY",
+    "content": "రైతు భరోసా పథకం తెలంగాణ ప్రభుత్వం రైతులకు వ్యవసాయ వనరులకు అందించడానికి మొదలైంది. ప్రధాన లక్ష్యం రైతులకు పెట్టుబడి సాయం ఇవ్వడం; వ్యవసాయం చేసేవారు అర్హులు. కౌలు రైతులు మరియు వెలువడి అయిన భూమి లెక్కించిన రైతులు అర్హులు. ప్రస్తుతం పథకం రిఫ్రాగ్ చేస్తూ అమలులో ఉంది: కౌలు రైతులకు సహాయం అందించడానికి ఫార్మల్ లీస్ అయ్యిన భూమి మీద మాత్రమే దరఖాస్తు నమోదు చేయబడుతుంది. రైతు మరియు వడ్డి కలిసి ఒకే మొత్తం చెల్లించకుండా ద్విపక్ష లీస్ వ్యవస్థ అమలు అవుతోంది.",
+    "scheme_identifier": "RYTHU_BHAROSA_TG",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ],
+    "name_history": [],
+    "metadata": {
+      "state": "Telangana",
+      "category": "AGRICULTURE",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "revenue_rules",
+        "required_documents"
+      ],
+      "base_url": "https://rythubharosa.telangana.gov.in",
+      "key_rules": {
+        "benefit_amount": "12000 per acre per year (6000 Vanakalam + 6000 Yasangi)",
+        "land_exclusions": "Excludes fallow land, real estate layouts, mining areas",
+        "tenant_exclusion": "Tenant farmers without a formal lease agreement are excluded (no legal title). Tenant farmers with a registered lease are eligible.",
+        "verification": "Paid on verified cultivable land only",
+        "tenant_eligibility": "Implementation now requires formal lease agreements for genuine tenant farmers (Koulu Raithu). Original Rythu Bandhu gave assistance only to registered landowners; tenant farmers were excluded for lacking legal title. The state is restructuring into Rythu Bharosa with panels identifying genuine Koulu Raithu.",
+        "landlord_lease_requirement": "Formal lease agreement required to prevent double-payment to both landowner and tenant. Tenant farmers without a registered lease cannot receive benefits."
+      }
+    }
   },
   {
-    "id": "rythu_eligibility_02",
-    "scheme": "రైతు బంధు / రైతు భరోసా",
-    "section": "ELIGIBILITY",
-    "title": "రైతు బంధు / రైతు భరోసా అర్హత నిబంధనలు",
-    "text": "ఈ పథకానికి స్వంత వ్యవసాయ భూమి ఉండి పట్టాదారు పాస్ పుస్తకం కలిగిన రైతులు అర్హులు. అలాగే నోటిఫై చేయబడిన అటవీ హక్కుల చట్టం (ROFR) పట్టాదారులు మరియు రిజిస్టర్డ్ కౌలు రైతులు (CCRC కార్డుదారులు) అర్హత కలిగి ఉంటారు. ప్రభుత్వ ఉద్యోగులు, ఆదాయపు పన్ను చెల్లించే పెద్ద భూస్వాములు ఈ పథకానికి అనర్హులు.",
-    "source_url": "https://apagrisnet.gov.in"
+    "doc_id": "rb_ben_02",
+    "scheme": "రైతు భరోసా",
+    "category": "BENEFITS",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Telangana",
+    "authority": "Agriculture & Cooperation Department, Government of Telangana",
+    "source_url": "https://rythubharosa.telangana.gov.in",
+    "source_title": "Telangana Rythu Bharosa official scheme overview (transition to Rythu Bharosa)",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "BENEFITS",
+    "content": "రైతు భరోసా పథకం ప్రతి అర్హు రైతుకు ప్రతి సీజన్లో వ్యవసాయం చేసిన భూమికి గణనీయంగా రూ. 12,000 వరకు రూపాయలు అందిస్తుంది (వానకాలం 6,000 + యసంగి 6,000). అదనంగా గరిష్ట పరిమితి ఉండదని, అన్ని అర్హులకు సమానంగా ఇవ్వబడుతుందన్నది కూడా ప్రస్తావించబడింది.",
+    "scheme_identifier": "RYTHU_BHAROSA_TG",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ],
+    "name_history": [],
+    "metadata": {
+      "state": "Telangana",
+      "category": "AGRICULTURE",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "revenue_rules",
+        "required_documents"
+      ],
+      "base_url": "https://rythubharosa.telangana.gov.in",
+      "key_rules": {
+        "benefit_amount": "12000 per acre per year (6000 Vanakalam + 6000 Yasangi)",
+        "land_exclusions": "Excludes fallow land, real estate layouts, mining areas",
+        "tenant_exclusion": "Tenant farmers without a formal lease agreement are excluded (no legal title). Tenant farmers with a registered lease are eligible.",
+        "verification": "Paid on verified cultivable land only",
+        "tenant_eligibility": "Implementation now requires formal lease agreements for genuine tenant farmers (Koulu Raithu). Original Rythu Bandhu gave assistance only to registered landowners; tenant farmers were excluded for lacking legal title. The state is restructuring into Rythu Bharosa with panels identifying genuine Koulu Raithu.",
+        "landlord_lease_requirement": "Formal lease agreement required to prevent double-payment to both landowner and tenant. Tenant farmers without a registered lease cannot receive benefits."
+      }
+    }
   },
   {
-    "id": "rythu_docs_03",
-    "scheme": "రైతు బంధు / రైతు భరోసా",
-    "section": "REQUIRED_DOCUMENTS",
-    "title": "రైతు బంధు / రైతు భరోసాకు కావలసిన పత్రాలు",
-    "text": "దరఖాస్తుకు అవసరమైన పత్రాలు: 1. పట్టాదారు పాస్ పుస్తకం జిరాక్స్ (భూమి రికార్డులు 1B / అడంగల్), 2. ఆధార్ కార్డు, 3. ఆధార్ లింక్ అయిన బ్యాంక్ అకౌంట్ పాస్ బుక్ జిరాక్స్, 4. కౌలు రైతులైతే CCRC ఒప్పంద పత్రం.",
-    "source_url": "https://apagrisnet.gov.in"
+    "doc_id": "rb_docs_03",
+    "scheme": "రైతు భరోసా",
+    "category": "REQUIRED_DOCUMENTS",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Telangana",
+    "authority": "Agriculture & Cooperation Department, Government of Telangana",
+    "source_url": "https://rythubharosa.telangana.gov.in",
+    "source_title": "Telangana Rythu Bharosa official scheme overview (transition to Rythu Bharosa)",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "REQUIRED_DOCUMENTS",
+    "content": "రైతు భరోసా దరఖాస్తు చేయడానికి ప్రభుత్వ భూ రికార్డు (రైతు భూమి మార్కులో), ఆధార్ కార్డు, బ్యాంకు ఖాతా పాస్ బుక్, వ్యవసాయ భూమి పరిమితి/సమర్పింపు పత్రం మరియు లీస్ అయ్యిన భూమి కోసం ఫార్మల్ లీస్ అధికారిక రేఖాంశం కావాలి.",
+    "scheme_identifier": "RYTHU_BHAROSA_TG",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ],
+    "name_history": [],
+    "metadata": {
+      "state": "Telangana",
+      "category": "AGRICULTURE",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "revenue_rules",
+        "required_documents"
+      ],
+      "base_url": "https://rythubharosa.telangana.gov.in",
+      "key_rules": {
+        "benefit_amount": "12000 per acre per year (6000 Vanakalam + 6000 Yasangi)",
+        "land_exclusions": "Excludes fallow land, real estate layouts, mining areas",
+        "tenant_exclusion": "Tenant farmers without a formal lease agreement are excluded (no legal title). Tenant farmers with a registered lease are eligible.",
+        "verification": "Paid on verified cultivable land only",
+        "tenant_eligibility": "Implementation now requires formal lease agreements for genuine tenant farmers (Koulu Raithu). Original Rythu Bandhu gave assistance only to registered landowners; tenant farmers were excluded for lacking legal title. The state is restructuring into Rythu Bharosa with panels identifying genuine Koulu Raithu.",
+        "landlord_lease_requirement": "Formal lease agreement required to prevent double-payment to both landowner and tenant. Tenant farmers without a registered lease cannot receive benefits."
+      }
+    }
   },
   {
-    "id": "rythu_apply_04",
-    "scheme": "రైతు బంధు / రైతు భరోసా",
-    "section": "APPLICATION_PROCEDURE",
-    "title": "రైతు బంధు / రైతు భరోసా దరఖాస్తు విధానం",
-    "text": "రైతులు తమ సమీప గ్రామ/వార్డు సచివాలయంలో లేదా మండల వ్యవసాయ విస్తరణ అధికారి (AEO) వద్ద దరఖాస్తు ఫారమ్ సమర్పించాలి. భూమి రికార్డుల ఈ-కేవైసీ (e-KYC) పూర్తి చేయించి, రైతు భరోసా పోర్టల్ లో వివరాలు నమోదు చేయించుకోవాలి.",
-    "source_url": "https://apagrisnet.gov.in"
+    "doc_id": "rb_proc_04",
+    "scheme": "రైతు భరోసా",
+    "category": "APPLICATION_PROCEDURE",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Telangana",
+    "authority": "Agriculture & Cooperation Department, Government of Telangana",
+    "source_url": "https://rythubharosa.telangana.gov.in",
+    "source_title": "Telangana Rythu Bharosa official scheme overview (transition to Rythu Bharosa)",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "APPLICATION_PROCEDURE",
+    "content": "రైతు భరోసా పథకానికి దరఖాస్తు చేయడానికి స్థానిక వ్యవసాయ సహాయకుడి దగ్గరకు వెళ్ళి కావలసిన పత్రాలతో దరఖాస్తు చేయవచ్చు; ఆన్‌లైన్ దరఖాస్తుకు rythubharosa.telangana.gov.in పోర్టల్ లేదా మీ-సేవ కేంద్రం ఉపయోగించవచ్చు.",
+    "scheme_identifier": "RYTHU_BHAROSA_TG",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ],
+    "name_history": [],
+    "metadata": {
+      "state": "Telangana",
+      "category": "AGRICULTURE",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "revenue_rules",
+        "required_documents"
+      ],
+      "base_url": "https://rythubharosa.telangana.gov.in",
+      "key_rules": {
+        "benefit_amount": "12000 per acre per year (6000 Vanakalam + 6000 Yasangi)",
+        "land_exclusions": "Excludes fallow land, real estate layouts, mining areas",
+        "tenant_exclusion": "Tenant farmers without a formal lease agreement are excluded (no legal title). Tenant farmers with a registered lease are eligible.",
+        "verification": "Paid on verified cultivable land only",
+        "tenant_eligibility": "Implementation now requires formal lease agreements for genuine tenant farmers (Koulu Raithu). Original Rythu Bandhu gave assistance only to registered landowners; tenant farmers were excluded for lacking legal title. The state is restructuring into Rythu Bharosa with panels identifying genuine Koulu Raithu.",
+        "landlord_lease_requirement": "Formal lease agreement required to prevent double-payment to both landowner and tenant. Tenant farmers without a registered lease cannot receive benefits."
+      }
+    }
   },
   {
-    "id": "aarogya_benefits_01",
-    "scheme": "వైఎస్సార్ ఆరోగ్యశ్రీ / ఆయుష్మాన్ భారత్",
-    "section": "BENEFITS",
-    "title": "ఆరోగ్యశ్రీ వైద్య చికిత్సలు మరియు ఉచిత బీమా పరిమితి",
-    "text": "ఆరోగ్యశ్రీ పథకం ద్వారా అర్హులైన పేద మరియు మధ్యతరగతి కుటుంబాలకు గుర్తింపు పొందిన నెట్‌వర్క్ ఆసుపత్రులలో ఉచితంగా రూ. 5 లక్షల నుండి రూ. 25 లక్షల వరకు నగదు రహిత (Cashless) సూపర్ స్పెషాలిటీ వైద్య చికిత్సలు అందించబడతాయి. సుమారు 3,250 పైగా వ్యాధులకు మరియు శస్త్రచికిత్సలకు ఉచిత వైద్యం, మందులు మరియు ఆపరేషన్ అనంతరం ఆసరా భత్యం లభిస్తాయి.",
-    "source_url": "https://aarogyasri.ap.gov.in"
+    "doc_id": "as_elig_05",
+    "scheme": "డాన్ ఎన్టిఆర్ వైద్య సేవ",
+    "category": "ELIGIBILITY",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Dr. NTR Vaidya Seva, Government of Andhra Pradesh",
+    "source_url": "https://aarogyasri.ap.gov.in",
+    "source_title": "Dr. NTR Vaidya Seva official scheme overview",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "ELIGIBILITY",
+    "content": "ఆరోగ్యశ్రీ పథకం సేవకులకు ఆరోగ్య సేవలకు అందించే ఆదాయ బద్ధమైన వైద్య సహాయ పథకం. తెల్లరేషన్ కార్డు కలిగి ఉన్న పేద కుటుంబాలలో ప్రతి ఒక్కరూ అర్హులు; వార్షిక ఆదాయం రూ. 5 లక్షలలోపు ఉండాలి. ఆయుష్మాన్ భారత్ తో కలిసి అమలు అయ్యింది.",
+    "scheme_identifier": "NTR_VAIDYA_SEVA_AP",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ],
+    "name_history": [
+      "వైఎస్ఆర్ ఆరోగ్యశ్రీ"
+    ],
+    "metadata": {
+      "state": "Andhra Pradesh",
+      "category": "HEALTHCARE",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "required_documents",
+        "revenue_rules"
+      ],
+      "base_url": "https://ntruvidyaseva.ap.gov.in",
+      "key_rules": {
+        "benefit_cap": "Up to 25 lakh per family per year (cashless)",
+        "income_ceiling": "Annual family income < 5,00,000",
+        "land_ceiling": null,
+        "insurance": "Family floater, > 3,250 therapies covered",
+        "tenant_eligibility": "Landless tenant farmers belonging to SC, ST, BC, and minority communities are eligible.",
+        "landlord_lease_requirement": "Tenant farmers receive assistance if they secure an official Crop Cultivator Rights Card (CCRC) or formal lease agreement for a minimum designated acreage.",
+        "landless_tenants_primary_help": "Landless tenant farmers (SC/ST/BC/minority) are eligible; landlord/owner farmers are not the primary beneficiaries."
+      }
+    }
   },
   {
-    "id": "aarogya_eligibility_02",
-    "scheme": "వైఎస్సార్ ఆరోగ్యశ్రీ / ఆయుష్మాన్ భారత్",
-    "section": "ELIGIBILITY",
-    "title": "ఆరోగ్యశ్రీ కార్డు పొందేందుకు అర్హతలు",
-    "text": "తెల్ల రేషన్ కార్డు (బియ్యం కార్డు) కలిగిన కుటుంబాలు లేదా వార్షిక కుటుంబ ఆదాయం రూ. 5 లక్షల లోపు ఉన్న కుటుంబాలన్నీ ఆరోగ్యశ్రీ చికిత్సలకు అర్హులు. 35 ఎకరాల కంటే తక్కువ మెట్ట భూమి లేదా 10 ఎకరాల లోపు మాగాణి భూమి ఉన్నవారు కూడా అర్హులు.",
-    "source_url": "https://aarogyasri.ap.gov.in"
+    "doc_id": "as_ben_06",
+    "scheme": "డాన్ ఎన్టిఆర్ వైద్య సేవ",
+    "category": "BENEFITS",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Dr. NTR Vaidya Seva, Government of Andhra Pradesh",
+    "source_url": "https://aarogyasri.ap.gov.in",
+    "source_title": "Dr. NTR Vaidya Seva official scheme overview",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "BENEFITS",
+    "content": "నెట్‌వర్క్ ఆసుపత్రులలోని చికిత్స కోసం ఉచిత నగదు రహిత చికిత్స (Cashless Treatment) అందించబడుతుంది. నిర్దేశించిన 3,000 పైగా వ్యాధులకు మరియు ఆపరేషన్లకు రూ. 25 లక్షలవరకు ఉచిత వైద్య సాయం లభిస్తుంది.",
+    "scheme_identifier": "NTR_VAIDYA_SEVA_AP",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ],
+    "name_history": [
+      "వైఎస్ఆర్ ఆరోగ్యశ్రీ"
+    ],
+    "metadata": {
+      "state": "Andhra Pradesh",
+      "category": "HEALTHCARE",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "required_documents",
+        "revenue_rules"
+      ],
+      "base_url": "https://ntruvidyaseva.ap.gov.in",
+      "key_rules": {
+        "benefit_cap": "Up to 25 lakh per family per year (cashless)",
+        "income_ceiling": "Annual family income < 5,00,000",
+        "land_ceiling": null,
+        "insurance": "Family floater, > 3,250 therapies covered",
+        "tenant_eligibility": "Landless tenant farmers belonging to SC, ST, BC, and minority communities are eligible.",
+        "landlord_lease_requirement": "Tenant farmers receive assistance if they secure an official Crop Cultivator Rights Card (CCRC) or formal lease agreement for a minimum designated acreage.",
+        "landless_tenants_primary_help": "Landless tenant farmers (SC/ST/BC/minority) are eligible; landlord/owner farmers are not the primary beneficiaries."
+      }
+    }
   },
   {
-    "id": "aarogya_docs_03",
-    "scheme": "వైఎస్సార్ ఆరోగ్యశ్రీ / ఆయుష్మాన్ భారత్",
-    "section": "REQUIRED_DOCUMENTS",
-    "title": "ఆరోగ్యశ్రీ దరఖాస్తుకు కావలసిన పత్రాలు",
-    "text": "కావలసిన పత్రాలు: 1. కుటుంబ సభ్యులందరి ఆధార్ కార్డులు, 2. తెల్ల రేషన్ కార్డు లేదా ఆహార భద్రతా కార్డు, 3. వార్షిక ఆదాయ ధృవీకరణ పత్రం (రేషన్ కార్డు లేనిచో), 4. పాస్‌పోర్ట్ సైజు ఫోటో.",
-    "source_url": "https://aarogyasri.ap.gov.in"
+    "doc_id": "as_docs_07",
+    "scheme": "డాన్ ఎన్టిఆర్ వైద్య సేవ",
+    "category": "REQUIRED_DOCUMENTS",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Dr. NTR Vaidya Seva, Government of Andhra Pradesh",
+    "source_url": "https://aarogyasri.ap.gov.in",
+    "source_title": "Dr. NTR Vaidya Seva official scheme overview",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "REQUIRED_DOCUMENTS",
+    "content": "ఆరోగ్యశ్రీ కార్డు లేదా తెల్ల రేషన్ కార్డు, రోగి ఆధార్ కార్డు మరియు చిరునామా ధ్రువీకరణ పత్రం ఆసుపత్రిలోని ఆరోగ్యమిత్రకు చూపించాలి. కార్డు లేకుండా రేషన్ కార్డు చూపించినా చికిత్స పొందవచ్చు.",
+    "scheme_identifier": "NTR_VAIDYA_SEVA_AP",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ],
+    "name_history": [
+      "వైఎస్ఆర్ ఆరోగ్యశ్రీ"
+    ],
+    "metadata": {
+      "state": "Andhra Pradesh",
+      "category": "HEALTHCARE",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "required_documents",
+        "revenue_rules"
+      ],
+      "base_url": "https://ntruvidyaseva.ap.gov.in",
+      "key_rules": {
+        "benefit_cap": "Up to 25 lakh per family per year (cashless)",
+        "income_ceiling": "Annual family income < 5,00,000",
+        "land_ceiling": null,
+        "insurance": "Family floater, > 3,250 therapies covered",
+        "tenant_eligibility": "Landless tenant farmers belonging to SC, ST, BC, and minority communities are eligible.",
+        "landlord_lease_requirement": "Tenant farmers receive assistance if they secure an official Crop Cultivator Rights Card (CCRC) or formal lease agreement for a minimum designated acreage.",
+        "landless_tenants_primary_help": "Landless tenant farmers (SC/ST/BC/minority) are eligible; landlord/owner farmers are not the primary beneficiaries."
+      }
+    }
   },
   {
-    "id": "aarogya_apply_04",
-    "scheme": "వైఎస్సార్ ఆరోగ్యశ్రీ / ఆయుష్మాన్ భారత్",
-    "section": "APPLICATION_PROCEDURE",
-    "title": "ఆరోగ్యశ్రీ కార్డు ఎలా తీసుకోవాలి మరియు దరఖాస్తు విధానం",
-    "text": "ఆరోగ్యశ్రీ కార్డు కోసం సమీప గ్రామ/వార్డు సచివాలయంలో దరఖాస్తు చేసుకోవచ్చు. అత్యవసర పరిస్థితుల్లో నెట్‌వర్క్ ఆసుపత్రిలోని 'ఆరోగ్య మిత్ర' (Arogya Mithra) హెల్ప్ డెస్క్ ను సంప్రదించి కేవలం ఆధార్ కార్డు మరియు రేషన్ కార్డు చూపించి నేరుగా ఉచిత చికిత్స పొందవచ్చు.",
-    "source_url": "https://aarogyasri.ap.gov.in"
+    "doc_id": "as_proc_08",
+    "scheme": "డాన్ ఎన్టిఆర్ వైద్య సేవ",
+    "category": "APPLICATION_PROCEDURE",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Dr. NTR Vaidya Seva, Government of Andhra Pradesh",
+    "source_url": "https://aarogyasri.ap.gov.in",
+    "source_title": "Dr. NTR Vaidya Seva official scheme overview",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "APPLICATION_PROCEDURE",
+    "content": "ఆరోగ్యశ్రీ కార్డు కోసం స్థానిక గ్రామ సచివాలయం లేదా మీ-సేవ కేంద్రానికి వెళ్ళి దరఖాస్తు చేయవచ్చు; aarogyasri.ap.gov.in పోర్టల్ ద్వారా ఆన్‌లైన్ లో కూడా నమోదు చేయవచ్చు. నెట్‌వర్క్ ఆసుపత్రిలో చేరాల్సి వస్తే ఆరోగ్యమిత్రను సంప్రదించవచ్చు.",
+    "scheme_identifier": "NTR_VAIDYA_SEVA_AP",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ],
+    "name_history": [
+      "వైఎస్ఆర్ ఆరోగ్యశ్రీ"
+    ],
+    "metadata": {
+      "state": "Andhra Pradesh",
+      "category": "HEALTHCARE",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "required_documents",
+        "revenue_rules"
+      ],
+      "base_url": "https://ntruvidyaseva.ap.gov.in",
+      "key_rules": {
+        "benefit_cap": "Up to 25 lakh per family per year (cashless)",
+        "income_ceiling": "Annual family income < 5,00,000",
+        "land_ceiling": null,
+        "insurance": "Family floater, > 3,250 therapies covered",
+        "tenant_eligibility": "Landless tenant farmers belonging to SC, ST, BC, and minority communities are eligible.",
+        "landlord_lease_requirement": "Tenant farmers receive assistance if they secure an official Crop Cultivator Rights Card (CCRC) or formal lease agreement for a minimum designated acreage.",
+        "landless_tenants_primary_help": "Landless tenant farmers (SC/ST/BC/minority) are eligible; landlord/owner farmers are not the primary beneficiaries."
+      }
+    }
   },
   {
-    "id": "ammavodi_benefits_01",
-    "scheme": "జగనన్న అమ్మ ఒడి / విద్యా దీవెన",
-    "section": "BENEFITS",
-    "title": "అమ్మ ఒడి ఆర్థిక సాయం వివరాలు",
-    "text": "దారిద్య్రరేఖకు దిగువన ఉన్న కుటుంబాల్లో పిల్లలను పాఠశాలలకు పంపించే తల్లులకు ప్రతి విద్యా సంవత్సరంలో రూ. 15,000 వార్షిక ఆర్థిక సాయం అందించబడుతుంది. ఈ మొత్తం నేరుగా తల్లి బ్యాంక్ ఖాతాలో జమ అవుతుంది, దీనిలో రూ. 1,000 పాఠశాల పారిశుధ్య నిర్వహణ నిధికి మినహాయించబడుతుంది.",
-    "source_url": "https://jaganannaammavodi.ap.gov.in"
+    "doc_id": "talliki_elig_01",
+    "scheme": "తలికీ వండనం",
+    "category": "ELIGIBILITY",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Andhra Pradesh Social Security Division, Government of Andhra Pradesh",
+    "source_url": "https://tallikiammavodi.ap.gov.in",
+    "source_title": "Talliki Vandanam official scheme overview",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "ELIGIBILITY",
+    "supported_categories": [
+      "ELIGIBILITY",
+      "BENEFITS",
+      "REQUIRED_DOCUMENTS"
+    ],
+    "content": "1 నుండి 12వ తరగతి (ఇంటర్నీడియట్) వరకు ప్రభుత్వ లేదా గుర్తింపు పొందిన ప్రైవేట్ పాఠశాలల్లో చదువుతున్న పిల్లల తల్లులకు ఈ పథకం వర్తిస్తుంది. ఒక తల్లికి ఒకటి కంటే ఎక్కువ పిల్లలు అర్హులైతే ప్రతి పిల్లల కోసం ప్రత్యేకంగా అందిస్తారు. గ్రామీణ కుటుంబాలలో రూ. 10,000/మాస వరకు, పట్టణ కుటుంబాలలో రూ. 12,000/మాస వరకు ఆదాయం ఉండాలి. సంస్థలో పనిచేసే సభ్యులు, ఆదాయ పన్ను చెల్లించే సభ్యులు, 3 ఎకరాల వరకు ఎండ్లకు, 10 ఎకరాల వరకు ఎండ్లకు హక్కు ఉన్న కుటుంబాలు అర్హత ఇవ్వబోలేదు. ప్రతి సంవత్సరం ఉత్తమ ప్రతిభ బహుమతి పొందే విద్యార్థులకు స్కూల్ ఆఫ్ చంద్ర అవార్డు ఇవ్వబడుతుంది. నమోదు చేసిన విద్యార్థి 100 శాతం ఉపస్తిత్వం కావాలి. విద్యార్థి కుటుంబ పీఎస్ఎస్ విభాగం ద్వారా మొత్తం పొందే పెట్టుబడి ప్రామాణీకరించబడుతుంది.",
+    "name_history": [
+      "జగనన్న అమ్మ ఒడి"
+    ],
+    "metadata": {
+      "state": "Andhra Pradesh",
+      "category": "EDUCATION",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "required_documents",
+        "revenue_rules"
+      ],
+      "base_url": "https://tallikiammavodi.ap.gov.in",
+      "key_rules": {
+        "benefit_amount": "15000 per student (13000 net DBT after 2000 deduction to school infrastructure fund)",
+        "no_child_limit": "Applies to every child in classes 1-12 (no per-mother cap)",
+        "attendance_requirement": "75% minimum school attendance",
+        "income_criteria": "Rural < 10000/month, Urban < 12000/month"
+      }
+    }
   },
   {
-    "id": "ammavodi_eligibility_02",
-    "scheme": "జగనన్న అమ్మ ఒడి / విద్యా దీవెన",
-    "section": "ELIGIBILITY",
-    "title": "అమ్మ ఒడి పథకానికి ఎవరు అర్హులు (హాజరు నిబంధనలు)",
-    "text": "1వ తరగతి నుండి 12వ తరగతి (ఇంటర్మీడియట్) వరకు ప్రభుత్వ, ఎయిడెడ్ లేదా ప్రైవేట్ అన్-ఎయిడెడ్ గుర్తింపు పొందిన పాఠశాలల్లో చదువుతున్న విద్యార్థుల తల్లులు అర్హులు. విద్యార్థికి విద్యా సంవత్సరంలో కనీసం 75% పాఠశాల హాజరు తప్పనిసరిగా ఉండాలి.",
-    "source_url": "https://jaganannaammavodi.ap.gov.in"
+    "doc_id": "talliki_ben_02",
+    "scheme": "తలికీ వండనం",
+    "category": "BENEFITS",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Andhra Pradesh Social Security Division, Government of Andhra Pradesh",
+    "source_url": "https://tallikiammavodi.ap.gov.in",
+    "source_title": "Talliki Vandanam official scheme overview",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "BENEFITS",
+    "supported_categories": [
+      "ELIGIBILITY",
+      "BENEFITS",
+      "REQUIRED_DOCUMENTS"
+    ],
+    "content": "A 1-12th (Intermediate) వరకు ప్రభుత్వం లేదా గుర్తింపు పొందిన ప్రైవేట్ పాఠశాలల్లో చదువుతున్న పిల్లల తల్లులకు ఈ పథకం వర్తిస్తుంది. ఒక తల్లికి ఒకటి కంటే ఎక్కువ పిల్లలు అర్హులైతే ప్రతి పిల్లల కోసం ప్రత్యేకంగా అందిస్తారు. గ్రామీణ కుటుంబాలలో రూ. 10,000/మాస వరకు, పట్టణ కుటుంబాలలో రూ. 12,000/మాస వరకు ఆదాయం ఉండాలి. సంస్థలో పనిచేసే సభ్యులు, ఆదాయ పన్ను చెల్లించే సభ్యులు, 3 ఎకరాల వరకు ఎండ్లకు, 10 ఎకరాల వరకు ఎండ్లకు హక్కు ఉన్న కుటుంబాలు అర్హత ఇవ్వబోలేదు. ప్రతి సంవత్సరం ఉత్తమ ప్రతిభ బహుమతి పొందే విద్యార్థులకు స్కూల్ ఆఫ్ చంద్ర అవార్డు ఇవ్వబడుతుంది. నమోదు చేసిన విద్యార్థి 100 శాతం ఉపస్తిత్వం కావాలి.",
+    "name_history": [
+      "జగనన్న అమ్మ ఒడి"
+    ],
+    "metadata": {
+      "state": "Andhra Pradesh",
+      "category": "EDUCATION",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "required_documents",
+        "revenue_rules"
+      ],
+      "base_url": "https://tallikiammavodi.ap.gov.in",
+      "key_rules": {
+        "benefit_amount": "15000 per student (13000 net DBT after 2000 deduction to school infrastructure fund)",
+        "no_child_limit": "Applies to every child in classes 1-12 (no per-mother cap)",
+        "attendance_requirement": "75% minimum school attendance",
+        "income_criteria": "Rural < 10000/month, Urban < 12000/month"
+      }
+    }
   },
   {
-    "id": "ammavodi_docs_03",
-    "scheme": "జగనన్న అమ్మ ఒడి / విద్యా దీవెన",
-    "section": "REQUIRED_DOCUMENTS",
-    "title": "అమ్మ ఒడి పథకానికి కావలసిన పత్రాలు",
-    "text": "1. తల్లి మరియు విద్యార్థి ఆధార్ కార్డులు, 2. చెల్లుబాటులో ఉన్న తెల్ల రేషన్ కార్డు, 3. తల్లి పేరు మీద ఉన్న యాక్టివ్ బ్యాంక్ ఖాతా పాస్ బుక్, 4. పాఠశాల స్టడీ మరియు 75% హాజరు సర్టిఫికెట్.",
-    "source_url": "https://jaganannaammavodi.ap.gov.in"
+    "doc_id": "talliki_docs_03",
+    "scheme": "తలికీ వండనం",
+    "category": "REQUIRED_DOCUMENTS",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Andhra Pradesh Social Security Division, Government of Andhra Pradesh",
+    "source_url": "https://tallikiammavodi.ap.gov.in",
+    "source_title": "Talliki Vandanam official scheme overview",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "REQUIRED_DOCUMENTS",
+    "supported_categories": [
+      "ELIGIBILITY",
+      "BENEFITS",
+      "REQUIRED_DOCUMENTS"
+    ],
+    "content": "దరఖాస్తు కోసం తల్లి ఆధార్ కార్డు, తల్లి బ్యాంకు ఖాతా పాస్ బుక్, పిల్లల పాఠశాల అడ్మిషన్ సర్టిఫికెట్ (TC లేదా రిపోర్ట్ కార్డు), పిల్లల హాజరు ధ్రువీకరణ పత్రం (స్కూలు ప్రధానోపాధ్యాయుని సంతకంతో) సమర్పించాలి. విద్యార్థి కుటుంబ పీఎస్ఎస్ విభాగం ద్వారా మొత్తం పొందే పెట్టుబడి ప్రామాణీకరించబడుతుంది.",
+    "name_history": [
+      "జగనన్న అమ్మ ఒడి"
+    ],
+    "metadata": {
+      "state": "Andhra Pradesh",
+      "category": "EDUCATION",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "required_documents",
+        "revenue_rules"
+      ],
+      "base_url": "https://tallikiammavodi.ap.gov.in",
+      "key_rules": {
+        "benefit_amount": "15000 per student (13000 net DBT after 2000 deduction to school infrastructure fund)",
+        "no_child_limit": "Applies to every child in classes 1-12 (no per-mother cap)",
+        "attendance_requirement": "75% minimum school attendance",
+        "income_criteria": "Rural < 10000/month, Urban < 12000/month"
+      }
+    }
   },
   {
-    "id": "ammavodi_apply_04",
-    "scheme": "జగనన్న అమ్మ ఒడి / విద్యా దీవెన",
-    "section": "APPLICATION_PROCEDURE",
-    "title": "అమ్మ ఒడి నమోదు మరియు దరఖాస్తు ప్రక్రియ",
-    "text": "విద్యార్థి చదువుతున్న పాఠశాల ప్రధానోపాధ్యాయుడు (HM) ద్వారా వివరాలు చైల్డ్ ఇన్ఫో (Child Info) పోర్టల్ లో నమోదు చేయబడతాయి. అనంతరం గ్రామ/వార్డు సచివాలయంలో సామాజిక తనిఖీ (Social Audit) కోసం అర్హుల జాబితా ప్రదర్శించబడుతుంది. ఏవైనా అభ్యంతరాలు ఉంటే సచివాలయంలో సరిచేసుకోవచ్చు.",
-    "source_url": "https://jaganannaammavodi.ap.gov.in"
+    "doc_id": "talliki_proc_04",
+    "scheme": "తలికీ వండనం",
+    "category": "APPLICATION_PROCEDURE",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Andhra Pradesh Social Security Division, Government of Andhra Pradesh",
+    "source_url": "https://tallikiammavodi.ap.gov.in",
+    "source_title": "Talliki Vandanam official scheme overview",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "APPLICATION_PROCEDURE",
+    "supported_categories": [
+      "ELIGIBILITY",
+      "BENEFITS",
+      "REQUIRED_DOCUMENTS"
+    ],
+    "content": "అమ్మ ఒడి పథకానికి నమోదు కోసం స్థానిక గ్రామ వలంటీర్ లేదా సచివాలయాన్ని సంప్రదించవచ్చు. jaganannaammavodi.ap.gov.in పోర్టల్ ద్వారా ఆన్‌లైన్ లో అర్జీ ఇవ్వొచ్చు. పాఠశాలలో కూడా నమోదు చేయించుకోవడానికి వీలుంటుంది. తల్లి కుటుంబ పీఎస్ఎస్ విభాగం ద్వారా పొందే పెట్టుబడి ప్రామాణీకరించబడుతుంది.",
+    "name_history": [
+      "జగనన్న అమ్మ ఒడి"
+    ],
+    "metadata": {
+      "state": "Andhra Pradesh",
+      "category": "EDUCATION",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "required_documents",
+        "revenue_rules"
+      ],
+      "base_url": "https://tallikiammavodi.ap.gov.in",
+      "key_rules": {
+        "benefit_amount": "15000 per student (13000 net DBT after 2000 deduction to school infrastructure fund)",
+        "no_child_limit": "Applies to every child in classes 1-12 (no per-mother cap)",
+        "attendance_requirement": "75% minimum school attendance",
+        "income_criteria": "Rural < 10000/month, Urban < 12000/month"
+      }
+    }
   },
   {
-    "id": "aasara_benefits_01",
+    "doc_id": "ap_elig_13",
     "scheme": "ఆసరా పెన్షన్ / పెన్షన్ కానుక",
-    "section": "BENEFITS",
-    "title": "ఆసరా పింఛను ఆర్థిక భద్రత మరియు నెలవారీ చెల్లింపులు",
-    "text": "నిరుపేద వృద్ధులు, వితంతువులు, ఒంటరి మహిళలు మరియు చేనేత కార్మికులకు నెలకు రూ. 3,000 నుండి రూ. 4,000 వరకు గౌరవ పింఛను లభిస్తుంది. తీవ్ర దివ్యాంగులకు నెలకు రూ. 6,000 మరియు దీర్ఘకాలిక వ్యాధిగ్రస్తులకు (డయాలసిస్ రోగులు) నెలకు రూ. 10,000 వరకు పింఛను నేరుగా ప్రతి నెలా 1వ తేదీన ఇంటివద్దనే అందించబడుతుంది.",
-    "source_url": "https://aasara.telangana.gov.in"
+    "category": "ELIGIBILITY",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Telangana",
+    "authority": "Telangana Aasara Pension, Government of Telangana",
+    "source_url": "https://aasara.telangana.gov.in",
+    "source_title": "Telangana Aasara Pension official eligibility",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "ELIGIBILITY",
+    "content": "60 సంవత్సరాలు మరియు అంతకంటే ఎక్కువ వయస్సు గల వృద్ధులు, వితంతువులు, ఒంటరి మహిళలు, దివ్యాంగులు మరియు అంధులు పెన్షన్‌కు అర్హులు. కుటుంబ వార్షికాదాయం రూ. 1.5 లక్షల లోపు ఉండాలి. BPL రేషన్ కార్డు ఉండటం అవసరం.",
+    "scheme_identifier": "AASARA_TELANGANA",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ]
   },
   {
-    "id": "aasara_eligibility_02",
+    "doc_id": "ap_ben_14",
     "scheme": "ఆసరా పెన్షన్ / పెన్షన్ కానుక",
-    "section": "ELIGIBILITY",
-    "title": "ఆసరా పింఛను వయోపరిమితి మరియు అర్హతలు",
-    "text": "వృద్ధాప్య పింఛనుకు కనీస వయస్సు 60 సంవత్సరాలు (కొన్ని కేటగిరీలలో 57 సం.). వితంతు పింఛనుకు 18 సంవత్సరాలు నిండి భర్త మరణ ధృవీకరణ పత్రం ఉండాలి. దివ్యాంగ పింఛనుకు కనీసం 40% అంగవైకల్యం ఉండాలి. కుటుంబ వార్షిక ఆదాయం గ్రామీణ ప్రాంతాల్లో రూ. 1.5 లక్షలు, పట్టణాల్లో రూ. 2 లక్షల లోపు ఉండాలి.",
-    "source_url": "https://aasara.telangana.gov.in"
+    "category": "BENEFITS",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Telangana",
+    "authority": "Telangana Aasara Pension, Government of Telangana",
+    "source_url": "https://aasara.telangana.gov.in",
+    "source_title": "Telangana Aasara Pension official benefits",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "BENEFITS",
+    "content": "వృద్ధులు, వితంతువులు, ఒంటరి మహిళలకు నెలకు రూ. 2,016 నుండి రూ. 3,000 వరకు మరియు దివ్యాంగులకు నెలకు రూ. 4,016 నుండి రూ. 6,000 వరకు ఆర్థిక పెన్షన్ అందుతుంది. పెన్షన్ మొత్తం నేరుగా లబ్ధిదారుల బ్యాంక్ ఖాతాలో జమ చేయబడుతుంది.",
+    "scheme_identifier": "AASARA_TELANGANA",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ]
   },
   {
-    "id": "aasara_docs_03",
+    "doc_id": "ap_docs_15",
     "scheme": "ఆసరా పెన్షన్ / పెన్షన్ కానుక",
-    "section": "REQUIRED_DOCUMENTS",
-    "title": "ఆసరా పెన్షన్ కు కావలసిన ధృవీకరణ పత్రాలు",
-    "text": "1. ఆధార్ కార్డు మరియు వయస్సు ధృవీకరణ పత్రం (ఓటర్ ఐడీ / జనన ధృవీకరణ), 2. తెల్ల రేషన్ కార్డు, 3. దివ్యాంగులకైతే సదరం (SADAREM) మెడికల్ సర్టిఫికెట్, 4. వితంతువులకైతే భర్త డెత్ సర్టిఫికెట్, 5. బ్యాంక్ లేదా పోస్టాఫీసు సేవింగ్స్ ఖాతా వివరాలు.",
-    "source_url": "https://aasara.telangana.gov.in"
+    "category": "REQUIRED_DOCUMENTS",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Telangana",
+    "authority": "Telangana Aasara Pension, Government of Telangana",
+    "source_url": "https://aasara.telangana.gov.in",
+    "source_title": "Telangana Aasara Pension official documents",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "REQUIRED_DOCUMENTS",
+    "content": "ఆసరా పెన్షన్ దరఖాస్తుకు ఆధార్ కార్డు, వయస్సు ధ్రువీకరణ పత్రం (జనన ధ్రువీకరణ లేదా స్కూలు సర్టిఫికెట్), BPL రేషన్ కార్డు, బ్యాంక్ పాస్ బుక్, నివాస ధ్రువీకరణ పత్రం మరియు దివ్యాంగులకు వైద్య ధ్రువీకరణ పత్రం (దివ్యాంగత సర్టిఫికెట్) సమర్పించాలి.",
+    "scheme_identifier": "AASARA_TELANGANA",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ]
   },
   {
-    "id": "aasara_apply_04",
+    "doc_id": "ap_proc_16",
     "scheme": "ఆసరా పెన్షన్ / పెన్షన్ కానుక",
-    "section": "APPLICATION_PROCEDURE",
-    "title": "ఆసరా పెన్షన్ దరఖాస్తు విధానం ఏమిటి",
-    "text": "దరఖాస్తుదారులు గ్రామ సచివాలయం లేదా మీసేవ (MeeSeva) కేంద్రంలో దరఖాస్తు ఫారమ్ తో పాటు అవసరమైన పత్రాలు సమర్పించాలి. పంచాయతీ కార్యదర్శి లేదా మున్సిపల్ కమిషనర్ విచారణ జరిపి అర్హుల జాబితాను ఆమోదిస్తారు. మంజూరైన పింఛను కార్డు ద్వారా ప్రతినెలా చెల్లింపు జరుగుతుంది.",
-    "source_url": "https://aasara.telangana.gov.in"
+    "category": "APPLICATION_PROCEDURE",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Telangana",
+    "authority": "Telangana Aasara Pension, Government of Telangana",
+    "source_url": "https://aasara.telangana.gov.in",
+    "source_title": "Telangana Aasara Pension official procedure",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "APPLICATION_PROCEDURE",
+    "content": "ఆసరా పెన్షన్ కోసం స్థానిక గ్రామ పంచాయతీ కార్యాలయం లేదా మండల సంక్షేమ అధికారి కార్యాలయంలో దరఖాస్తు చేయవచ్చు. aasara.telangana.gov.in మరియు sspensions.ap.gov.in పోర్టల్ ద్వారా కూడా ఆన్‌లైన్ లో అర్జీ ఇవ్వొచ్చు. గ్రామ వలంటీర్ కూడా నమోదు చేయించవచ్చు.",
+    "scheme_identifier": "AASARA_TELANGANA",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ]
+  },
+  {
+    "doc_id": "ntru_elig_06a",
+    "scheme": "డాన్ ఎన్టిఆర్ వైద్య సేవ",
+    "category": "ELIGIBILITY",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Dr. NTR Vaidya Seva, Government of Andhra Pradesh",
+    "source_url": "https://ntruvidyaseva.ap.gov.in",
+    "source_title": "Dr. NTR Vaidya Seva official scheme overview",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "ELIGIBILITY",
+    "supported_categories": [
+      "ELIGIBILITY",
+      "BENEFITS",
+      "REQUIRED_DOCUMENTS"
+    ],
+    "content": "వైఎస్ఆర్ ఆరోగ్యశ్రీ పథకం యువతికి సహాయం చేయడం మరియు విద్యను ప్రోత్సహించడం ద్వారా కుటుంబాలను సంక్షేమంగా తీర్చడానికి ఉద్దేశించబడింది. పేద కుటుంబాలలో వైద్య సేవలకు అందించే ఆదాయ బద్ధమైన వైద్య సహాయ పథకం. తెల్లరేషన్ కార్డు కలిగి ఉన్న పేద కుటుంబాలలో ప్రతి ఒక్కరూ అర్హులు; వార్షిక ఆదాయం రూ. 5 లక్షలలోపు ఉండాలి.",
+    "metadata": {
+      "state": "Andhra Pradesh",
+      "category": "HEALTHCARE",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "required_documents",
+        "revenue_rules"
+      ],
+      "base_url": "https://ntruvidyaseva.ap.gov.in",
+      "key_rules": {
+        "benefit_cap": "Up to 25 lakh per family per year (cashless)",
+        "income_ceiling": "Annual family income < 5,00,000",
+        "land_ceiling": null,
+        "insurance": "Family floater, > 3,250 therapies covered",
+        "tenant_eligibility": "Landless tenant farmers belonging to SC, ST, BC, and minority communities are eligible.",
+        "landlord_lease_requirement": "Tenant farmers receive assistance if they secure an official Crop Cultivator Rights Card (CCRC) or formal lease agreement for a minimum designated acreage.",
+        "landless_tenants_primary_help": "Landless tenant farmers (SC/ST/BC/minority) are eligible; landlord/owner farmers are not the primary beneficiaries.",
+        "content_fixed": null
+      }
+    },
+    "scheme_identifier": "NTR_VAIDYA_SEVA_AP",
+    "name_history": [
+      "వైఎస్ఆర్ ఆరోగ్యశ్రీ"
+    ]
+  },
+  {
+    "doc_id": "ntru_purpose_10a",
+    "scheme": "డాన్ ఎన్టిఆర్ వైద్య సేవ",
+    "category": "PURPOSE",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Dr. NTR Vaidya Seva, Government of Andhra Pradesh",
+    "source_url": "https://ntruvidyaseva.ap.gov.in",
+    "source_title": "Dr. NTR Vaidya Seva official scheme overview",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "PURPOSE",
+    "supported_categories": [
+      "ELIGIBILITY",
+      "BENEFITS",
+      "REQUIRED_DOCUMENTS"
+    ],
+    "content": "వైఎస్ఆర్ ఆరోగ్యశ్రీ పథకం యువతికి సహాయం చేయడం మరియు విద్యను ప్రోత్సహించడం ద్వారా కుటుంబాలను సంక్షేమంగా తీర్చడం. ఈ పథకం విద్యార్థుల విద్య పూర్తి చేయడం ద్వారా వారి భవిష్యత్తు మెరుగుపరచడానికి ఉద్దేశించబడింది.",
+    "metadata": {
+      "state": "Andhra Pradesh",
+      "category": "HEALTHCARE",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "required_documents",
+        "revenue_rules"
+      ],
+      "base_url": "https://ntruvidyaseva.ap.gov.in",
+      "key_rules": {
+        "benefit_cap": "Up to 25 lakh per family per year (cashless)",
+        "income_ceiling": "Annual family income < 5,00,000",
+        "land_ceiling": null,
+        "insurance": "Family floater, > 3,250 therapies covered",
+        "tenant_eligibility": "Landless tenant farmers belonging to SC, ST, BC, and minority communities are eligible.",
+        "landlord_lease_requirement": "Tenant farmers receive assistance if they secure an official Crop Cultivator Rights Card (CCRC) or formal lease agreement for a minimum designated acreage.",
+        "landless_tenants_primary_help": "Landless tenant farmers (SC/ST/BC/minority) are eligible; landlord/owner farmers are not the primary beneficiaries.",
+        "content_fixed": null
+      }
+    },
+    "scheme_identifier": "NTR_VAIDYA_SEVA_AP",
+    "name_history": [
+      "వైఎస్ఆర్ ఆరోగ్యశ్రీ"
+    ]
+  },
+  {
+    "doc_id": "rb_ap_elig_01",
+    "scheme": "రైతు భరోసా",
+    "category": "ELIGIBILITY",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "state": "Andhra Pradesh",
+    "authority": "Agriculture & Cooperation Department, Government of Andhra Pradesh",
+    "source_url": "https://ap.rthubharosa.gov.in",
+    "source_title": "Andhra Pradesh Rythu Bharosa official scheme overview",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "ELIGIBILITY",
+    "content": "ఆంధ్రప్రదేశ్ ప్రభుత్వం రైతు భరోసా పథకాన్ని రైతులకు వ్యవసాయ వనరులకు అందించడానికి ప్రారంభించింది. ప్రధాన లక్ష్యం రైతులకు పెట్టుబడి సాయం ఇవ్వడం; వ్యవసాయం చేసేవారు అర్హులు. కౌలు రైతులు మరియు వెలువడి అయిన భూమి లెక్కించిన రైతులు మాత్రమే అర్హులు. భూమి లేని కౌలు రైతులకు సహాయం అందించడానికి ఫార్మల్ లీస్ అయ్యిన భూమి మీద మాత్రమే దరఖాస్తు నమోదు చేయబడుతుంది. రైతు మరియు వడ్డి కలిసి ఒకే మొత్తం చెల్లించకుండా ద్విపక్ష లీస్ వ్యవస్థ అమలు అవుతోంది.",
+    "scheme_identifier": "RYTHU_BHAROSA_AP",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ],
+    "name_history": [],
+    "metadata": {
+      "state": "Andhra Pradesh",
+      "category": "AGRICULTURE",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "revenue_rules",
+        "required_documents"
+      ],
+      "base_url": "https://ap.rthubharosa.gov.in",
+      "key_rules": {
+        "benefit_amount": "12000 per acre per year (6000 Vanakalam + 6000 Yasangi)",
+        "land_exclusions": "Excludes fallow land, real estate layouts, mining areas",
+        "tenant_eligibility": "Tenant farmers with formal lease agreement eligible; landless tenant farmers need Crop Cultivator Rights Card (CCRC)",
+        "verification": "Paid on verified cultivable land only"
+      }
+    }
+  },
+  {
+    "doc_id": "rb_ap_ben_02",
+    "scheme": "రైతు భరోసా",
+    "category": "BENEFITS",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "state": "Andhra Pradesh",
+    "authority": "Agriculture & Cooperation Department, Government of Andhra Pradesh",
+    "source_url": "https://ap.rthubharosa.gov.in",
+    "source_title": "Andhra Pradesh Rythu Bharosa official scheme overview",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "BENEFITS",
+    "content": "అంధ్రప్రదేశ్ రైతు భరోసా పథకం ప్రతి అర్హు రైతుకు ప్రతి సీజన్లో వ్యవసాయం చేసిన భూమికి గణనీయంగా రూ. 12,000 వరకు రూపాయలు అందిస్తుంది (వానకాలం 6,000 + యసంగి 6,000). అదనంగా గరిష్ట పరిమితి ఉండదని, అన్ని అర్హులకు సమానంగా ఇవ్వబడుతుందన్నది కూడా ప్రస్తావించబడింది.",
+    "scheme_identifier": "RYTHU_BHAROSA_AP",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ],
+    "name_history": [],
+    "metadata": {
+      "state": "Andhra Pradesh",
+      "category": "AGRICULTURE",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "revenue_rules",
+        "required_documents"
+      ],
+      "base_url": "https://ap.rthubharosa.gov.in",
+      "key_rules": {
+        "benefit_amount": "12000 per acre per year (6000 Vanakalam + 6000 Yasangi)",
+        "land_exclusions": "Excludes fallow land, real estate layouts, mining areas",
+        "tenant_eligibility": "Tenant farmers with formal lease agreement eligible; landless tenant farmers need Crop Cultivator Rights Card (CCRC)",
+        "verification": "Paid on verified cultivable land only"
+      }
+    }
+  },
+  {
+    "doc_id": "rb_ap_proc_04",
+    "scheme": "రైతు భరోసా",
+    "category": "APPLICATION_PROCEDURE",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "state": "Andhra Pradesh",
+    "authority": "Agriculture & Cooperation Department, Government of Andhra Pradesh",
+    "source_url": "https://ap.rthubharosa.gov.in",
+    "source_title": "Andhra Pradesh Rythu Bharosa official scheme overview",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "APPLICATION_PROCEDURE",
+    "content": "అంధ్రప్రదేశ్ రైతు భరోసా పథకానికి దరఖాస్తు చేయడానికి స్థానిక వ్యవసాయ సహాయకుడి దగ్గరకు వెళ్ళి కావలసిన పత్రాలతో దరఖాస్తు చేయవచ్చు; ఆన్‌లైన్ దరఖాస్తుకు apathy.ap.gov.in పోర్టల్ లేదా మీ-సేవ కేంద్రం ఉపయోగించవచ్చు.",
+    "scheme_identifier": "RYTHU_BHAROSA_AP",
+    "supported_categories": [
+      "PURPOSE",
+      "BENEFITS",
+      "ELIGIBILITY"
+    ],
+    "name_history": [],
+    "metadata": {
+      "state": "Andhra Pradesh",
+      "category": "AGRICULTURE",
+      "attributes": [
+        "eligibility_criteria",
+        "benefits_amount",
+        "revenue_rules",
+        "required_documents"
+      ],
+      "base_url": "https://ap.rthubharosa.gov.in",
+      "key_rules": {
+        "benefit_amount": "12000 per acre per year (6000 Vanakalam + 6000 Yasangi)",
+        "land_exclusions": "Excludes fallow land, real estate layouts, mining areas",
+        "tenant_eligibility": "Tenant farmers with formal lease agreement eligible; landless tenant farmers need Crop Cultivator Rights Card (CCRC)",
+        "verification": "Paid on verified cultivable land only"
+      }
+    }
+  },
+  {
+    "doc_id": "ap_rb_elig_01",
+    "scheme": "రైతు భరోసా",
+    "category": "ELIGIBILITY",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Andhra Pradesh Rythu Bharosa, Government of Andhra Pradesh",
+    "source_url": "https://rythubharosa.telangana.gov.in",
+    "source_title": "Telangana Rythu Bharosa official scheme overview (transition to Rythu Bharosa)",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "ELIGIBILITY",
+    "scheme_identifier": "RYTHU_BHAROSA_AP",
+    "supported_categories": [
+      "ELIGIBILITY"
+    ],
+    "content": [
+      "ఆంధ్రప్రదేశ్ రైతు భరోసా పథకానికి అర్హత సాధించడానికి లబ్ధిదారులు క్రింది చట్టబద్ధమైన మరియు రెవెన్యూ నిబంధనలను కలిగి ఉండాలి:\n1. నివాస ధృవీకరణ: దరఖాస్తుదారు తప్పనిసరిగా ఆంధ్రప్రదేశ్ రాష్ట్ర శాశ్వత నివాసి అయి ఉండాలి.\n2. భూమి యాజమాన్యం: స్వంత భూమి ఉన్న రైతులు అధికారిక వెబ్‌ల్యాండ్ (Webland) మరియు మీభూమి (Meebhoomi) రెవెన్యూ డేటాబేస్ లో నమోదైన పట్టాదారులై ఉండాలి.\n3. కౌలు రైతుల అర్హత: భూమి లేని కౌలు రైతులు (Tenant Farmers) ఈ పథకం కింద లబ్ధి పొందాలంటే, వారు విలేజ్ సెక్రటేరియట్ (గ్రామ సచివాలయం) ద్వారా జారీ చేయబడిన చెల్లుబాటు అయ్యే పంట సాగు హక్కుల కార్డు (CCRC - Crop Cultivator Rights Card) కలిగి ఉండాలి. ఈ కౌలు రైతులు ఎస్సీ (SC), ఎస్టీ (ST), బీసీ (BC) లేదా మైనారిటీ వర్గాలకు చెందినవారై ఉండాలి.\n4. మినహాయింపులు (నిషేధిత వర్గాలు):\n   - కుటుంబంలో ఎవరైనా ఆదాయపు పన్ను (Income Tax) చెల్లించేవారైతే అర్హులు కారు.\n   - ప్రభుత్వ ఉద్యోగులు (కేంద్ర/రాష్ట్ర ప్రభుత్వ ఉద్యోగులు, ప్రభుత్వ రంగ సంస్థలు, కార్పొరేషన్ల సిబ్బంది) దీనికి అర్హులు కారు (క్లాస్ IV/గ్రూప్ D మినహా).\n   - ప్రస్తుత లేదా మాజీ ప్రజాప్రతినిధులు (మంత్రులు, ఎంపీలు, ఎమ్మెల్యేలు, జెడ్పీ చైర్మన్లు) అనర్హులు.\n5. ల్యాండ్ సీలింగ్ మరియు పంట నిబంధనలు: సాధారణ వ్యవసాయం, హార్టికల్చర్ లేదా సెరికల్చర్ చేసే రైతులు కనీసం 1.0 ఎకరం భూమి సాగులో కలిగి ఉండాలి. కూరగాయలు, పూలు మరియు పశుగ్రాసం సాగు చేసేవారికి కనీసం 0.5 ఎకరం, తమలపాకు తోటలకైతే కనీసం 0.1 ఎకరం సాగు భూమి ఉండాలి."
+    ]
+  },
+  {
+    "doc_id": "ap_rb_documents_01",
+    "scheme": "రైతు భరోసా",
+    "category": "REQUIRED_DOCUMENTS",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Andhra Pradesh Rythu Bharosa, Government of Andhra Pradesh",
+    "source_url": "https://rythubharosa.telangana.gov.in",
+    "source_title": "Telangana Rythu Bharosa official scheme overview (transition to Rythu Bharosa)",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "REQUIRED_DOCUMENTS",
+    "scheme_identifier": "RYTHU_BHAROSA_AP",
+    "supported_categories": [
+      "REQUIRED_DOCUMENTS"
+    ],
+    "content": [
+      "ఆంధ్రప్రదేశ్ రైతు భరోసా పథకం నమోదు మరియు బయోమెట్రిక్ వెరిఫికేషన్ కోసం క్రింది పత్రాలు తప్పనిసరి:\n1. ఆధార్ కార్డ్ (Aadhaar Card): దరఖాస్తుదారు (భూ యజమాని లేదా కౌలు రైతు) యొక్క ఆధార్ కార్డ్ మరియు బయోమెట్రిక్ ఈ-కేవైసి (E-KYC) పూర్తి చేయడం తప్పనిసరి.\n2. పట్టాదార్ పాస్ బుక్ (Pattadar Passbook): భూ యజమానుల భూమి హక్కుల నిర్ధారణ కోసం భూమి పత్రాలు మరియు ఖాతా సంఖ్య అవసరం.\n3. పంట సాగు హక్కుల కార్డు (CCRC - Crop Cultivator Rights Card): కౌలు రైతులు భూమి యజమాని సంతకంతో కూడిన ఒప్పంద పత్రాన్ని గ్రామ రెవెన్యూ అధికారి (VRO) కి సమర్పించి పొందిన ఉమ్మడి CCRC కార్డును అందించాలి.\n4. కుల ధృవీకరణ పత్రం (Caste Certificate): కౌలు రైతులకు మాత్రమే వర్తిస్తుంది (ఎస్సీ, ఎస్టీ, బీసీ మరియు మైనారిటీ వర్గాల నిర్ధారణ కోసం).\n5. బ్యాంక్ పాస్ బుక్ (Bank Passbook): సబ్సిడీ మరియు ఆర్థిక సాయం నేరుగా జమ కావడానికి ఆధార్ మరియు ఎన్పీసీఐ (NPCI - National Payments Corporation of India) తో లింక్ చేయబడిన క్రియాశీల బ్యాంక్ ఖాతా వివరాలు సమర్పించాలి.\n6. మొబైల్ నంబర్: ఓటీపీ (OTP) వెరిఫికేషన్ మరియు స్టేటస్ అప్డేట్స్ కోసం యాక్టివ్ మొబైల్ నంబర్ లింక్ అయి ఉండాలి."
+    ]
+  },
+  {
+    "doc_id": "ap_rb_benefits_01",
+    "scheme": "రైతు భరోసా",
+    "category": "BENEFITS",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Andhra Pradesh Rythu Bharosa, Government of Andhra Pradesh",
+    "source_url": "https://rythubharosa.telangana.gov.in",
+    "source_title": "Telangana Rythu Bharosa official scheme overview (transition to Rythu Bharosa)",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "BENEFITS",
+    "scheme_identifier": "RYTHU_BHAROSA_AP",
+    "supported_categories": [
+      "BENEFITS"
+    ],
+    "content": [
+      "ఆంధ్రప్రదేశ్ రైతు భరోసా పథకం కింద అర్హులైన ప్రతి రైతు కుటుంబానికి పెట్టుబడి మద్దతుగా ఈ క్రింది ప్రయోజనాలు అందించబడతాయి:\n1. వార్షిక ఆర్థిక సహాయం: ప్రతి పాత్రుడైన రైతు కుటుంబానికి సంవత్సరానికి మొత్తం ₹13,500 లభిస్తుంది.\n   - ఇందులో ఆంధ్రప్రదేశ్ రాష్ట్ర ప్రభుత్వం అందించే వాటా ₹7,500.\n   - కేంద్ర ప్రభుత్వం అందించే పీఎం-కిసాన్ (PM-KISAN) వాటా ₹6,000.\n   - పీఎం-కిసాన్ పరిధిలోకి రాని అర్హులైన రైతులకు పూర్తి ₹13,500 మొత్తాన్ని రాష్ట్ర ప్రభుత్వమే భరిస్తుంది.\n2. విడతల వారీ పంపిణీ (3 Installments):\n   - మొదటి విడత (మే నెల - ఖరీఫ్ పెట్టుబడి): ₹7,500 (రాష్ట్ర ప్రభుత్వం ₹5,500 + పీఎం కిసాన్ ₹2,000).\n   - రెండవ విడత (అక్టోబర్/నవంబర్ - రబీ పెట్టుబడి): ₹4,000 (రాష్ట్ర ప్రభుత్వం ₹2,000 + పీఎం కిసాన్ ₹2,000).\n   - మూడవ విడత (జనవరి - సంక్రాంతి సమయం): ₹2,000 (రాష్ట్ర ప్రభుత్వం / పీఎం కిసాన్ ద్వారా).\n3. అనుబంధ ప్రయోజనాలు:\n   - ఉచిత వ్యవసాయ బోర్ వెల్స్ సౌకర్యం.\n   - పగటిపూట నిరంతరాయంగా 9 గంటల ఉచిత విద్యుత్ సరఫరా.\n   - వ్యవసాయ ట్రాక్టర్లకు రోడ్ టాక్స్ మరియు టోల్ టాక్స్ మినహాయింపు.\n   - వడ్డీ లేని పంట రుణాలు (Zero Interest Crop Loans)."
+    ]
+  },
+  {
+    "doc_id": "ap_rb_procedure_01",
+    "scheme": "రైతు భరోసా",
+    "category": "APPLICATION_PROCEDURE",
+    "source_role": "scheme_evidence",
+    "source_classification": "official_primary",
+    "verification_status": "official_accessed_currentness_unverified",
+    "temporal_scope": "",
+    "state": "Andhra Pradesh",
+    "authority": "Andhra Pradesh Rythu Bharosa, Government of Andhra Pradesh",
+    "source_url": "https://rythubharosa.telangana.gov.in",
+    "source_title": "Telangana Rythu Bharosa official scheme overview (transition to Rythu Bharosa)",
+    "published_date": null,
+    "updated_date": null,
+    "retrieval_category": "APPLICATION_PROCEDURE",
+    "scheme_identifier": "RYTHU_BHAROSA_AP",
+    "supported_categories": [
+      "APPLICATION_PROCEDURE"
+    ],
+    "content": [
+      "ఈ పథకం పారదర్శకంగా, దళారీల ప్రమేయం లేకుండా గ్రామ స్థాయిలోనే ప్రాసెస్ చేయబడుతుంది. దరఖాస్తు మరియు వెరిఫికేషన్ దశలు క్రింది విధంగా ఉన్నాయి:\n1. ఈ-క్రాప్ నమోదు (e-Crop Booking): రైతు ఏ పంట వేశాడో గ్రామ వ్యవసాయ సహాయకుడు (VAA) క్షేత్రస్థాయి పరిశీలన చేసి డిజిటల్ ఈ-క్రాప్ బుకింగ్ పూర్తి చేయాలి.\n2. కౌలు రైతుల ప్రత్యేక నిబంధన (Koulu Raithu / CCRC Rule): ఆంధ్రప్రదేశ్ పంట సాగుదారుల హక్కుల చట్టం 2019 ప్రకారం, కౌలు రైతులకు లబ్ధి చేకూరాలంటే భూ యజమాని యొక్క లిఖితపూర్వక అంగీకారం (Written Consent) తప్పనిసరి. యజమాని మరియు కౌలు రైతు ఇద్దరూ సంతకం చేసిన 11 నెలల కాలపరిమితి గల ఉమ్మడి ఒప్పందంపై గ్రామ రెవెన్యూ అధికారి (VRO) సంతకం చేసి CCRC కార్డు జారీ చేస్తారు. ఈ కార్డు ఆధారంగానే కౌలు రైతుకు అర్హత లభిస్తుంది. ఒకే భూమికి ఎక్కువ మంది కౌలుదారులు ఉంటే, ప్రాధాన్యత క్రమం: ఎస్సీ కౌలుదారు > ఎస్టీ > బీసీ > మైనారిటీ.\n3. ఉమ్మడి వెరిఫికేషన్ (Joint Verification): గ్రామ రెవెన్యూ అధికారి (VRO) మరియు గ్రామ వ్యవసాయ సహాయకుడు (VAA) సంయుక్తంగా రెవెన్యూ రికార్డులను, ఆధార్ వివరాలను మరియు ఈ-క్రాప్ డేటాను పరిశీలిస్తారు.\n4. సోషల్ ఆడిట్ (Social Audit): అర్హులైన లబ్ధిదారుల జాబితాలను గ్రామ సచివాలయంలో (Village Secretariat) ప్రదర్శిస్తారు. ఏదైనా అభ్యంతరాలు లేదా తప్పులు ఉంటే అక్కడే సరిచేసుకోవచ్చు.\n5. ఈ-కేవైసి మరియు నిధుల జమ: తుది జాబితా ఆమోదం పొందిన తర్వాత, రైతు బయోమెట్రిక్ ఈ-కేవైసి పూర్తి చేయాలి. నిధులు నేరుగా ఆధార్ లింక్డ్ బ్యాంక్ ఖాతాలోకి డీబీటీ (DBT) ద్వారా బదిలీ చేయబడతాయి."
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "sklearn_version": "1.9.1",
-  "numpy_version": "2.4.6",
+  "sklearn_version": "1.4.2",
+  "numpy_version": "1.26.4",
   "n_train": 242,
   "classes": [
     "APPLICATION_PROCEDURE",
@@ -12,20 +12,20 @@
   "classifier": "LogisticRegression(C=1.0)",
   "grouped_cv_macro_f1": {
     "majority": {
-      "mean": 0.0915,
-      "std": 0.0319
+      "mean": 0.0856,
+      "std": 0.0007
     },
     "word_lr": {
-      "mean": 0.8113,
-      "std": 0.0897
+      "mean": 0.7793,
+      "std": 0.1513
     },
     "char_nb": {
-      "mean": 0.7804,
-      "std": 0.1243
+      "mean": 0.7498,
+      "std": 0.0997
     },
     "char_lr": {
-      "mean": 0.814,
-      "std": 0.0798
+      "mean": 0.8397,
+      "std": 0.0771
     }
   },
   "grouped_holdout_macro_f1": 0.8308,

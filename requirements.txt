@@ -9,9 +9,13 @@ Levenshtein
 scikit-learn
 pandas
 numpy
-streamlit
+streamlit>=1.32.0
 chromadb
 sentence-transformers
 rank-bm25
+pypdf
 gTTS
 matplotlib
+
+# Optional live Telugu ASR (downloads model weights on first use)
+openai-whisper
